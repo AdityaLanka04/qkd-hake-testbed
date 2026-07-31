@@ -1,0 +1,164 @@
+# Hybrid QKD-PQC HAKE Testbed — Implementation Status
+
+## Implemented Till Now
+
+- Created the basic Python project structure.
+- Added an `AGENTS.md` file containing project instructions for Codex.
+- Added a `README.md` with installation and execution instructions.
+- Added a `Makefile` with the following commands:
+  - `make setup`
+  - `make test`
+  - `make server`
+  - `make demo`
+- Created an in-memory QKD key pool.
+- Added configurable QKD parameters:
+  - QKD refill rate
+  - Maximum pool depth
+  - Initial number of keys
+  - QKD key size
+  - Per-peer key quota
+- Implemented generation of random 256-bit QKD keys.
+- Implemented UUID-based identification for every QKD key.
+- Implemented one-time key retrieval using the key ID.
+- Ensured that both communicating SAEs receive the same QKD key.
+- Added pool-exhaustion detection.
+- Added basic per-peer quota checking.
+- Implemented the following ETSI GS QKD 014-style API endpoints:
+  - Get status
+  - Get encryption key
+  - Get key with key ID
+  - Get multiple keys with key IDs
+- Added SAE identification using the `X-SAE-ID` request header.
+- Added HTTP error responses for:
+  - Missing SAE identity
+  - Unsupported key size
+  - Empty QKD pool
+  - Exceeded peer quota
+  - Invalid or reused key ID
+- Implemented basic labelled HKDF using HMAC-SHA3-256.
+- Added separate labels for:
+  - Long-term KEM secret
+  - Ephemeral KEM secret
+  - QKD key
+  - Session key
+  - Client confirmation key
+  - Server confirmation key
+- Added the following security modes:
+  - `HYBRID_QKD`
+  - `PQC_ONLY`
+  - `REJECTED`
+- Prevented silent QKD downgrade in the key-combiner layer.
+- Added an explicit option to either reject the handshake when QKD is unavailable or continue in clearly identified `PQC_ONLY` mode.
+- Added a liboqs-python wrapper for:
+  - ML-KEM-512
+  - ML-KEM-768
+  - ML-KEM-1024
+  - FrodoKEM-976-AES
+- Added methods for KEM key-pair generation, encapsulation and decapsulation.
+- Added the initial experiment configuration containing:
+  - Handshake rates
+  - QKD supply rates
+  - KEM algorithms
+  - Number of benchmark runs
+  - Warm-up runs
+  - Starvation-handling policies
+- Added a small local smoke benchmark for checking the KDF implementation.
+- Added automated tests for:
+  - QKD key generation
+  - Matching keys on both sides
+  - Pool exhaustion
+  - One-time key-ID retrieval
+  - QKD API endpoints
+  - Hybrid key derivation
+  - Explicit PQC-only fallback
+  - Rejection when QKD is required
+- All 8 current automated tests are passing.
+
+
+
+
+## Left to Implement
+
+- Install and verify liboqs-python on the development machines.
+- Verify that all four required KEM algorithms are enabled.
+- Study and reproduce the exact protocol flow from the 2026 signature-free HAKE paper.
+- Define the complete handshake message formats.
+- Implement Alice and Bob as separate protocol participants.
+- Implement long-term KEM key registration and storage.
+- Implement authenticated distribution of long-term KEM public keys.
+- Implement fresh ephemeral KEM key generation for every handshake.
+- Implement the complete long-term KEM authentication exchange.
+- Implement the ephemeral KEM exchange for forward secrecy.
+- Connect the HAKE protocol to the QKD mock API.
+- Transfer the QKD key ID from the initiating SAE to the responding SAE.
+- Retrieve the corresponding QKD key using `GetKeyWithIDs`.
+- Create a canonical handshake transcript containing:
+  - Protocol version
+  - Participant identities
+  - Selected KEM algorithm
+  - Nonces
+  - Long-term public keys
+  - Ephemeral public keys
+  - KEM ciphertexts
+  - QKD key ID
+  - Security mode
+- Finalize the labelled HKDF chain according to the paper.
+- Implement transcript hashing using SHA3-256.
+- Implement client and server confirmation MACs.
+- Verify confirmation MACs before accepting the session.
+- Ensure that Alice and Bob derive the same final session key.
+- Add protection against:
+  - Replay attacks
+  - Message modification
+  - Unknown key-share attacks
+  - Role confusion
+  - Downgrade attacks
+- Implement the pure-PQC baseline without the QKD component.
+- Ensure the hybrid and pure-PQC implementations use the same transport and measurement method.
+- Implement the full 1,000-run benchmark for every KEM algorithm.
+- Measure:
+  - End-to-end handshake latency
+  - CPU time
+  - Bytes transmitted
+  - KEM key-generation time
+  - Encapsulation time
+  - Decapsulation time
+  - QKD key-fetch time
+  - HKDF and MAC time
+- Calculate median and 95th-percentile results.
+- Add warm-up runs before recording measurements.
+- Save every raw benchmark result in CSV format.
+- Record system information with each benchmark.
+- Implement an asynchronous handshake load generator.
+- Test handshake rates of 1, 5, 10, 20, 50 and 100 handshakes per second.
+- Test QKD supply rates of 1, 10 and 100 kbps.
+- Continuously record QKD pool occupancy.
+- Measure queueing delay and rejected handshakes.
+- Find the point where QKD supply becomes the main bottleneck.
+- Implement and compare the three starvation policies:
+  - Per-peer quotas
+  - Admission control
+  - Explicit computational-only downgrade
+- Improve quota handling using fair per-peer allocation.
+- Implement admission control that returns a clear rejection instead of degrading.
+- Include the final security mode in the handshake result.
+- Bind the security mode into the transcript and confirmation MAC.
+- Generate plots for:
+  - Handshake rate versus latency
+  - Handshake rate versus QKD pool occupancy
+  - QKD supply versus successful hybrid handshakes
+  - Rejected and downgraded handshakes
+  - Median and 95th-percentile latency
+  - KEM algorithm comparison
+  - Bytes transmitted by each protocol
+- Prepare the compromise matrix for:
+  - Nothing broken
+  - QKD broken
+  - KEM broken
+  - Both broken
+- Evaluate every compromise case against authentication, session-key secrecy and forward secrecy.
+- Write the CK01 game-hop security-analysis outline.
+- Add Docker support for one-command reproduction.
+- Add continuous integration for automated testing.
+- Complete documentation and usage examples.
+- Clearly state that the software is an experimental research testbed and not production cryptography.

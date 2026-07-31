@@ -1,0 +1,18 @@
+{
+  "handshake_rates_per_second": [1, 5, 10, 20, 50, 100],
+  "qkd_supply_kbps": [1, 10, 100],
+  "kem_algorithms": [
+    "ML-KEM-512",
+    "ML-KEM-768",
+    "ML-KEM-1024",
+    "FrodoKEM-976-AES"
+  ],
+  "runs_per_case": 1000,
+  "warmup_runs": 100,
+  "qkd_key_size_bits": 256,
+  "policies": [
+    "uncontrolled_explicit_downgrade",
+    "per_peer_quota",
+    "admission_control"
+  ]
+}
