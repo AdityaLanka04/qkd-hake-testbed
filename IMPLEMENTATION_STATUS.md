@@ -72,93 +72,19 @@
   - Hybrid key derivation
   - Explicit PQC-only fallback
   - Rejection when QKD is required
-- All 8 current automated tests are passing.
-
-
-
+- Installed and verified liboqs-python on the development machines.
+- Verified that all four required KEM algorithms are enabled (ML-KEM-512, ML-KEM-768, ML-KEM-1024, FrodoKEM-976-AES).
+- Implemented the Clermont-Henrich 2026 Signature-Free HAKE 4-message protocol pipeline (Alice & Bob).
+- Implemented ROKDF Multi-Input KDF using SHA-3-512 and HMAC-SHA-256 confirmation tags.
+- Implemented Quota, Admission Control (5% occupancy threshold), and computational-only PQC fallback mitigations.
+- Implemented performance benchmarks and key starvation rate-vs-supply bottleneck sweeps.
+- Authored the CK01 model game-hop security analysis and compromise matrix.
+- All 17 automated tests are passing.
 
 ## Left to Implement
 
-- Install and verify liboqs-python on the development machines.
-- Verify that all four required KEM algorithms are enabled.
-- Study and reproduce the exact protocol flow from the 2026 signature-free HAKE paper.
-- Define the complete handshake message formats.
-- Implement Alice and Bob as separate protocol participants.
-- Implement long-term KEM key registration and storage.
-- Implement authenticated distribution of long-term KEM public keys.
-- Implement fresh ephemeral KEM key generation for every handshake.
-- Implement the complete long-term KEM authentication exchange.
-- Implement the ephemeral KEM exchange for forward secrecy.
-- Connect the HAKE protocol to the QKD mock API.
-- Transfer the QKD key ID from the initiating SAE to the responding SAE.
-- Retrieve the corresponding QKD key using `GetKeyWithIDs`.
-- Create a canonical handshake transcript containing:
-  - Protocol version
-  - Participant identities
-  - Selected KEM algorithm
-  - Nonces
-  - Long-term public keys
-  - Ephemeral public keys
-  - KEM ciphertexts
-  - QKD key ID
-  - Security mode
-- Finalize the labelled HKDF chain according to the paper.
-- Implement transcript hashing using SHA3-256.
-- Implement client and server confirmation MACs.
-- Verify confirmation MACs before accepting the session.
-- Ensure that Alice and Bob derive the same final session key.
-- Add protection against:
-  - Replay attacks
-  - Message modification
-  - Unknown key-share attacks
-  - Role confusion
-  - Downgrade attacks
-- Implement the pure-PQC baseline without the QKD component.
-- Ensure the hybrid and pure-PQC implementations use the same transport and measurement method.
-- Implement the full 1,000-run benchmark for every KEM algorithm.
-- Measure:
-  - End-to-end handshake latency
-  - CPU time
-  - Bytes transmitted
-  - KEM key-generation time
-  - Encapsulation time
-  - Decapsulation time
-  - QKD key-fetch time
-  - HKDF and MAC time
-- Calculate median and 95th-percentile results.
-- Add warm-up runs before recording measurements.
-- Save every raw benchmark result in CSV format.
-- Record system information with each benchmark.
-- Implement an asynchronous handshake load generator.
-- Test handshake rates of 1, 5, 10, 20, 50 and 100 handshakes per second.
-- Test QKD supply rates of 1, 10 and 100 kbps.
-- Continuously record QKD pool occupancy.
-- Measure queueing delay and rejected handshakes.
-- Find the point where QKD supply becomes the main bottleneck.
-- Implement and compare the three starvation policies:
-  - Per-peer quotas
-  - Admission control
-  - Explicit computational-only downgrade
-- Improve quota handling using fair per-peer allocation.
-- Implement admission control that returns a clear rejection instead of degrading.
-- Include the final security mode in the handshake result.
-- Bind the security mode into the transcript and confirmation MAC.
-- Generate plots for:
-  - Handshake rate versus latency
-  - Handshake rate versus QKD pool occupancy
-  - QKD supply versus successful hybrid handshakes
-  - Rejected and downgraded handshakes
-  - Median and 95th-percentile latency
-  - KEM algorithm comparison
-  - Bytes transmitted by each protocol
-- Prepare the compromise matrix for:
-  - Nothing broken
-  - QKD broken
-  - KEM broken
-  - Both broken
-- Evaluate every compromise case against authentication, session-key secrecy and forward secrecy.
-- Write the CK01 game-hop security-analysis outline.
 - Add Docker support for one-command reproduction.
 - Add continuous integration for automated testing.
 - Complete documentation and usage examples.
 - Clearly state that the software is an experimental research testbed and not production cryptography.
+
