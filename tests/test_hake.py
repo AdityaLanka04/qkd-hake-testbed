@@ -27,14 +27,14 @@ def test_hake_hybrid_handshake_success() -> None:
             return qkd_key
 
     # Msg 1
-    ct1 = alice.message1()
+    ct1, nonce_a = alice.message1()
 
     # Msg 2
-    pk_e, tau1, ct2 = bob.message2(ct1)
+    pk_e, tau1, ct2, nonce_b = bob.message2((ct1, nonce_a))
 
     # Msg 3
     ct_star, q_id, tau2 = alice.message3(
-        (pk_e, tau1, ct2),
+        (pk_e, tau1, ct2, nonce_b),
         qkd_pool_client_fn=mock_qkd_client,
         allow_explicit_fallback=False
     )
@@ -64,14 +64,14 @@ def test_hake_pqc_fallback_success() -> None:
     bob = BobSession("alice", kp_a.public_key, "bob", kp_b.public_key, kp_b.secret_key, alg)
 
     # Msg 1
-    ct1 = alice.message1()
+    ct1, nonce_a = alice.message1()
 
     # Msg 2
-    pk_e, tau1, ct2 = bob.message2(ct1)
+    pk_e, tau1, ct2, nonce_b = bob.message2((ct1, nonce_a))
 
     # Msg 3 (No QKD Client, allow fallback = True)
     ct_star, q_id, tau2 = alice.message3(
-        (pk_e, tau1, ct2),
+        (pk_e, tau1, ct2, nonce_b),
         qkd_pool_client_fn=None,
         allow_explicit_fallback=True
     )
@@ -105,14 +105,14 @@ def test_hake_admission_control_triggers() -> None:
         return b"q" * 32, "id"
 
     # Msg 1 & 2 mock inputs
-    ct1 = alice.message1()
+    ct1, nonce_a = alice.message1()
     bob = BobSession("alice", kp_a.public_key, "bob", kp_b.public_key, kp_b.secret_key, alg)
-    pk_e, tau1, ct2 = bob.message2(ct1)
+    pk_e, tau1, ct2, nonce_b = bob.message2((ct1, nonce_a))
 
     # Verify that when allow_explicit_fallback is False, it raises HandshakeError
     with pytest.raises(HandshakeError) as excinfo:
         alice.message3(
-            (pk_e, tau1, ct2),
+            (pk_e, tau1, ct2, nonce_b),
             qkd_pool_client_fn=mock_qkd_client_low_occupancy,
             allow_explicit_fallback=False
         )
@@ -152,8 +152,8 @@ def test_hake_tampering_fails() -> None:
     alice = AliceSession("alice", kp_a.public_key, kp_a.secret_key, "bob", kp_b.public_key, alg)
     bob = BobSession("alice", kp_a.public_key, "bob", kp_b.public_key, kp_b.secret_key, alg)
 
-    ct1 = alice.message1()
-    pk_e, tau1, ct2 = bob.message2(ct1)
+    ct1, nonce_a = alice.message1()
+    pk_e, tau1, ct2, nonce_b = bob.message2((ct1, nonce_a))
 
     # Tamper with Message 2 MAC tag
     tampered_tau1 = bytearray(tau1)
@@ -162,7 +162,7 @@ def test_hake_tampering_fails() -> None:
 
     with pytest.raises(HandshakeError) as excinfo:
         alice.message3(
-            (pk_e, tampered_tau1, ct2),
+            (pk_e, tampered_tau1, ct2, nonce_b),
             qkd_pool_client_fn=None,
             allow_explicit_fallback=True
         )

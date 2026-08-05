@@ -71,21 +71,21 @@ def run_performance_benchmarks(runs: int = 1000, output_dir: str = "results") ->
                     bob = BobSession("alice", kp_a.public_key, "bob", kp_b.public_key, kp_b.secret_key, alg)
                     
                     # Msg 1
-                    ct1 = alice.message1()
+                    ct1, nonce_a = alice.message1()
                     
                     # Msg 2
-                    pk_e, tau1, ct2 = bob.message2(ct1)
+                    pk_e, tau1, ct2, nonce_b = bob.message2((ct1, nonce_a))
                     
                     # Msg 3
                     if mode == "HYBRID":
                         ct_star, q_id, tau2 = alice.message3(
-                            (pk_e, tau1, ct2),
+                            (pk_e, tau1, ct2, nonce_b),
                             qkd_pool_client_fn=mock_qkd_client,
                             allow_explicit_fallback=False
                         )
                     else:
                         ct_star, q_id, tau2 = alice.message3(
-                            (pk_e, tau1, ct2),
+                            (pk_e, tau1, ct2, nonce_b),
                             qkd_pool_client_fn=None,  # Forces pure PQC
                             allow_explicit_fallback=True
                         )
@@ -104,7 +104,18 @@ def run_performance_benchmarks(runs: int = 1000, output_dir: str = "results") ->
                     
                     lat_ms = (t_wall_end - t_wall_start) / 1_000_000.0
                     cpu_ms = (t_cpu_end - t_cpu_start) / 1_000_000.0
-                    bytes_on_wire = len(ct1) + len(pk_e) + len(tau1) + len(ct2) + len(ct_star) + len(q_id.encode('utf-8')) + len(tau2) + len(tau3)
+                    bytes_on_wire = (
+                        len(ct1)
+                        + len(nonce_a)
+                        + len(pk_e)
+                        + len(tau1)
+                        + len(ct2)
+                        + len(nonce_b)
+                        + len(ct_star)
+                        + len(q_id.encode('utf-8'))
+                        + len(tau2)
+                        + len(tau3)
+                    )
                     
                     latencies.append(lat_ms)
                     cpus.append(cpu_ms)

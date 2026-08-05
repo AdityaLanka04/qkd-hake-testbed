@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import hashlib
 import hmac
 import secrets
 from typing import NamedTuple
@@ -28,6 +29,7 @@ class AliceSession:
         pk_b: bytes,
         algorithm: str = "ML-KEM-512",
         mitigation_mgr: MitigationManager | None = None,
+        version: str = "1.0",
     ) -> None:
         self.id_a = id_a
         self.pk_a = pk_a
@@ -37,18 +39,22 @@ class AliceSession:
         self.algorithm = algorithm
         self.mitigation_mgr = mitigation_mgr or MitigationManager()
         self.kem = OQSKEM(algorithm)
+        self.version = version
 
+        # Generate fresh nonce for anti-replay protection
+        self.nonce_a = secrets.token_bytes(16)
+        
         self.k1: bytes | None = None
         self.ct1: bytes | None = None
 
-    def message1(self) -> bytes:
-        """Message 1: Alice encapsulates Bob's public key."""
+    def message1(self) -> tuple[bytes, bytes]:
+        """Message 1: Alice encapsulates Bob's public key and sends (ct1, nonce_a)."""
         self.ct1, self.k1 = self.kem.encapsulate(self.pk_b)
-        return self.ct1
+        return self.ct1, self.nonce_a
 
     def message3(
         self,
-        msg2_data: tuple[bytes, bytes, bytes],
+        msg2_data: tuple[bytes, bytes, bytes, bytes],
         qkd_pool_client_fn=None,  # Function to fetch (k_qkd, qkdKeyId)
         allow_explicit_fallback: bool = True,
     ) -> tuple[bytes, str, bytes]:
@@ -56,11 +62,16 @@ class AliceSession:
         Message 3: Alice verifies Bob's Message 2, decapsulates, encapsulates Bob's ephemeral key,
         fetches QKD key, and generates Message 3 tag.
         """
-        pk_e, tau1, ct2 = msg2_data
+        pk_e, tau1, ct2, nonce_b = msg2_data
+        self.nonce_b = nonce_b
+        self.pk_e = pk_e
+        self.ct2 = ct2
+
+        # Transcript s binds ciphertexts for integrity
         s = self.ct1 + ct2
 
-        # Verify tau1 using k1
-        expected_tau1 = hmac_sha256_tag(self.k1, pk_e + s + b"A")
+        # Verify tau1 using k1. Binds ephemeral key pk_e, nonce_b, and identity.
+        expected_tau1 = hmac_sha256_tag(self.k1, pk_e + nonce_b + s + b"A")
         if not hmac.compare_digest(tau1, expected_tau1):
             raise HandshakeError("Alice failed to verify Bob's Message 2 MAC (tau1)")
 
@@ -112,19 +123,16 @@ class AliceSession:
                 else:
                     raise HandshakeError("QKD is required but no key pool client is available")
 
-
         # Compute tau2 tag using k2
         tau2 = hmac_sha256_tag(k2, qkd_key_id.encode("utf-8") + ct_star + s + b"B")
 
         # Save state for session key derivation
-        self.pk_e = pk_e
         self.k2 = k2
         self.k_star = k_star
         self.ct_star = ct_star
         self.k_qkd = k_qkd
         self.qkd_key_id = qkd_key_id
         self.security_mode = security_mode
-        self.ct2 = ct2
         self.tau1 = tau1
         self.tau2 = tau2
 
@@ -132,11 +140,32 @@ class AliceSession:
 
     def derive_and_verify(self, tau3: bytes) -> HandshakeResult:
         """Derive final keys and verify Bob's confirmation tag tau3."""
-        # Multi-input KDF inputs
-        c_kem = serialize_fields(
-            self.id_a, self.pk_a, self.id_b, self.pk_b, self.pk_e, self.k1, self.k2, self.k_star
+        # Create canonical transcript containing required values
+        raw_transcript = serialize_fields(
+            self.version,
+            self.id_a,
+            self.id_b,
+            self.algorithm,
+            self.nonce_a,
+            self.nonce_b,
+            self.pk_a,
+            self.pk_b,
+            self.pk_e,
+            self.ct1,
+            self.ct2,
+            self.ct_star,
+            self.qkd_key_id,
+            self.security_mode,
         )
-        c_qkd = serialize_fields(self.id_a, self.id_b, self.qkd_key_id)
+        
+        # Hashing using SHA3-256
+        transcript_hash = hashlib.sha3_256(raw_transcript).digest()
+
+        # Multi-input KDF inputs including transcript hash to bind security mode and identities
+        c_kem = serialize_fields(
+            self.id_a, self.pk_a, self.id_b, self.pk_b, self.pk_e, self.k1, self.k2, self.k_star, transcript_hash
+        )
+        c_qkd = serialize_fields(self.id_a, self.id_b, self.qkd_key_id, transcript_hash)
 
         sigma_qkd = self.k_qkd if self.k_qkd is not None else b""
 
@@ -144,19 +173,19 @@ class AliceSession:
         k1h = k_h[:32]
         k2h = k_h[32:]
 
-        # Verify tau3
+        # Verify tau3 confirmation tag
         expected_tau3 = hmac_sha256_tag(
             k1h,
             serialize_fields(
-                self.k1, self.qkd_key_id, self.pk_e, self.tau1, self.k2, self.tau2
+                self.k1, self.qkd_key_id, self.pk_e, self.tau1, self.k2, self.tau2, transcript_hash
             ),
         )
         if not hmac.compare_digest(tau3, expected_tau3):
             raise HandshakeError("Alice failed to verify Bob's confirmation tag (tau3)")
 
-        transcript = self.ct1 + self.ct2 + self.tau1 + self.ct_star + self.qkd_key_id.encode("utf-8") + self.tau2 + tau3
+        complete_transcript = raw_transcript + tau3
 
-        return HandshakeResult(k2h, self.security_mode, transcript)
+        return HandshakeResult(k2h, self.security_mode, complete_transcript)
 
 
 class BobSession:
@@ -169,6 +198,7 @@ class BobSession:
         sk_b: bytes,
         algorithm: str = "ML-KEM-512",
         mitigation_mgr: MitigationManager | None = None,
+        version: str = "1.0",
     ) -> None:
         self.id_a = id_a
         self.pk_a = pk_a
@@ -178,26 +208,30 @@ class BobSession:
         self.algorithm = algorithm
         self.mitigation_mgr = mitigation_mgr or MitigationManager()
         self.kem = OQSKEM(algorithm)
+        self.version = version
 
-    def message2(self, ct1: bytes) -> tuple[bytes, bytes, bytes]:
-        """Message 2: Bob receives ct1, generates ephemeral keypair, decapsulates k1, encapsulates k2."""
-        self.ct1 = ct1
+        # Generate fresh nonce for anti-replay protection
+        self.nonce_b = secrets.token_bytes(16)
+
+    def message2(self, ct1_data: tuple[bytes, bytes]) -> tuple[bytes, bytes, bytes, bytes]:
+        """Message 2: Bob receives (ct1, nonce_a), generates ephemeral keypair, decapsulates k1, encapsulates k2."""
+        self.ct1, self.nonce_a = ct1_data
         
         # Ephemeral KEM
         self.kp_e = self.kem.generate_keypair()
         
         # Decapsulate k1
-        self.k1 = self.kem.decapsulate(self.sk_b, ct1)
+        self.k1 = self.kem.decapsulate(self.sk_b, self.ct1)
         
         # Encapsulate Alice's static key
         self.ct2, self.k2 = self.kem.encapsulate(self.pk_a)
         
-        s = ct1 + self.ct2
+        s = self.ct1 + self.ct2
         
-        # Tag tau1 using k1
-        self.tau1 = hmac_sha256_tag(self.k1, self.kp_e.public_key + s + b"A")
+        # Tag tau1 using k1. Binds nonce_b.
+        self.tau1 = hmac_sha256_tag(self.k1, self.kp_e.public_key + self.nonce_b + s + b"A")
         
-        return self.kp_e.public_key, self.tau1, self.ct2
+        return self.kp_e.public_key, self.tau1, self.ct2, self.nonce_b
 
     def message4(
         self,
@@ -228,11 +262,32 @@ class BobSession:
             k_qkd = None
             security_mode = "SECURITY_LEVEL_DEGRADED_PQC_ONLY"
 
-        # Multi-input KDF
-        c_kem = serialize_fields(
-            self.id_a, self.pk_a, self.id_b, self.pk_b, self.kp_e.public_key, self.k1, self.k2, k_star
+        # Create canonical transcript
+        raw_transcript = serialize_fields(
+            self.version,
+            self.id_a,
+            self.id_b,
+            self.algorithm,
+            self.nonce_a,
+            self.nonce_b,
+            self.pk_a,
+            self.pk_b,
+            self.kp_e.public_key,
+            self.ct1,
+            self.ct2,
+            ct_star,
+            qkd_key_id,
+            security_mode,
         )
-        c_qkd = serialize_fields(self.id_a, self.id_b, qkd_key_id)
+        
+        # Hashing using SHA3-256
+        transcript_hash = hashlib.sha3_256(raw_transcript).digest()
+
+        # Multi-input KDF including transcript hash
+        c_kem = serialize_fields(
+            self.id_a, self.pk_a, self.id_b, self.pk_b, self.kp_e.public_key, self.k1, self.k2, k_star, transcript_hash
+        )
+        c_qkd = serialize_fields(self.id_a, self.id_b, qkd_key_id, transcript_hash)
 
         sigma_qkd = k_qkd if k_qkd is not None else b""
 
@@ -244,10 +299,10 @@ class BobSession:
         tau3 = hmac_sha256_tag(
             k1h,
             serialize_fields(
-                self.k1, qkd_key_id, self.kp_e.public_key, self.tau1, self.k2, tau2
+                self.k1, qkd_key_id, self.kp_e.public_key, self.tau1, self.k2, tau2, transcript_hash
             ),
         )
 
-        transcript = self.ct1 + self.ct2 + self.tau1 + ct_star + qkd_key_id.encode("utf-8") + tau2 + tau3
+        complete_transcript = raw_transcript + tau3
 
-        return tau3, HandshakeResult(k2h, security_mode, transcript)
+        return tau3, HandshakeResult(k2h, security_mode, complete_transcript)
