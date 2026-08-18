@@ -83,8 +83,5 @@
 
 ## Left to Implement
 
-- Add Docker support for one-command reproduction.
-- Add continuous integration for automated testing.
-- Complete documentation and usage examples.
-- Clearly state that the software is an experimental research testbed and not production cryptography.
-
+- Implement three fixes for key starvation and measure what each costs: per-peer quotas, admission control that refuses instead of degrading, and an explicit signal that the session has dropped to computational-only security.
+- Write a modular security analysis: a compromise matrix over four failure cases (nothing broken, QKD broken, KEM broken, both broken) against three properties, plus a CK01 game-hop outline. Full reductions are not expected.
