@@ -4,9 +4,6 @@ __pycache__/
 .pytest_cache/
 .coverage
 htmlcov/
-results/*.csv
-results/*.json
-results/*.png
 dist/
 build/
 *.egg-info/
