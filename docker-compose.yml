@@ -1,0 +1,8 @@
+services:
+  qkd-hake:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: qkd-hake-testbed:latest
+    container_name: qkd-hake-testbed
+    command: python -m qkd_hake.cli demo
