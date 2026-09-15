@@ -46,6 +46,32 @@ POST /api/v1/keys/alice/dec_keys
 X-SAE-ID: bob
 {"key_IDs":[{"key_ID":"..."}]}
 ```
+## Docker
+
+Docker provides a reproducible environment for running the QKD-HAKE
+testbed and its experiments.
+
+Build the Docker image:
+
+```bash
+docker build -t qkd-hake-testbed .
+
+Run the demo with Docker Compose:
+docker compose up
+
+Run the complete test suite inside Docker:
+docker compose run --rm qkd-hake python -m pytest -q
+
+Run the 1000-run benchmark suite:
+docker compose run --rm qkd-hake python -m qkd_hake.cli benchmark
+
+The Docker image includes the required build tools and liboqs environment
+
+needed by liboqs-python, allowing the PQC KEM tests and benchmarks to run
+
+without requiring a local liboqs installation.
+
+```
 
 ## Configuration
 
