@@ -1,0 +1,4 @@
+Bob listening on 127.0.0.1:54161 | output=/Users/adityalanka/Downloads/qkd-hake-testbed/output/file-transfer/20261006T171529Z-bf10b7/hybrid/received
+liboqs-python faulthandler is disabled
+{"bytes": 80823, "confirmed": true, "event": "session_confirmed", "filename": "research-dataset.csv", "handshake_id": "8004d349b2fa6dd5", "mode": "HYBRID_QKD", "policy": "hybrid-required", "role": "bob", "time": "2026-10-06T17:15:30.094657+00:00", "transfer_id": "e2a097c4-9f34-40c8-bd8c-23dc77363e20"}
+{"bytes": 80823, "duration_ms": 45.237, "event": "delivered", "filename": "research-dataset.csv", "mode": "HYBRID_QKD", "policy": "hybrid-required", "reason": "aead_and_digest_verified", "role": "bob", "saved_as": "e2a097c4-9f34-40c8-bd8c-23dc77363e20-research-dataset.csv", "time": "2026-10-06T17:15:30.095573+00:00", "transfer_id": "e2a097c4-9f34-40c8-bd8c-23dc77363e20"}

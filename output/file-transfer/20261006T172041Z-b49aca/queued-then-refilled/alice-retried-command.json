@@ -1,0 +1,22 @@
+[
+  "/Users/adityalanka/Downloads/qkd-hake-testbed/.venv/bin/python",
+  "-m",
+  "qkd_hake.cli",
+  "transfer",
+  "work",
+  "--wait",
+  "--interval",
+  "0.5",
+  "--max-wait",
+  "25",
+  "--identity",
+  "/Users/adityalanka/Downloads/qkd-hake-testbed/output/file-transfer/20261006T172041Z-b49aca/private-identities/alice.json",
+  "--kme",
+  "http://127.0.0.1:54573",
+  "--port",
+  "54574",
+  "--queue-dir",
+  "/Users/adityalanka/Downloads/qkd-hake-testbed/output/file-transfer/20261006T172041Z-b49aca/queued-then-refilled/queue",
+  "--audit",
+  "/Users/adityalanka/Downloads/qkd-hake-testbed/output/file-transfer/20261006T172041Z-b49aca/queued-then-refilled/alice-audit.jsonl"
+]

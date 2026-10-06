@@ -1,0 +1,78 @@
+{
+  "time_utc": "20261006T171529Z",
+  "platform": "macOS-27.0-arm64-arm-64bit",
+  "machine": "arm64",
+  "python": "3.11.13",
+  "liboqs": "0.16.0",
+  "algorithm": "ML-KEM-768",
+  "cryptography": "46.0.7",
+  "fixture_seed": 20261006,
+  "warmup_runs": 0,
+  "runs_per_scenario": 1,
+  "purpose": "functional verification, not a performance benchmark",
+  "fixture_sha256": "f6bf5c98ee8fb39cbaf2065ed76af889ae8a29cf50703a56c41e7cda55cfc1b7",
+  "total_seconds": 10.595,
+  "all_passed": true,
+  "results": [
+    {
+      "scenario": "hybrid",
+      "passed": true,
+      "state": "DELIVERED",
+      "mode": "HYBRID_QKD",
+      "reason": "qkd_available",
+      "bytes": 80823,
+      "attempts": 1,
+      "duration_ms": 66.593,
+      "identical_file": true,
+      "alice_exit_code": 0
+    },
+    {
+      "scenario": "explicit-pqc-fallback",
+      "passed": true,
+      "state": "DELIVERED",
+      "mode": "PQC_ONLY",
+      "reason": "reserve_below_5_percent",
+      "bytes": 80823,
+      "attempts": 1,
+      "duration_ms": 43.055,
+      "identical_file": true,
+      "alice_exit_code": 0
+    },
+    {
+      "scenario": "tampered-ciphertext",
+      "passed": true,
+      "state": "FAILED",
+      "mode": "HYBRID_QKD",
+      "reason": "authentication_failed",
+      "bytes": 80823,
+      "attempts": 1,
+      "duration_ms": 68.022,
+      "identical_file": false,
+      "alice_exit_code": 1
+    },
+    {
+      "scenario": "hybrid-required-queued",
+      "passed": true,
+      "state": "QUEUED",
+      "mode": null,
+      "reason": "reserve_below_5_percent",
+      "bytes": 80823,
+      "attempts": 1,
+      "duration_ms": 40.643,
+      "identical_file": false,
+      "alice_exit_code": 2
+    },
+    {
+      "scenario": "refill-resumes-with-fresh-handshake",
+      "passed": true,
+      "state": "DELIVERED",
+      "mode": "HYBRID_QKD",
+      "reason": "qkd_available",
+      "bytes": 80823,
+      "attempts": 17,
+      "duration_ms": 61.304,
+      "identical_file": true,
+      "alice_exit_code": 0
+    }
+  ]
+}

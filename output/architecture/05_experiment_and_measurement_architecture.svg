@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg
+  PUBLIC '-//W3C//DTD SVG 1.0//EN'
+  'http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd'>
+<svg width="1440" height="1080" preserveAspectRatio="xMinYMin meet" viewBox="0 0 1440 1080" xmlns="http://www.w3.org/2000/svg" version="1.0" fill-rule="evenodd" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<title>...</title>
+	<desc>...</desc>
+	<clipPath id="clip">
+		<rect x="0" y="0" width="1440" height="1080"/>
+	</clipPath>
+	<g id="group" transform="scale(1,-1) translate(0,-1080)" style="clip-path: url(#clip)">
+		<g transform="">
+			<rect x="0" y="0" width="1440" height="1080" style="stroke: rgb(100%,100%,100%); stroke-linecap: butt; stroke-width: 1; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<text x="42" y="1046" style="font-family: Helvetica-Bold; font-size: 12px;fill: rgb(14%,36%,54%); stroke:none;" transform="translate(0,2092) scale(1,-1)">QKD / PQC  RESEARCH TESTBED</text>
+			<text x="1232.628" y="1046" style="font-family: Helvetica; font-size: 12px;fill: rgb(32%,39%,45%); stroke:none;" transform="translate(0,2092) scale(1,-1)">ARCHITECTURE ATLAS  /  05</text>
+			<text x="42" y="997" style="font-family: Helvetica-Bold; font-size: 32px;fill: rgb(9%,16%,22%); stroke:none;" transform="translate(0,1994) scale(1,-1)">Experiment architecture and measurement boundaries</text>
+			<text x="42" y="967" style="font-family: Helvetica; font-size: 14px;fill: rgb(32%,39%,45%); stroke:none;" transform="translate(0,1934) scale(1,-1)">Cryptographic cost and QKD resource scarcity are measured independently; combining them into an end-to-end claim requires another experiment.</text>
+			<path d="M 42,946 L 1398,946 Z" style="stroke: rgb(79%,83%,86%); stroke-linecap: butt; stroke-width: 1;"/>
+			<text x="42" y="917" style="font-family: Helvetica-Bold; font-size: 12px;fill: rgb(14%,36%,54%); stroke:none;" transform="translate(0,1834) scale(1,-1)">A  /  PAIRED CRYPTOGRAPHIC PERFORMANCE</text>
+			<text x="752" y="917" style="font-family: Helvetica-Bold; font-size: 12px;fill: rgb(7%,47%,44%); stroke:none;" transform="translate(0,1834) scale(1,-1)">B  /  TWO-PHASE QKD STARVATION SIMULATION</text>
+			<rect x="42" y="793" width="646" height="108" style="stroke: rgb(79%,83%,86%); stroke-linecap: butt; stroke-width: 1; fill: rgb(93%,96%,98%); fill-rule: evenodd;"/>
+			<rect x="42" y="793" width="4" height="108" style="stroke: rgb(14%,36%,54%); stroke-linecap: butt; stroke-width: 1; fill: rgb(14%,36%,54%); fill-rule: evenodd;"/>
+			<text x="58" y="879" style="font-family: Helvetica-Bold; font-size: 17px;fill: rgb(14%,36%,54%); stroke:none;" transform="translate(0,1758) scale(1,-1)">Provision once per algorithm</text>
+			<text x="58" y="855.45" style="font-family: Helvetica; font-size: 13.5px;fill: rgb(9%,16%,22%); stroke:none;" transform="translate(0,1710) scale(1,-1)">Generate long-term keypairs before timing. Supply a fixed 32-byte QKD test value and one UUID</text>
+			<text x="58" y="838.575" style="font-family: Helvetica; font-size: 13.5px;fill: rgb(9%,16%,22%); stroke:none;" transform="translate(0,1677) scale(1,-1)">through callbacks. Algorithms: ML-KEM-512/768/1024, FrodoKEM-976-AES.</text>
+			<rect x="752" y="793" width="646" height="108" style="stroke: rgb(79%,83%,86%); stroke-linecap: butt; stroke-width: 1; fill: rgb(93%,97%,96%); fill-rule: evenodd;"/>
+			<rect x="752" y="793" width="4" height="108" style="stroke: rgb(7%,47%,44%); stroke-linecap: butt; stroke-width: 1; fill: rgb(7%,47%,44%); fill-rule: evenodd;"/>
+			<text x="768" y="879" style="font-family: Helvetica-Bold; font-size: 17px;fill: rgb(7%,47%,44%); stroke:none;" transform="translate(0,1758) scale(1,-1)">Factorial experiment grid</text>
+			<text x="768" y="855.45" style="font-family: Helvetica; font-size: 13px;fill: rgb(9%,16%,22%); stroke:none;" transform="translate(0,1710) scale(1,-1)">Demand r = {1, 5, 10, 20, 50, 100} requests/s; supply R = {1, 10, 100} kbps.</text>
+			<text x="768" y="839.2" style="font-family: Helvetica; font-size: 13px;fill: rgb(9%,16%,22%); stroke:none;" transform="translate(0,1678) scale(1,-1)">Depth D = {16, 64, 128}; L = 256 bits; 5 repeats -&gt; 270 cases.</text>
+			<text x="768" y="822.95" style="font-family: Helvetica; font-size: 13px;fill: rgb(9%,16%,22%); stroke:none;" transform="translate(0,1645) scale(1,-1)">SimulatedClock advances by 1/r before every pool.issue().</text>
+			<path d="M 365,793 L 365,762 Z" style="stroke: rgb(14%,36%,54%); stroke-linecap: butt; stroke-width: 1.7;"/>
+			<polygon points="365 762, 368.5 770, 361.5 770" style="stroke: rgb(14%,36%,54%); stroke-linecap: butt; stroke-width: 1; fill: rgb(14%,36%,54%); fill-rule: evenodd;"/>
+			<path d="M 1075,793 L 1075,778 Z" style="stroke: rgb(7%,47%,44%); stroke-linecap: butt; stroke-width: 1.5;"/>
+			<path d="M 1075,778 L 905,778 Z" style="stroke: rgb(7%,47%,44%); stroke-linecap: butt; stroke-width: 1.7;"/>
+			<path d="M 905,778 L 905,762 Z" style="stroke: rgb(7%,47%,44%); stroke-linecap: butt; stroke-width: 1.7;"/>
+			<polygon points="905 762, 908.5 770, 901.5 770" style="stroke: rgb(7%,47%,44%); stroke-linecap: butt; stroke-width: 1; fill: rgb(7%,47%,44%); fill-rule: evenodd;"/>
+			<path d="M 1075,778 L 1245,778 Z" style="stroke: rgb(7%,47%,44%); stroke-linecap: butt; stroke-width: 1.7;"/>
+			<path d="M 1245,778 L 1245,762 Z" style="stroke: rgb(7%,47%,44%); stroke-linecap: butt; stroke-width: 1.7;"/>
+			<polygon points="1245 762, 1248.5 770, 1241.5 770" style="stroke: rgb(7%,47%,44%); stroke-linecap: butt; stroke-width: 1; fill: rgb(7%,47%,44%); fill-rule: evenodd;"/>
+			<rect x="42" y="653" width="646" height="109" style="stroke: rgb(79%,83%,86%); stroke-linecap: butt; stroke-width: 1; fill: rgb(93%,96%,98%); fill-rule: evenodd;"/>
+			<rect x="42" y="653" width="4" height="109" style="stroke: rgb(14%,36%,54%); stroke-linecap: butt; stroke-width: 1; fill: rgb(14%,36%,54%); fill-rule: evenodd;"/>
+			<text x="58" y="740" style="font-family: Helvetica-Bold; font-size: 17px;fill: rgb(14%,36%,54%); stroke:none;" transform="translate(0,1480) scale(1,-1)">Warm up, then alternate pair order</text>
+			<text x="58" y="716.45" style="font-family: Helvetica; font-size: 13.5px;fill: rgb(9%,16%,22%); stroke:none;" transform="translate(0,1432) scale(1,-1)">100 warm-up handshakes per mode, excluded from the CSV.</text>
+			<text x="58" y="699.575" style="font-family: Helvetica; font-size: 13.5px;fill: rgb(9%,16%,22%); stroke:none;" transform="translate(0,1399) scale(1,-1)">1,000 recorded HYBRID / PURE_PQC pairs per algorithm.</text>
+			<text x="58" y="682.7" style="font-family: Helvetica; font-size: 13.5px;fill: rgb(9%,16%,22%); stroke:none;" transform="translate(0,1365) scale(1,-1)">Odd pairs run hybrid first; even pairs run pure-PQC first -&gt; 8,000 raw rows.</text>
+			<rect x="752" y="623" width="306" height="139" style="stroke: rgb(79%,83%,86%); stroke-linecap: butt; stroke-width: 1; fill: rgb(93%,97%,96%); fill-rule: evenodd;"/>
+			<rect x="752" y="623" width="4" height="139" style="stroke: rgb(7%,47%,44%); stroke-linecap: butt; stroke-width: 1; fill: rgb(7%,47%,44%); fill-rule: evenodd;"/>
+			<text x="768" y="740" style="font-family: Helvetica-Bold; font-size: 17px;fill: rgb(7%,47%,44%); stroke:none;" transform="translate(0,1480) scale(1,-1)">Phase 1 / burst</text>
+			<text x="768" y="716.45" style="font-family: Helvetica; font-size: 13.5px;fill: rgb(9%,16%,22%); stroke:none;" transform="translate(0,1432) scale(1,-1)">Start A0 = D. If r &gt; R/L, issue until first</text>
+			<text x="768" y="699.575" style="font-family: Helvetica; font-size: 13.5px;fill: rgb(9%,16%,22%); stroke:none;" transform="translate(0,1399) scale(1,-1)">PoolExhausted.</text>
+			<text x="768" y="682.7" style="font-family: Helvetica; font-size: 13.5px;fill: rgb(9%,16%,22%); stroke:none;" transform="translate(0,1365) scale(1,-1)">Record elapsed virtual time.</text>
+			<text x="768" y="665.825" style="font-family: Helvetica; font-size: 13.5px;fill: rgb(9%,16%,22%); stroke:none;" transform="translate(0,1331) scale(1,-1)">Compare with D / (r - R/L).</text>
+			<rect x="1092" y="623" width="306" height="139" style="stroke: rgb(79%,83%,86%); stroke-linecap: butt; stroke-width: 1; fill: rgb(93%,97%,96%); fill-rule: evenodd;"/>
+			<rect x="1092" y="623" width="4" height="139" style="stroke: rgb(7%,47%,44%); stroke-linecap: butt; stroke-width: 1; fill: rgb(7%,47%,44%); fill-rule: evenodd;"/>
+			<text x="1108" y="740" style="font-family: Helvetica-Bold; font-size: 17px;fill: rgb(7%,47%,44%); stroke:none;" transform="translate(0,1480) scale(1,-1)">Non-overloaded branch</text>
+			<text x="1108" y="716.45" style="font-family: Helvetica; font-size: 13.5px;fill: rgb(9%,16%,22%); stroke:none;" transform="translate(0,1432) scale(1,-1)">If r &lt;= R/L, no finite depletion time is defined.</text>
+			<text x="1108" y="699.575" style="font-family: Helvetica; font-size: 13.5px;fill: rgb(9%,16%,22%); stroke:none;" transform="translate(0,1399) scale(1,-1)">Run 10 s of virtual warm-up before</text>
+			<text x="1108" y="682.7" style="font-family: Helvetica; font-size: 13.5px;fill: rgb(9%,16%,22%); stroke:none;" transform="translate(0,1365) scale(1,-1)">measurement.</text>
+			<path d="M 365,653 L 365,592 Z" style="stroke: rgb(14%,36%,54%); stroke-linecap: butt; stroke-width: 1.7;"/>
+			<polygon points="365 592, 368.5 600, 361.5 600" style="stroke: rgb(14%,36%,54%); stroke-linecap: butt; stroke-width: 1; fill: rgb(14%,36%,54%); fill-rule: evenodd;"/>
+			<rect x="42" y="447" width="646" height="145" style="stroke: rgb(79%,83%,86%); stroke-linecap: butt; stroke-width: 1; fill: rgb(93%,96%,98%); fill-rule: evenodd;"/>
+			<rect x="42" y="447" width="4" height="145" style="stroke: rgb(14%,36%,54%); stroke-linecap: butt; stroke-width: 1; fill: rgb(14%,36%,54%); fill-rule: evenodd;"/>
+			<text x="58" y="570" style="font-family: Helvetica-Bold; font-size: 17px;fill: rgb(14%,36%,54%); stroke:none;" transform="translate(0,1140) scale(1,-1)">Timed boundary: session construction through Alice verification</text>
+			<text x="58" y="546.45" style="font-family: Helvetica; font-size: 13.5px;fill: rgb(9%,16%,22%); stroke:none;" transform="translate(0,1092) scale(1,-1)">Includes fresh nonces, one ephemeral keypair, 3 encapsulations, 3 decapsulations,</text>
+			<text x="58" y="529.575" style="font-family: Helvetica; font-size: 13.5px;fill: rgb(9%,16%,22%); stroke:none;" transform="translate(0,1059) scale(1,-1)">transcript/KDF/MAC work and local callbacks.</text>
+			<text x="58" y="512.7" style="font-family: Helvetica; font-size: 13.5px;fill: rgb(9%,16%,22%); stroke:none;" transform="translate(0,1025) scale(1,-1)">Wall time: perf_counter_ns(). CPU time: process_time_ns().</text>
+			<text x="58" y="495.82500000000005" style="font-family: Helvetica; font-size: 13.5px;fill: rgb(9%,16%,22%); stroke:none;" transform="translate(0,991) scale(1,-1)">Excludes static key generation, peer networking, REST latency, optical QKD and transport framing.</text>
+			<text x="58" y="478.95000000000005" style="font-family: Helvetica; font-size: 13.5px;fill: rgb(9%,16%,22%); stroke:none;" transform="translate(0,957) scale(1,-1)">Session-key equality is checked.</text>
+			<path d="M 905,623 L 905,606 Z" style="stroke: rgb(7%,47%,44%); stroke-linecap: butt; stroke-width: 1.7;"/>
+			<path d="M 905,606 L 1075,606 Z" style="stroke: rgb(7%,47%,44%); stroke-linecap: butt; stroke-width: 1.7;"/>
+			<path d="M 1075,606 L 1075,592 Z" style="stroke: rgb(7%,47%,44%); stroke-linecap: butt; stroke-width: 1.7;"/>
+			<polygon points="1075 592, 1078.5 600, 1071.5 600" style="stroke: rgb(7%,47%,44%); stroke-linecap: butt; stroke-width: 1; fill: rgb(7%,47%,44%); fill-rule: evenodd;"/>
+			<path d="M 1245,623 L 1245,606 Z" style="stroke: rgb(7%,47%,44%); stroke-linecap: butt; stroke-width: 1.5;"/>
+			<path d="M 1245,606 L 1075,606 Z" style="stroke: rgb(7%,47%,44%); stroke-linecap: butt; stroke-width: 1.5;"/>
+			<rect x="752" y="447" width="646" height="145" style="stroke: rgb(79%,83%,86%); stroke-linecap: butt; stroke-width: 1; fill: rgb(93%,97%,96%); fill-rule: evenodd;"/>
+			<rect x="752" y="447" width="4" height="145" style="stroke: rgb(7%,47%,44%); stroke-linecap: butt; stroke-width: 1; fill: rgb(7%,47%,44%); fill-rule: evenodd;"/>
+			<text x="768" y="570" style="font-family: Helvetica-Bold; font-size: 17px;fill: rgb(7%,47%,44%); stroke:none;" transform="translate(0,1140) scale(1,-1)">Phase 2 / steady-state resource availability</text>
+			<text x="768" y="546.45" style="font-family: Helvetica; font-size: 13.5px;fill: rgb(9%,16%,22%); stroke:none;" transform="translate(0,1092) scale(1,-1)">Start immediately after the first failure (overloaded), or after warm-up.</text>
+			<text x="768" y="529.575" style="font-family: Helvetica; font-size: 13.5px;fill: rgb(9%,16%,22%); stroke:none;" transform="translate(0,1059) scale(1,-1)">Issue for 60 s of virtual time; count successes and failures; read final occupancy.</text>
+			<text x="768" y="512.7" style="font-family: Helvetica; font-size: 13.5px;fill: rgb(9%,16%,22%); stroke:none;" transform="translate(0,1025) scale(1,-1)">No KEM work, handshake transport, key retrieval, or mitigation policy is invoked. Repeats reproduce a</text>
+			<text x="768" y="495.82500000000005" style="font-family: Helvetica; font-size: 13.5px;fill: rgb(9%,16%,22%); stroke:none;" transform="translate(0,991) scale(1,-1)">deterministic schedule, not independent noise samples.</text>
+			<path d="M 365,447 L 365,415 Z" style="stroke: rgb(14%,36%,54%); stroke-linecap: butt; stroke-width: 1.7;"/>
+			<polygon points="365 415, 368.5 423, 361.5 423" style="stroke: rgb(14%,36%,54%); stroke-linecap: butt; stroke-width: 1; fill: rgb(14%,36%,54%); fill-rule: evenodd;"/>
+			<path d="M 1075,447 L 1075,415 Z" style="stroke: rgb(7%,47%,44%); stroke-linecap: butt; stroke-width: 1.7;"/>
+			<polygon points="1075 415, 1078.5 423, 1071.5 423" style="stroke: rgb(7%,47%,44%); stroke-linecap: butt; stroke-width: 1; fill: rgb(7%,47%,44%); fill-rule: evenodd;"/>
+			<rect x="42" y="297" width="646" height="118" style="stroke: rgb(79%,83%,86%); stroke-linecap: butt; stroke-width: 1; fill: rgb(93%,96%,98%); fill-rule: evenodd;"/>
+			<rect x="42" y="297" width="4" height="118" style="stroke: rgb(14%,36%,54%); stroke-linecap: butt; stroke-width: 1; fill: rgb(14%,36%,54%); fill-rule: evenodd;"/>
+			<text x="58" y="393" style="font-family: Helvetica-Bold; font-size: 17px;fill: rgb(14%,36%,54%); stroke:none;" transform="translate(0,786) scale(1,-1)">performance_benchmarks.csv -&gt; performance figures</text>
+			<text x="58" y="369.45000000000005" style="font-family: Helvetica; font-size: 13px;fill: rgb(9%,16%,22%); stroke:none;" transform="translate(0,738) scale(1,-1)">Rows: algorithm, mode, pair_run, latency_ms, cpu_time_ms, bytes_on_wire, qkd_key_id_bytes,</text>
+			<text x="58" y="353.20000000000005" style="font-family: Helvetica; font-size: 13px;fill: rgb(9%,16%,22%); stroke:none;" transform="translate(0,706) scale(1,-1)">long_term_public_keys_transmitted.</text>
+			<text x="58" y="336.95000000000005" style="font-family: Helvetica; font-size: 13px;fill: rgb(9%,16%,22%); stroke:none;" transform="translate(0,673) scale(1,-1)">Report median and linearly interpolated p95; plot latency and payload size.</text>
+			<rect x="752" y="297" width="646" height="118" style="stroke: rgb(79%,83%,86%); stroke-linecap: butt; stroke-width: 1; fill: rgb(93%,97%,96%); fill-rule: evenodd;"/>
+			<rect x="752" y="297" width="4" height="118" style="stroke: rgb(7%,47%,44%); stroke-linecap: butt; stroke-width: 1; fill: rgb(7%,47%,44%); fill-rule: evenodd;"/>
+			<text x="768" y="393" style="font-family: Helvetica-Bold; font-size: 17px;fill: rgb(7%,47%,44%); stroke:none;" transform="translate(0,786) scale(1,-1)">bottleneck_steady_state.csv -&gt; resource figures</text>
+			<text x="768" y="369.45000000000005" style="font-family: Helvetica; font-size: 13px;fill: rgb(9%,16%,22%); stroke:none;" transform="translate(0,738) scale(1,-1)">Rows record case parameters, burst times, first-failure status, measurement counts, QKD success fraction</text>
+			<text x="768" y="353.20000000000005" style="font-family: Helvetica; font-size: 13px;fill: rgb(9%,16%,22%); stroke:none;" transform="translate(0,706) scale(1,-1)">and final occupancy.</text>
+			<text x="768" y="336.95000000000005" style="font-family: Helvetica; font-size: 13px;fill: rgb(9%,16%,22%); stroke:none;" transform="translate(0,673) scale(1,-1)">Plots: burst capacity, sustainable success fraction, measured vs theoretical depletion.</text>
+			<text x="42" y="263" style="font-family: Helvetica-Bold; font-size: 12px;fill: rgb(9%,16%,22%); stroke:none;" transform="translate(0,526) scale(1,-1)">C  /  ANALYTICAL INTERPRETATION</text>
+			<rect x="42" y="115" width="429" height="131" style="stroke: rgb(79%,83%,86%); stroke-linecap: butt; stroke-width: 1; fill: rgb(93%,97%,96%); fill-rule: evenodd;"/>
+			<rect x="42" y="115" width="4" height="131" style="stroke: rgb(7%,47%,44%); stroke-linecap: butt; stroke-width: 1; fill: rgb(7%,47%,44%); fill-rule: evenodd;"/>
+			<text x="58" y="224" style="font-family: Helvetica-Bold; font-size: 17px;fill: rgb(7%,47%,44%); stroke:none;" transform="translate(0,448) scale(1,-1)">Supply-limited service ceiling</text>
+			<text x="58" y="200.45000000000005" style="font-family: Helvetica; font-size: 13.5px;fill: rgb(9%,16%,22%); stroke:none;" transform="translate(0,400) scale(1,-1)">mu = R / L keys/s</text>
+			<text x="58" y="183.57500000000005" style="font-family: Helvetica; font-size: 13.5px;fill: rgb(9%,16%,22%); stroke:none;" transform="translate(0,367) scale(1,-1)">At 10 kbps and 256 bits: mu = 39.0625.</text>
+			<text x="58" y="166.70000000000005" style="font-family: Helvetica; font-size: 13.5px;fill: rgb(9%,16%,22%); stroke:none;" transform="translate(0,333) scale(1,-1)">Fluid approximation: T_deplete = D/(r-mu), r &gt; mu; success</text>
+			<text x="58" y="149.82500000000005" style="font-family: Helvetica; font-size: 13.5px;fill: rgb(9%,16%,22%); stroke:none;" transform="translate(0,299) scale(1,-1)">fraction ~ min(1, mu/r).</text>
+			<rect x="505" y="115" width="429" height="131" style="stroke: rgb(79%,83%,86%); stroke-linecap: butt; stroke-width: 1; fill: rgb(93%,96%,98%); fill-rule: evenodd;"/>
+			<rect x="505" y="115" width="4" height="131" style="stroke: rgb(14%,36%,54%); stroke-linecap: butt; stroke-width: 1; fill: rgb(14%,36%,54%); fill-rule: evenodd;"/>
+			<text x="521" y="224" style="font-family: Helvetica-Bold; font-size: 17px;fill: rgb(14%,36%,54%); stroke:none;" transform="translate(0,448) scale(1,-1)">Payload byte accounting</text>
+			<text x="521" y="200.45000000000005" style="font-family: Helvetica; font-size: 13.5px;fill: rgb(9%,16%,22%); stroke:none;" transform="translate(0,400) scale(1,-1)">B = 3|ct| + |pkE| + 2(16) + 3(32) + |ID|</text>
+			<text x="521" y="183.57500000000005" style="font-family: Helvetica; font-size: 13.5px;fill: rgb(9%,16%,22%); stroke:none;" transform="translate(0,367) scale(1,-1)">Hybrid ID: 36 ASCII bytes; PQC ID: 0.</text>
+			<text x="521" y="166.70000000000005" style="font-family: Helvetica; font-size: 13.5px;fill: rgb(9%,16%,22%); stroke:none;" transform="translate(0,333) scale(1,-1)">Static public keys are pre-provisioned.</text>
+			<text x="521" y="149.82500000000005" style="font-family: Helvetica; font-size: 13.5px;fill: rgb(9%,16%,22%); stroke:none;" transform="translate(0,299) scale(1,-1)">CSV 'bytes_on_wire' is this payload sum.</text>
+			<rect x="968" y="115" width="430" height="131" style="stroke: rgb(79%,83%,86%); stroke-linecap: butt; stroke-width: 1; fill: rgb(96%,97%,98%); fill-rule: evenodd;"/>
+			<rect x="968" y="115" width="4" height="131" style="stroke: rgb(9%,16%,22%); stroke-linecap: butt; stroke-width: 1; fill: rgb(9%,16%,22%); fill-rule: evenodd;"/>
+			<text x="984" y="224" style="font-family: Helvetica-Bold; font-size: 17px;fill: rgb(9%,16%,22%); stroke:none;" transform="translate(0,448) scale(1,-1)">Reproducibility boundary</text>
+			<text x="984" y="200.45000000000005" style="font-family: Helvetica; font-size: 13.5px;fill: rgb(9%,16%,22%); stroke:none;" transform="translate(0,400) scale(1,-1)">Host, package versions, commands and source hashes</text>
+			<text x="984" y="183.57500000000005" style="font-family: Helvetica; font-size: 13.5px;fill: rgb(9%,16%,22%); stroke:none;" transform="translate(0,367) scale(1,-1)">accompany this run.</text>
+			<text x="984" y="166.70000000000005" style="font-family: Helvetica; font-size: 13.5px;fill: rgb(9%,16%,22%); stroke:none;" transform="translate(0,333) scale(1,-1)">Virtual scheduling is deterministic. KEM randomness and UUIDs</text>
+			<text x="984" y="149.82500000000005" style="font-family: Helvetica; font-size: 13.5px;fill: rgb(9%,16%,22%); stroke:none;" transform="translate(0,299) scale(1,-1)">are unseeded.</text>
+			<text x="984" y="132.95000000000005" style="font-family: Helvetica; font-size: 13.5px;fill: rgb(9%,16%,22%); stroke:none;" transform="translate(0,265) scale(1,-1)">No measured secret values are logged.</text>
+			<path d="M 42,90 L 1398,90 Z" style="stroke: rgb(79%,83%,86%); stroke-linecap: butt; stroke-width: 1;"/>
+			<text x="42" y="69" style="font-family: Helvetica; font-size: 11.5px;fill: rgb(9%,16%,22%); stroke:none;" transform="translate(0,138) scale(1,-1)">FIGURE 5. A fluid depletion formula is an analytical reference, not an exact identity for discrete arrivals and lazy refill. The experiment configuration JSON lists policies but the suite uses its own active parameter lists.</text>
+			<text x="42" y="20" style="font-family: Helvetica; font-size: 10px;fill: rgb(32%,39%,45%); stroke:none;" transform="translate(0,40) scale(1,-1)">Sources: benchmarks/suite.py:25-834; plot_performance_figures.py; plot_wp6.py; configs/experiments.json; verification.json.</text>
+			<text x="1191.57" y="20" style="font-family: Helvetica; font-size: 10px;fill: rgb(32%,39%,45%); stroke:none;" transform="translate(0,40) scale(1,-1)">Source revision 2ba1ede  |  06 Oct 2026  |  5/6</text>
+		</g>
+	</g>
+</svg>

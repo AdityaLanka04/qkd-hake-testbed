@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg
+  PUBLIC '-//W3C//DTD SVG 1.0//EN'
+  'http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd'>
+<svg width="1440" height="1080" preserveAspectRatio="xMinYMin meet" viewBox="0 0 1440 1080" xmlns="http://www.w3.org/2000/svg" version="1.0" fill-rule="evenodd" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<title>...</title>
+	<desc>...</desc>
+	<clipPath id="clip">
+		<rect x="0" y="0" width="1440" height="1080"/>
+	</clipPath>
+	<g id="group" transform="scale(1,-1) translate(0,-1080)" style="clip-path: url(#clip)">
+		<g transform="">
+			<rect x="0" y="0" width="1440" height="1080" style="stroke: rgb(100%,100%,100%); stroke-linecap: butt; stroke-width: 1; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<text x="42" y="1046" style="font-family: Helvetica-Bold; font-size: 12px;fill: rgb(14%,36%,54%); stroke:none;" transform="translate(0,2092) scale(1,-1)">QKD / PQC  RESEARCH TESTBED</text>
+			<text x="1232.628" y="1046" style="font-family: Helvetica; font-size: 12px;fill: rgb(32%,39%,45%); stroke:none;" transform="translate(0,2092) scale(1,-1)">ARCHITECTURE ATLAS  /  02</text>
+			<text x="42" y="997" style="font-family: Helvetica-Bold; font-size: 32px;fill: rgb(9%,16%,22%); stroke:none;" transform="translate(0,1994) scale(1,-1)">Protocol execution and transcript-bound key schedule</text>
+			<text x="42" y="967" style="font-family: Helvetica; font-size: 14px;fill: rgb(32%,39%,45%); stroke:none;" transform="translate(0,1934) scale(1,-1)">Exact tuple ordering and derivation expressions from protocol/hake.py; this is the repository protocol, not a conformance claim.</text>
+			<path d="M 42,946 L 1398,946 Z" style="stroke: rgb(79%,83%,86%); stroke-linecap: butt; stroke-width: 1;"/>
+			<rect x="42" y="837" width="321" height="86" style="stroke: rgb(79%,83%,86%); stroke-linecap: butt; stroke-width: 1; fill: rgb(93%,96%,98%); fill-rule: evenodd;"/>
+			<rect x="42" y="837" width="4" height="86" style="stroke: rgb(14%,36%,54%); stroke-linecap: butt; stroke-width: 1; fill: rgb(14%,36%,54%); fill-rule: evenodd;"/>
+			<text x="58" y="901" style="font-family: Helvetica-Bold; font-size: 17px;fill: rgb(14%,36%,54%); stroke:none;" transform="translate(0,1802) scale(1,-1)">Alice / initiator</text>
+			<text x="58" y="877.45" style="font-family: Helvetica; font-size: 12.5px;fill: rgb(9%,16%,22%); stroke:none;" transform="translate(0,1754) scale(1,-1)">Inputs: idA, pkA, skA, idB, pkB, algorithm</text>
+			<rect x="655" y="837" width="321" height="86" style="stroke: rgb(79%,83%,86%); stroke-linecap: butt; stroke-width: 1; fill: rgb(93%,96%,98%); fill-rule: evenodd;"/>
+			<rect x="655" y="837" width="4" height="86" style="stroke: rgb(14%,36%,54%); stroke-linecap: butt; stroke-width: 1; fill: rgb(14%,36%,54%); fill-rule: evenodd;"/>
+			<text x="671" y="901" style="font-family: Helvetica-Bold; font-size: 17px;fill: rgb(14%,36%,54%); stroke:none;" transform="translate(0,1802) scale(1,-1)">Bob / responder</text>
+			<text x="671" y="877.45" style="font-family: Helvetica; font-size: 12.5px;fill: rgb(9%,16%,22%); stroke:none;" transform="translate(0,1754) scale(1,-1)">Inputs: idA, pkA, idB, pkB, skB, algorithm</text>
+			<rect x="1014" y="837" width="384" height="86" style="stroke: rgb(79%,83%,86%); stroke-linecap: butt; stroke-width: 1; fill: rgb(93%,97%,96%); fill-rule: evenodd;"/>
+			<rect x="1014" y="837" width="4" height="86" style="stroke: rgb(7%,47%,44%); stroke-linecap: butt; stroke-width: 1; fill: rgb(7%,47%,44%); fill-rule: evenodd;"/>
+			<text x="1030" y="901" style="font-family: Helvetica-Bold; font-size: 17px;fill: rgb(7%,47%,44%); stroke:none;" transform="translate(0,1802) scale(1,-1)">Local key-delivery callback</text>
+			<text x="1030" y="877.45" style="font-family: Helvetica; font-size: 13px;fill: rgb(9%,16%,22%); stroke:none;" transform="translate(0,1754) scale(1,-1)">Alice: status/get. Bob: retrieve(QKD ID).</text>
+			<path d="M 202,837 L 202,417 Z" style="stroke: rgb(14%,36%,54%); stroke-linecap: butt; stroke-width: 1; stroke-dasharray: 5, 4;"/>
+			<path d="M 816,837 L 816,417 Z" style="stroke: rgb(14%,36%,54%); stroke-linecap: butt; stroke-width: 1; stroke-dasharray: 5, 4;"/>
+			<path d="M 1207,837 L 1207,417 Z" style="stroke: rgb(7%,47%,44%); stroke-linecap: butt; stroke-width: 1; stroke-dasharray: 5, 4;"/>
+			<rect x="39" y="807" width="259.604" height="18" style="stroke: rgb(100%,100%,100%); stroke-linecap: butt; stroke-width: 1; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<text x="42" y="810" style="font-family: Helvetica; font-size: 13px;fill: rgb(43%,32%,55%); stroke:none;" transform="translate(0,1620) scale(1,-1)">(ct1, k1) = Encaps(pkB); nA = random(16 B)</text>
+			<path d="M 202,786 L 816,786 Z" style="stroke: rgb(14%,36%,54%); stroke-linecap: butt; stroke-width: 1.7;"/>
+			<polygon points="816 786, 808 789.5, 808 782.5" style="stroke: rgb(14%,36%,54%); stroke-linecap: butt; stroke-width: 1; fill: rgb(14%,36%,54%); fill-rule: evenodd;"/>
+			<rect x="449.094" y="791" width="101.81199999999995" height="20" style="stroke: rgb(100%,100%,100%); stroke-linecap: butt; stroke-width: 1; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<text x="454.094" y="795" style="font-family: Helvetica; font-size: 14px;fill: rgb(14%,36%,54%); stroke:none;" transform="translate(0,1590) scale(1,-1)">M1  /  (ct1, nA)</text>
+			<rect x="397" y="758" width="274.77600000000007" height="17" style="stroke: rgb(100%,100%,100%); stroke-linecap: butt; stroke-width: 1; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<text x="400" y="761" style="font-family: Helvetica; font-size: 12px;fill: rgb(43%,32%,55%); stroke:none;" transform="translate(0,1522) scale(1,-1)">Bob: KeyGen -&gt; (pkE, skE); k1 = Decaps(skB, ct1)</text>
+			<rect x="397" y="739" width="319.476" height="17" style="stroke: rgb(100%,100%,100%); stroke-linecap: butt; stroke-width: 1; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<text x="400" y="742" style="font-family: Helvetica; font-size: 12px;fill: rgb(43%,32%,55%); stroke:none;" transform="translate(0,1484) scale(1,-1)">(ct2, k2) = Encaps(pkA); nB = random(16 B); compute tag1</text>
+			<path d="M 816,716 L 202,716 Z" style="stroke: rgb(14%,36%,54%); stroke-linecap: butt; stroke-width: 1.7;"/>
+			<polygon points="202 716, 210 712.5, 210 719.5" style="stroke: rgb(14%,36%,54%); stroke-linecap: butt; stroke-width: 1; fill: rgb(14%,36%,54%); fill-rule: evenodd;"/>
+			<rect x="415.627" y="721" width="168.74600000000004" height="20" style="stroke: rgb(100%,100%,100%); stroke-linecap: butt; stroke-width: 1; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<text x="420.627" y="725" style="font-family: Helvetica; font-size: 14px;fill: rgb(14%,36%,54%); stroke:none;" transform="translate(0,1450) scale(1,-1)">M2  /  (pkE, tag1, ct2, nB)</text>
+			<rect x="39" y="687" width="316.116" height="17" style="stroke: rgb(100%,100%,100%); stroke-linecap: butt; stroke-width: 1; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<text x="42" y="690" style="font-family: Helvetica; font-size: 12px;fill: rgb(43%,32%,55%); stroke:none;" transform="translate(0,1380) scale(1,-1)">Verify tag1; k2 = Decaps(skA, ct2); (ct*, k*) = Encaps(pkE)</text>
+			<path d="M 202,658 L 1207,658 Z" style="stroke: rgb(7%,47%,44%); stroke-linecap: butt; stroke-width: 1.7;"/>
+			<polygon points="1207 658, 1199 661.5, 1199 654.5" style="stroke: rgb(7%,47%,44%); stroke-linecap: butt; stroke-width: 1; fill: rgb(7%,47%,44%); fill-rule: evenodd;"/>
+			<rect x="912.12" y="665" width="195.7600000000001" height="18" style="stroke: rgb(100%,100%,100%); stroke-linecap: butt; stroke-width: 1; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<text x="917.12" y="669" style="font-family: Helvetica; font-size: 12px;fill: rgb(7%,47%,44%); stroke:none;" transform="translate(0,1338) scale(1,-1)">quota -&gt; status -&gt; admission -&gt; get</text>
+			<path d="M 1207,633 L 202,633 Z" style="stroke: rgb(7%,47%,44%); stroke-linecap: butt; stroke-width: 1.7;"/>
+			<polygon points="202 633, 210 629.5, 210 636.5" style="stroke: rgb(7%,47%,44%); stroke-linecap: butt; stroke-width: 1; fill: rgb(7%,47%,44%); fill-rule: evenodd;"/>
+			<rect x="940.65" y="635" width="138.69999999999993" height="18" style="stroke: rgb(100%,100%,100%); stroke-linecap: butt; stroke-width: 1; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<text x="945.65" y="639" style="font-family: Helvetica; font-size: 12px;fill: rgb(7%,47%,44%); stroke:none;" transform="translate(0,1278) scale(1,-1)">local return: (q, QKD ID)</text>
+			<rect x="39" y="606" width="377.49600000000004" height="17" style="stroke: rgb(100%,100%,100%); stroke-linecap: butt; stroke-width: 1; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<text x="42" y="609" style="font-family: Helvetica; font-size: 12px;fill: rgb(61%,39%,11%); stroke:none;" transform="translate(0,1218) scale(1,-1)">On allowed fallback: q absent; QKD ID empty; explicit degraded mode</text>
+			<path d="M 202,580 L 816,580 Z" style="stroke: rgb(14%,36%,54%); stroke-linecap: butt; stroke-width: 1.7;"/>
+			<polygon points="816 580, 808 583.5, 808 576.5" style="stroke: rgb(14%,36%,54%); stroke-linecap: butt; stroke-width: 1; fill: rgb(14%,36%,54%); fill-rule: evenodd;"/>
+			<rect x="418.195" y="585" width="165.61000000000007" height="20" style="stroke: rgb(100%,100%,100%); stroke-linecap: butt; stroke-width: 1; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<text x="423.195" y="589" style="font-family: Helvetica; font-size: 14px;fill: rgb(14%,36%,54%); stroke:none;" transform="translate(0,1178) scale(1,-1)">M3  /  (ct*, QKD ID, tag2)</text>
+			<rect x="417" y="552" width="209.74800000000005" height="17" style="stroke: rgb(100%,100%,100%); stroke-linecap: butt; stroke-width: 1; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<text x="420" y="555" style="font-family: Helvetica; font-size: 12px;fill: rgb(43%,32%,55%); stroke:none;" transform="translate(0,1110) scale(1,-1)">Bob: verify tag2; k* = Decaps(skE, ct*)</text>
+			<path d="M 816,532 L 1207,532 Z" style="stroke: rgb(7%,47%,44%); stroke-linecap: butt; stroke-width: 1.7;"/>
+			<polygon points="1207 532, 1199 535.5, 1199 528.5" style="stroke: rgb(7%,47%,44%); stroke-linecap: butt; stroke-width: 1; fill: rgb(7%,47%,44%); fill-rule: evenodd;"/>
+			<rect x="932.646" y="537" width="154.70800000000008" height="18" style="stroke: rgb(100%,100%,100%); stroke-linecap: butt; stroke-width: 1; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<text x="937.646" y="541" style="font-family: Helvetica; font-size: 12px;fill: rgb(7%,47%,44%); stroke:none;" transform="translate(0,1082) scale(1,-1)">retrieve non-empty QKD ID</text>
+			<path d="M 1207,507 L 816,507 Z" style="stroke: rgb(7%,47%,44%); stroke-linecap: butt; stroke-width: 1.7;"/>
+			<polygon points="816 507, 824 503.5, 824 510.5" style="stroke: rgb(7%,47%,44%); stroke-linecap: butt; stroke-width: 1; fill: rgb(7%,47%,44%); fill-rule: evenodd;"/>
+			<rect x="935.646" y="510" width="148.70800000000008" height="18" style="stroke: rgb(100%,100%,100%); stroke-linecap: butt; stroke-width: 1; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<text x="940.646" y="514" style="font-family: Helvetica; font-size: 12px;fill: rgb(7%,47%,44%); stroke:none;" transform="translate(0,1028) scale(1,-1)">same q; one-time retrieval</text>
+			<rect x="418" y="477" width="274.116" height="17" style="stroke: rgb(100%,100%,100%); stroke-linecap: butt; stroke-width: 1; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<text x="421" y="480" style="font-family: Helvetica; font-size: 12px;fill: rgb(43%,32%,55%); stroke:none;" transform="translate(0,960) scale(1,-1)">Bob derives (k1h, k2h) and returns result with tag3</text>
+			<path d="M 816,457 L 202,457 Z" style="stroke: rgb(14%,36%,54%); stroke-linecap: butt; stroke-width: 1.7;"/>
+			<polygon points="202 457, 210 453.5, 210 460.5" style="stroke: rgb(14%,36%,54%); stroke-linecap: butt; stroke-width: 1; fill: rgb(14%,36%,54%); fill-rule: evenodd;"/>
+			<rect x="461.925" y="461" width="76.15000000000003" height="20" style="stroke: rgb(100%,100%,100%); stroke-linecap: butt; stroke-width: 1; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<text x="466.925" y="465" style="font-family: Helvetica; font-size: 14px;fill: rgb(14%,36%,54%); stroke:none;" transform="translate(0,930) scale(1,-1)">M4  /  tag3</text>
+			<rect x="39" y="427" width="342.132" height="17" style="stroke: rgb(100%,100%,100%); stroke-linecap: butt; stroke-width: 1; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<text x="42" y="430" style="font-family: Helvetica; font-size: 12px;fill: rgb(14%,36%,54%); stroke:none;" transform="translate(0,860) scale(1,-1)">Alice derives keys, verifies tag3, then returns HandshakeResult</text>
+			<text x="42" y="390" style="font-family: Helvetica-Bold; font-size: 12px;fill: rgb(9%,16%,22%); stroke:none;" transform="translate(0,780) scale(1,-1)">A  /  CANONICAL CONTEXT AND DERIVATION</text>
+			<rect x="42" y="245" width="825" height="130" style="stroke: rgb(79%,83%,86%); stroke-linecap: butt; stroke-width: 1; fill: rgb(96%,94%,97%); fill-rule: evenodd;"/>
+			<rect x="42" y="245" width="4" height="130" style="stroke: rgb(43%,32%,55%); stroke-linecap: butt; stroke-width: 1; fill: rgb(43%,32%,55%); fill-rule: evenodd;"/>
+			<text x="58" y="353" style="font-family: Helvetica-Bold; font-size: 17px;fill: rgb(43%,32%,55%); stroke:none;" transform="translate(0,706) scale(1,-1)">Length-prefixed transcript T</text>
+			<text x="58" y="329.45000000000005" style="font-family: Helvetica; font-size: 13.5px;fill: rgb(9%,16%,22%); stroke:none;" transform="translate(0,658) scale(1,-1)">LP(version, idA, idB, algorithm, nA, nB, pkA, pkB, pkE, ct1, ct2, ct*, QKD ID, mode)</text>
+			<text x="58" y="312.57500000000005" style="font-family: Helvetica; font-size: 13.5px;fill: rgb(9%,16%,22%); stroke:none;" transform="translate(0,625) scale(1,-1)">hT = SHA3-256(T); each LP field uses a 4-byte big-endian length.</text>
+			<text x="58" y="295.70000000000005" style="font-family: Helvetica; font-size: 13.5px;fill: rgb(9%,16%,22%); stroke:none;" transform="translate(0,591) scale(1,-1)">Roles are ordered by the initiator/responder fields; mode is inferred from the QKD-ID path, then bound.</text>
+			<rect x="897" y="245" width="501" height="130" style="stroke: rgb(79%,83%,86%); stroke-linecap: butt; stroke-width: 1; fill: rgb(96%,94%,97%); fill-rule: evenodd;"/>
+			<rect x="897" y="245" width="4" height="130" style="stroke: rgb(43%,32%,55%); stroke-linecap: butt; stroke-width: 1; fill: rgb(43%,32%,55%); fill-rule: evenodd;"/>
+			<text x="913" y="353" style="font-family: Helvetica-Bold; font-size: 17px;fill: rgb(43%,32%,55%); stroke:none;" transform="translate(0,706) scale(1,-1)">Confirmation tags</text>
+			<text x="913" y="329.45000000000005" style="font-family: Helvetica; font-size: 12.5px;fill: rgb(9%,16%,22%); stroke:none;" transform="translate(0,658) scale(1,-1)">s = ct1 || ct2; MAC = HMAC-SHA-256</text>
+			<text x="913" y="313.82500000000005" style="font-family: Helvetica; font-size: 12.5px;fill: rgb(9%,16%,22%); stroke:none;" transform="translate(0,627) scale(1,-1)">tag1 = MAC(k1, pkE || nB || s || 'A')</text>
+			<text x="913" y="298.20000000000005" style="font-family: Helvetica; font-size: 12.5px;fill: rgb(9%,16%,22%); stroke:none;" transform="translate(0,596) scale(1,-1)">tag2 = MAC(k2, ID || ct* || s || 'B')</text>
+			<text x="913" y="282.57500000000005" style="font-family: Helvetica; font-size: 12.5px;fill: rgb(9%,16%,22%); stroke:none;" transform="translate(0,565) scale(1,-1)">tag3 = MAC(k1h, LP(k1, ID, pkE, tag1, k2, tag2, hT))</text>
+			<rect x="42" y="113" width="825" height="106" style="stroke: rgb(79%,83%,86%); stroke-linecap: butt; stroke-width: 1; fill: rgb(96%,94%,97%); fill-rule: evenodd;"/>
+			<rect x="42" y="113" width="4" height="106" style="stroke: rgb(43%,32%,55%); stroke-linecap: butt; stroke-width: 1; fill: rgb(43%,32%,55%); fill-rule: evenodd;"/>
+			<text x="58" y="197" style="font-family: Helvetica-Bold; font-size: 17px;fill: rgb(43%,32%,55%); stroke:none;" transform="translate(0,394) scale(1,-1)">ROKDF used by the handshake</text>
+			<text x="58" y="173.45000000000005" style="font-family: Helvetica; font-size: 12.5px;fill: rgb(9%,16%,22%); stroke:none;" transform="translate(0,346) scale(1,-1)">cK = LP(idA, pkA, idB, pkB, pkE, k1, k2, k*, hT); cQ = LP(idA, idB, ID, hT)</text>
+			<text x="58" y="157.82500000000005" style="font-family: Helvetica; font-size: 12.5px;fill: rgb(9%,16%,22%); stroke:none;" transform="translate(0,315) scale(1,-1)">kh = SHA3-512(label || LP(k*, cK, q_or_empty, cQ)); label = 'KEM-QKD-Hybrid KEX'</text>
+			<text x="58" y="142.20000000000005" style="font-family: Helvetica; font-size: 12.5px;fill: rgb(9%,16%,22%); stroke:none;" transform="translate(0,284) scale(1,-1)">k1h = kh[0:32] (confirmation); k2h = kh[32:64] (session key)</text>
+			<path d="M 450,245 L 450,219 Z" style="stroke: rgb(43%,32%,55%); stroke-linecap: butt; stroke-width: 1.7;"/>
+			<polygon points="450 219, 453.5 227, 446.5 227" style="stroke: rgb(43%,32%,55%); stroke-linecap: butt; stroke-width: 1; fill: rgb(43%,32%,55%); fill-rule: evenodd;"/>
+			<rect x="897" y="113" width="501" height="106" style="stroke: rgb(79%,83%,86%); stroke-linecap: butt; stroke-width: 1; fill: rgb(100%,97%,92%); fill-rule: evenodd;"/>
+			<rect x="897" y="113" width="4" height="106" style="stroke: rgb(61%,39%,11%); stroke-linecap: butt; stroke-width: 1; fill: rgb(61%,39%,11%); fill-rule: evenodd;"/>
+			<text x="913" y="197" style="font-family: Helvetica-Bold; font-size: 17px;fill: rgb(61%,39%,11%); stroke:none;" transform="translate(0,394) scale(1,-1)">Observable acceptance semantics</text>
+			<text x="913" y="173.45000000000005" style="font-family: Helvetica; font-size: 12.5px;fill: rgb(9%,16%,22%); stroke:none;" transform="translate(0,346) scale(1,-1)">No final Alice-to-Bob acknowledgement. Returned transcript = T || tag3; tag1/tag2</text>
+			<text x="913" y="157.82500000000005" style="font-family: Helvetica; font-size: 12.5px;fill: rgb(9%,16%,22%); stroke:none;" transform="translate(0,315) scale(1,-1)">are covered by confirmation but not returned in T. Empty QKD input is valid only on</text>
+			<text x="913" y="142.20000000000005" style="font-family: Helvetica; font-size: 12.5px;fill: rgb(9%,16%,22%); stroke:none;" transform="translate(0,284) scale(1,-1)">an explicit fallback path.</text>
+			<path d="M 42,90 L 1398,90 Z" style="stroke: rgb(79%,83%,86%); stroke-linecap: butt; stroke-width: 1;"/>
+			<text x="42" y="69" style="font-family: Helvetica; font-size: 11.5px;fill: rgb(9%,16%,22%); stroke:none;" transform="translate(0,138) scale(1,-1)">FIGURE 2. KEM public keys and QKD delivery are provisioned assumptions. Secret values stay in local process state; only the QKD identifier crosses the peer message boundary. This plate transcribes implementation behavior.</text>
+			<text x="42" y="20" style="font-family: Helvetica; font-size: 10px;fill: rgb(32%,39%,45%); stroke:none;" transform="translate(0,40) scale(1,-1)">Sources: protocol/hake.py:22-308; crypto/kdf.py:51-81; crypto/kem.py:34-55. LP = serialize_fields; || = concatenate.</text>
+			<text x="1191.57" y="20" style="font-family: Helvetica; font-size: 10px;fill: rgb(32%,39%,45%); stroke:none;" transform="translate(0,40) scale(1,-1)">Source revision 2ba1ede  |  06 Oct 2026  |  2/6</text>
+		</g>
+	</g>
+</svg>

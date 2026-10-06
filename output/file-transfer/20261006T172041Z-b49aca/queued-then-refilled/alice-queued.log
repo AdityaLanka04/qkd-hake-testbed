@@ -1,0 +1,5 @@
+QUEUED 6ca4f1f1-8e89-426b-be3d-557948d34c3b | research-dataset.csv | hybrid-required
+{"available_keys": 0, "capacity": 8, "event": "pool_status", "occupancy_percent": 0.0, "reason": "status_available", "role": "alice", "time": "2026-10-06T17:20:44.397765+00:00"}
+liboqs-python faulthandler is disabled
+{"attempt_id": "bf4e9f3e948b9089", "attempts": 1, "bytes": 80823, "event": "handshake_started", "filename": "research-dataset.csv", "policy": "hybrid-required", "role": "alice", "time": "2026-10-06T17:20:44.406534+00:00", "transfer_id": "6ca4f1f1-8e89-426b-be3d-557948d34c3b"}
+{"attempts": 1, "bytes": 80823, "duration_ms": 43.937, "event": "queued", "filename": "research-dataset.csv", "mode": null, "policy": "hybrid-required", "reason": "reserve_below_5_percent", "role": "alice", "saved_as": null, "state": "QUEUED", "time": "2026-10-06T17:20:44.419308+00:00", "transfer_id": "6ca4f1f1-8e89-426b-be3d-557948d34c3b"}

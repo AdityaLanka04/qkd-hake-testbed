@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg
+  PUBLIC '-//W3C//DTD SVG 1.0//EN'
+  'http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd'>
+<svg width="1440" height="1080" preserveAspectRatio="xMinYMin meet" viewBox="0 0 1440 1080" xmlns="http://www.w3.org/2000/svg" version="1.0" fill-rule="evenodd" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<title>...</title>
+	<desc>...</desc>
+	<clipPath id="clip">
+		<rect x="0" y="0" width="1440" height="1080"/>
+	</clipPath>
+	<g id="group" transform="scale(1,-1) translate(0,-1080)" style="clip-path: url(#clip)">
+		<g transform="">
+			<rect x="0" y="0" width="1440" height="1080" style="stroke: rgb(100%,100%,100%); stroke-linecap: butt; stroke-width: 1; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<text x="42" y="1046" style="font-family: Helvetica-Bold; font-size: 12px;fill: rgb(14%,36%,54%); stroke:none;" transform="translate(0,2092) scale(1,-1)">QKD / PQC  RESEARCH TESTBED</text>
+			<text x="1232.628" y="1046" style="font-family: Helvetica; font-size: 12px;fill: rgb(32%,39%,45%); stroke:none;" transform="translate(0,2092) scale(1,-1)">ARCHITECTURE ATLAS  /  04</text>
+			<text x="42" y="997" style="font-family: Helvetica-Bold; font-size: 32px;fill: rgb(9%,16%,22%); stroke:none;" transform="translate(0,1994) scale(1,-1)">Starvation policy, admission and security-mode outcomes</text>
+			<text x="42" y="967" style="font-family: Helvetica; font-size: 14px;fill: rgb(32%,39%,45%); stroke:none;" transform="translate(0,1934) scale(1,-1)">Decision order in AliceSession.message3; policies control access to QKD after the initial KEM work has already executed.</text>
+			<path d="M 42,946 L 1398,946 Z" style="stroke: rgb(79%,83%,86%); stroke-linecap: butt; stroke-width: 1;"/>
+			<text x="42" y="918" style="font-family: Helvetica-Bold; font-size: 12px;fill: rgb(9%,16%,22%); stroke:none;" transform="translate(0,1836) scale(1,-1)">A  /  CONTROL FLOW</text>
+			<rect x="42" y="769" width="279" height="131" style="stroke: rgb(79%,83%,86%); stroke-linecap: butt; stroke-width: 1; fill: rgb(93%,96%,98%); fill-rule: evenodd;"/>
+			<rect x="42" y="769" width="4" height="131" style="stroke: rgb(14%,36%,54%); stroke-linecap: butt; stroke-width: 1; fill: rgb(14%,36%,54%); fill-rule: evenodd;"/>
+			<text x="58" y="878" style="font-family: Helvetica-Bold; font-size: 10.5px;fill: rgb(14%,36%,54%); stroke:none;" transform="translate(0,1756) scale(1,-1)">ENTRY</text>
+			<text x="58" y="859" style="font-family: Helvetica-Bold; font-size: 17px;fill: rgb(14%,36%,54%); stroke:none;" transform="translate(0,1718) scale(1,-1)">Verified M2 + KEM work</text>
+			<text x="58" y="835.45" style="font-family: Helvetica; font-size: 13px;fill: rgb(9%,16%,22%); stroke:none;" transform="translate(0,1670) scale(1,-1)">Verify tag1; recover k2; encapsulate pkE</text>
+			<text x="58" y="819.2" style="font-family: Helvetica; font-size: 13px;fill: rgb(9%,16%,22%); stroke:none;" transform="translate(0,1638) scale(1,-1)">-&gt; ct*, k*.</text>
+			<text x="58" y="802.95" style="font-family: Helvetica; font-size: 13px;fill: rgb(9%,16%,22%); stroke:none;" transform="translate(0,1605) scale(1,-1)">Then enter policy checks.</text>
+			<rect x="381" y="769" width="279" height="131" style="stroke: rgb(79%,83%,86%); stroke-linecap: butt; stroke-width: 1; fill: rgb(100%,97%,92%); fill-rule: evenodd;"/>
+			<rect x="381" y="769" width="4" height="131" style="stroke: rgb(61%,39%,11%); stroke-linecap: butt; stroke-width: 1; fill: rgb(61%,39%,11%); fill-rule: evenodd;"/>
+			<text x="397" y="878" style="font-family: Helvetica-Bold; font-size: 10.5px;fill: rgb(61%,39%,11%); stroke:none;" transform="translate(0,1756) scale(1,-1)">GATE 1</text>
+			<text x="397" y="859" style="font-family: Helvetica-Bold; font-size: 17px;fill: rgb(61%,39%,11%); stroke:none;" transform="translate(0,1718) scale(1,-1)">Rolling request quota</text>
+			<text x="397" y="835.45" style="font-family: Helvetica; font-size: 13px;fill: rgb(9%,16%,22%); stroke:none;" transform="translate(0,1670) scale(1,-1)">check_quota(idA)</text>
+			<text x="397" y="819.2" style="font-family: Helvetica; font-size: 13px;fill: rgb(9%,16%,22%); stroke:none;" transform="translate(0,1638) scale(1,-1)">Default limit: 10 requests/s.</text>
+			<text x="397" y="802.95" style="font-family: Helvetica; font-size: 13px;fill: rgb(9%,16%,22%); stroke:none;" transform="translate(0,1605) scale(1,-1)">Records request before acquisition.</text>
+			<path d="M 321,833 L 381,833 Z" style="stroke: rgb(14%,36%,54%); stroke-linecap: butt; stroke-width: 1.7;"/>
+			<polygon points="381 833, 373 836.5, 373 829.5" style="stroke: rgb(14%,36%,54%); stroke-linecap: butt; stroke-width: 1; fill: rgb(14%,36%,54%); fill-rule: evenodd;"/>
+			<rect x="720" y="769" width="279" height="131" style="stroke: rgb(79%,83%,86%); stroke-linecap: butt; stroke-width: 1; fill: rgb(100%,97%,92%); fill-rule: evenodd;"/>
+			<rect x="720" y="769" width="4" height="131" style="stroke: rgb(61%,39%,11%); stroke-linecap: butt; stroke-width: 1; fill: rgb(61%,39%,11%); fill-rule: evenodd;"/>
+			<text x="736" y="878" style="font-family: Helvetica-Bold; font-size: 10.5px;fill: rgb(61%,39%,11%); stroke:none;" transform="translate(0,1756) scale(1,-1)">GATE 2</text>
+			<text x="736" y="859" style="font-family: Helvetica-Bold; font-size: 17px;fill: rgb(61%,39%,11%); stroke:none;" transform="translate(0,1718) scale(1,-1)">Status and admission</text>
+			<text x="736" y="835.45" style="font-family: Helvetica; font-size: 13px;fill: rgb(9%,16%,22%); stroke:none;" transform="translate(0,1670) scale(1,-1)">Require callback. Read A, D.</text>
+			<text x="736" y="819.2" style="font-family: Helvetica; font-size: 13px;fill: rgb(9%,16%,22%); stroke:none;" transform="translate(0,1638) scale(1,-1)">Reject admission when A/D &lt; 0.05.</text>
+			<text x="736" y="802.95" style="font-family: Helvetica; font-size: 13px;fill: rgb(9%,16%,22%); stroke:none;" transform="translate(0,1605) scale(1,-1)">5% exactly passes this gate.</text>
+			<path d="M 660,833 L 720,833 Z" style="stroke: rgb(61%,39%,11%); stroke-linecap: butt; stroke-width: 1.7;"/>
+			<polygon points="720 833, 712 836.5, 712 829.5" style="stroke: rgb(61%,39%,11%); stroke-linecap: butt; stroke-width: 1; fill: rgb(61%,39%,11%); fill-rule: evenodd;"/>
+			<rect x="1059" y="769" width="339" height="131" style="stroke: rgb(79%,83%,86%); stroke-linecap: butt; stroke-width: 1; fill: rgb(93%,97%,96%); fill-rule: evenodd;"/>
+			<rect x="1059" y="769" width="4" height="131" style="stroke: rgb(7%,47%,44%); stroke-linecap: butt; stroke-width: 1; fill: rgb(7%,47%,44%); fill-rule: evenodd;"/>
+			<text x="1075" y="878" style="font-family: Helvetica-Bold; font-size: 10.5px;fill: rgb(7%,47%,44%); stroke:none;" transform="translate(0,1756) scale(1,-1)">GATE 3</text>
+			<text x="1075" y="859" style="font-family: Helvetica-Bold; font-size: 17px;fill: rgb(7%,47%,44%); stroke:none;" transform="translate(0,1718) scale(1,-1)">Acquire QKD input</text>
+			<text x="1075" y="835.45" style="font-family: Helvetica; font-size: 13px;fill: rgb(9%,16%,22%); stroke:none;" transform="translate(0,1670) scale(1,-1)">callback('get') -&gt; (q, key_ID)</text>
+			<text x="1075" y="819.2" style="font-family: Helvetica; font-size: 13px;fill: rgb(9%,16%,22%); stroke:none;" transform="translate(0,1638) scale(1,-1)">Backend may enforce an additional outstanding-key</text>
+			<text x="1075" y="802.95" style="font-family: Helvetica; font-size: 13px;fill: rgb(9%,16%,22%); stroke:none;" transform="translate(0,1605) scale(1,-1)">quota.</text>
+			<path d="M 999,833 L 1059,833 Z" style="stroke: rgb(7%,47%,44%); stroke-linecap: butt; stroke-width: 1.7;"/>
+			<polygon points="1059 833, 1051 836.5, 1051 829.5" style="stroke: rgb(7%,47%,44%); stroke-linecap: butt; stroke-width: 1; fill: rgb(7%,47%,44%); fill-rule: evenodd;"/>
+			<path d="M 520,769 L 520,727 Z" style="stroke: rgb(61%,39%,11%); stroke-linecap: butt; stroke-width: 1.5;"/>
+			<path d="M 860,769 L 860,727 Z" style="stroke: rgb(61%,39%,11%); stroke-linecap: butt; stroke-width: 1.5;"/>
+			<path d="M 1228,769 L 1228,727 Z" style="stroke: rgb(61%,39%,11%); stroke-linecap: butt; stroke-width: 1.5;"/>
+			<path d="M 520,727 L 1228,727 Z" style="stroke: rgb(61%,39%,11%); stroke-linecap: butt; stroke-width: 1.5;"/>
+			<path d="M 860,727 L 860,680 Z" style="stroke: rgb(61%,39%,11%); stroke-linecap: butt; stroke-width: 1.7;"/>
+			<polygon points="860 680, 863.5 688, 856.5 688" style="stroke: rgb(61%,39%,11%); stroke-linecap: butt; stroke-width: 1; fill: rgb(61%,39%,11%); fill-rule: evenodd;"/>
+			<rect x="732.27" y="731" width="255.46000000000004" height="18" style="stroke: rgb(100%,100%,100%); stroke-linecap: butt; stroke-width: 1; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<text x="737.27" y="735" style="font-family: Helvetica; font-size: 12px;fill: rgb(61%,39%,11%); stroke:none;" transform="translate(0,1470) scale(1,-1)">quota / no callback / admission / get exception</text>
+			<rect x="650" y="571" width="420" height="109" style="stroke: rgb(79%,83%,86%); stroke-linecap: butt; stroke-width: 1; fill: rgb(100%,97%,92%); fill-rule: evenodd;"/>
+			<rect x="650" y="571" width="4" height="109" style="stroke: rgb(61%,39%,11%); stroke-linecap: butt; stroke-width: 1; fill: rgb(61%,39%,11%); fill-rule: evenodd;"/>
+			<text x="666" y="658" style="font-family: Helvetica-Bold; font-size: 17px;fill: rgb(61%,39%,11%); stroke:none;" transform="translate(0,1316) scale(1,-1)">allow_explicit_fallback?</text>
+			<text x="666" y="634.45" style="font-family: Helvetica; font-size: 14px;fill: rgb(9%,16%,22%); stroke:none;" transform="translate(0,1268) scale(1,-1)">Policy flag determines whether the failure path can continue</text>
+			<text x="666" y="616.95" style="font-family: Helvetica; font-size: 14px;fill: rgb(9%,16%,22%); stroke:none;" transform="translate(0,1233) scale(1,-1)">using KEM inputs alone.</text>
+			<path d="M 756,571 L 756,535 Z" style="stroke: rgb(61%,39%,11%); stroke-linecap: butt; stroke-width: 1.7;"/>
+			<path d="M 756,535 L 470,535 Z" style="stroke: rgb(61%,39%,11%); stroke-linecap: butt; stroke-width: 1.7;"/>
+			<path d="M 470,535 L 470,500 Z" style="stroke: rgb(61%,39%,11%); stroke-linecap: butt; stroke-width: 1.7;"/>
+			<polygon points="470 500, 473.5 508, 466.5 508" style="stroke: rgb(61%,39%,11%); stroke-linecap: butt; stroke-width: 1; fill: rgb(61%,39%,11%); fill-rule: evenodd;"/>
+			<rect x="589.668" y="536" width="42.66399999999999" height="18" style="stroke: rgb(100%,100%,100%); stroke-linecap: butt; stroke-width: 1; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<text x="594.668" y="540" style="font-family: Helvetica; font-size: 12px;fill: rgb(61%,39%,11%); stroke:none;" transform="translate(0,1080) scale(1,-1)">TRUE</text>
+			<path d="M 963,571 L 963,535 Z" style="stroke: rgb(64%,28%,23%); stroke-linecap: butt; stroke-width: 1.7;"/>
+			<path d="M 963,535 L 1192,535 Z" style="stroke: rgb(64%,28%,23%); stroke-linecap: butt; stroke-width: 1.7;"/>
+			<path d="M 1192,535 L 1192,500 Z" style="stroke: rgb(64%,28%,23%); stroke-linecap: butt; stroke-width: 1.7;"/>
+			<polygon points="1192 500, 1195.5 508, 1188.5 508" style="stroke: rgb(64%,28%,23%); stroke-linecap: butt; stroke-width: 1; fill: rgb(64%,28%,23%); fill-rule: evenodd;"/>
+			<rect x="1070.992" y="536" width="48.016000000000076" height="18" style="stroke: rgb(100%,100%,100%); stroke-linecap: butt; stroke-width: 1; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<text x="1075.992" y="540" style="font-family: Helvetica; font-size: 12px;fill: rgb(64%,28%,23%); stroke:none;" transform="translate(0,1080) scale(1,-1)">FALSE</text>
+			<rect x="42" y="571" width="537" height="109" style="stroke: rgb(79%,83%,86%); stroke-linecap: butt; stroke-width: 1; fill: rgb(93%,97%,96%); fill-rule: evenodd;"/>
+			<rect x="42" y="571" width="4" height="109" style="stroke: rgb(7%,47%,44%); stroke-linecap: butt; stroke-width: 1; fill: rgb(7%,47%,44%); fill-rule: evenodd;"/>
+			<text x="58" y="658" style="font-family: Helvetica-Bold; font-size: 17px;fill: rgb(7%,47%,44%); stroke:none;" transform="translate(0,1316) scale(1,-1)">HYBRID_QKD</text>
+			<text x="58" y="634.45" style="font-family: Helvetica; font-size: 14px;fill: rgb(9%,16%,22%); stroke:none;" transform="translate(0,1268) scale(1,-1)">Acquisition succeeds with q and a non-empty key ID.</text>
+			<text x="58" y="616.95" style="font-family: Helvetica; font-size: 14px;fill: rgb(9%,16%,22%); stroke:none;" transform="translate(0,1233) scale(1,-1)">Bob retrieves q by that ID; both derive transcript-bound keys.</text>
+			<path d="M 1398,815 L 1415,815 Z" style="stroke: rgb(7%,47%,44%); stroke-linecap: butt; stroke-width: 1.7;"/>
+			<path d="M 1415,815 L 1415,700 Z" style="stroke: rgb(7%,47%,44%); stroke-linecap: butt; stroke-width: 1.7;"/>
+			<path d="M 1415,700 L 310,700 Z" style="stroke: rgb(7%,47%,44%); stroke-linecap: butt; stroke-width: 1.7;"/>
+			<path d="M 310,700 L 310,680 Z" style="stroke: rgb(7%,47%,44%); stroke-linecap: butt; stroke-width: 1.7;"/>
+			<polygon points="310 680, 313.5 688, 306.5 688" style="stroke: rgb(7%,47%,44%); stroke-linecap: butt; stroke-width: 1; fill: rgb(7%,47%,44%); fill-rule: evenodd;"/>
+			<rect x="333.976" y="700" width="148.048" height="18" style="stroke: rgb(100%,100%,100%); stroke-linecap: butt; stroke-width: 1; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<text x="338.976" y="704" style="font-family: Helvetica; font-size: 12px;fill: rgb(7%,47%,44%); stroke:none;" transform="translate(0,1408) scale(1,-1)">successful key acquisition</text>
+			<rect x="42" y="374" width="861" height="126" style="stroke: rgb(79%,83%,86%); stroke-linecap: butt; stroke-width: 1; fill: rgb(100%,97%,92%); fill-rule: evenodd;"/>
+			<rect x="42" y="374" width="4" height="126" style="stroke: rgb(61%,39%,11%); stroke-linecap: butt; stroke-width: 1; fill: rgb(61%,39%,11%); fill-rule: evenodd;"/>
+			<text x="58" y="478" style="font-family: Helvetica-Bold; font-size: 10.5px;fill: rgb(61%,39%,11%); stroke:none;" transform="translate(0,956) scale(1,-1)">CONTINUE</text>
+			<text x="58" y="459" style="font-family: Helvetica-Bold; font-size: 17px;fill: rgb(61%,39%,11%); stroke:none;" transform="translate(0,918) scale(1,-1)">SECURITY_LEVEL_DEGRADED_PQC_ONLY</text>
+			<text x="58" y="435.45000000000005" style="font-family: Helvetica; font-size: 13.5px;fill: rgb(9%,16%,22%); stroke:none;" transform="translate(0,870) scale(1,-1)">Handshake mode returned by hake.py on explicit fallback. QKD ID is empty; QKD KDF input is empty. Bob infers the mode from the empty</text>
+			<text x="58" y="418.57500000000005" style="font-family: Helvetica; font-size: 13.5px;fill: rgb(9%,16%,22%); stroke:none;" transform="translate(0,837) scale(1,-1)">ID; the full mode string is then bound into the transcript hash.</text>
+			<text x="58" y="401.70000000000005" style="font-family: Helvetica; font-size: 13.5px;fill: rgb(9%,16%,22%); stroke:none;" transform="translate(0,803) scale(1,-1)">PURE_PQC is the benchmark treatment label for this same no-QKD execution path.</text>
+			<rect x="963" y="374" width="435" height="126" style="stroke: rgb(79%,83%,86%); stroke-linecap: butt; stroke-width: 1; fill: rgb(98%,94%,93%); fill-rule: evenodd;"/>
+			<rect x="963" y="374" width="4" height="126" style="stroke: rgb(64%,28%,23%); stroke-linecap: butt; stroke-width: 1; fill: rgb(64%,28%,23%); fill-rule: evenodd;"/>
+			<text x="979" y="478" style="font-family: Helvetica-Bold; font-size: 10.5px;fill: rgb(64%,28%,23%); stroke:none;" transform="translate(0,956) scale(1,-1)">REJECT</text>
+			<text x="979" y="459" style="font-family: Helvetica-Bold; font-size: 17px;fill: rgb(64%,28%,23%); stroke:none;" transform="translate(0,918) scale(1,-1)">HandshakeError</text>
+			<text x="979" y="435.45000000000005" style="font-family: Helvetica; font-size: 13.5px;fill: rgb(9%,16%,22%); stroke:none;" transform="translate(0,870) scale(1,-1)">Abort instead of returning a session.</text>
+			<text x="979" y="418.57500000000005" style="font-family: Helvetica; font-size: 13.5px;fill: rgb(9%,16%,22%); stroke:none;" transform="translate(0,837) scale(1,-1)">REJECTED exists in the separate SecurityMode enum; the</text>
+			<text x="979" y="401.70000000000005" style="font-family: Helvetica; font-size: 13.5px;fill: rgb(9%,16%,22%); stroke:none;" transform="translate(0,803) scale(1,-1)">handshake uses an exception.</text>
+			<text x="42" y="331" style="font-family: Helvetica-Bold; font-size: 12px;fill: rgb(9%,16%,22%); stroke:none;" transform="translate(0,662) scale(1,-1)">B  /  CONTROL SCOPE AND RESEARCH INTERPRETATION</text>
+			<rect x="42" y="115" width="429" height="197" style="stroke: rgb(79%,83%,86%); stroke-linecap: butt; stroke-width: 1; fill: rgb(100%,97%,92%); fill-rule: evenodd;"/>
+			<rect x="42" y="115" width="4" height="197" style="stroke: rgb(61%,39%,11%); stroke-linecap: butt; stroke-width: 1; fill: rgb(61%,39%,11%); fill-rule: evenodd;"/>
+			<text x="58" y="290" style="font-family: Helvetica-Bold; font-size: 10.5px;fill: rgb(61%,39%,11%); stroke:none;" transform="translate(0,580) scale(1,-1)">SCOPE</text>
+			<text x="58" y="271" style="font-family: Helvetica-Bold; font-size: 17px;fill: rgb(61%,39%,11%); stroke:none;" transform="translate(0,542) scale(1,-1)">Scope of enforcement</text>
+			<text x="58" y="247.45000000000005" style="font-family: Helvetica; font-size: 13.5px;fill: rgb(9%,16%,22%); stroke:none;" transform="translate(0,494) scale(1,-1)">A new MitigationManager is created by default for every</text>
+			<text x="58" y="230.57500000000005" style="font-family: Helvetica; font-size: 13.5px;fill: rgb(9%,16%,22%); stroke:none;" transform="translate(0,461) scale(1,-1)">AliceSession. Global per-peer rate enforcement requires explicitly</text>
+			<text x="58" y="213.70000000000005" style="font-family: Helvetica; font-size: 13.5px;fill: rgb(9%,16%,22%); stroke:none;" transform="translate(0,427) scale(1,-1)">sharing a manager.</text>
+			<text x="58" y="196.82500000000005" style="font-family: Helvetica; font-size: 13.5px;fill: rgb(9%,16%,22%); stroke:none;" transform="translate(0,393) scale(1,-1)">The paired benchmark constructs fresh sessions, so it does not</text>
+			<text x="58" y="179.95000000000005" style="font-family: Helvetica; font-size: 13.5px;fill: rgb(9%,16%,22%); stroke:none;" transform="translate(0,359) scale(1,-1)">evaluate cross-session quota effectiveness.</text>
+			<rect x="505" y="115" width="429" height="197" style="stroke: rgb(79%,83%,86%); stroke-linecap: butt; stroke-width: 1; fill: rgb(100%,97%,92%); fill-rule: evenodd;"/>
+			<rect x="505" y="115" width="4" height="197" style="stroke: rgb(61%,39%,11%); stroke-linecap: butt; stroke-width: 1; fill: rgb(61%,39%,11%); fill-rule: evenodd;"/>
+			<text x="521" y="290" style="font-family: Helvetica-Bold; font-size: 10.5px;fill: rgb(61%,39%,11%); stroke:none;" transform="translate(0,580) scale(1,-1)">SEMANTICS</text>
+			<text x="521" y="271" style="font-family: Helvetica-Bold; font-size: 17px;fill: rgb(61%,39%,11%); stroke:none;" transform="translate(0,542) scale(1,-1)">Admission is not reservation</text>
+			<text x="521" y="247.45000000000005" style="font-family: Helvetica; font-size: 13.5px;fill: rgb(9%,16%,22%); stroke:none;" transform="translate(0,494) scale(1,-1)">The occupancy check and issue operation are separate calls.</text>
+			<text x="521" y="230.57500000000005" style="font-family: Helvetica; font-size: 13.5px;fill: rgb(9%,16%,22%); stroke:none;" transform="translate(0,461) scale(1,-1)">Concurrent callers can pass the same check.</text>
+			<text x="521" y="213.70000000000005" style="font-family: Helvetica; font-size: 13.5px;fill: rgb(9%,16%,22%); stroke:none;" transform="translate(0,427) scale(1,-1)">The 5% rule checks current occupancy; it is not priority scheduling</text>
+			<text x="521" y="196.82500000000005" style="font-family: Helvetica; font-size: 13.5px;fill: rgb(9%,16%,22%); stroke:none;" transform="translate(0,393) scale(1,-1)">or an atomic reservation. Policy sweeps are not executed by the</text>
+			<text x="521" y="179.95000000000005" style="font-family: Helvetica; font-size: 13.5px;fill: rgb(9%,16%,22%); stroke:none;" transform="translate(0,359) scale(1,-1)">current pool-only sweep.</text>
+			<rect x="968" y="115" width="430" height="197" style="stroke: rgb(79%,83%,86%); stroke-linecap: butt; stroke-width: 1; fill: rgb(98%,94%,93%); fill-rule: evenodd;"/>
+			<rect x="968" y="115" width="4" height="197" style="stroke: rgb(64%,28%,23%); stroke-linecap: butt; stroke-width: 1; fill: rgb(64%,28%,23%); fill-rule: evenodd;"/>
+			<text x="984" y="290" style="font-family: Helvetica-Bold; font-size: 10.5px;fill: rgb(64%,28%,23%); stroke:none;" transform="translate(0,580) scale(1,-1)">INVARIANT / REVIEW ITEM</text>
+			<text x="984" y="271" style="font-family: Helvetica-Bold; font-size: 17px;fill: rgb(64%,28%,23%); stroke:none;" transform="translate(0,542) scale(1,-1)">Required guard for hybrid validity</text>
+			<text x="984" y="247.45000000000005" style="font-family: Helvetica; font-size: 13px;fill: rgb(9%,16%,22%); stroke:none;" transform="translate(0,494) scale(1,-1)">Require non-empty, correctly sized q whenever mode =</text>
+			<text x="984" y="231.20000000000005" style="font-family: Helvetica; font-size: 13px;fill: rgb(9%,16%,22%); stroke:none;" transform="translate(0,462) scale(1,-1)">HYBRID_QKD, at both roles.</text>
+			<text x="984" y="214.95000000000005" style="font-family: Helvetica; font-size: 13px;fill: rgb(9%,16%,22%); stroke:none;" transform="translate(0,429) scale(1,-1)">Current callbacks are trusted to return valid material; Bob can</text>
+			<text x="984" y="198.70000000000005" style="font-family: Helvetica; font-size: 13px;fill: rgb(9%,16%,22%); stroke:none;" transform="translate(0,397) scale(1,-1)">preserve HYBRID_QKD for a non-empty ID even if no retrieval</text>
+			<text x="984" y="182.45000000000005" style="font-family: Helvetica; font-size: 13px;fill: rgb(9%,16%,22%); stroke:none;" transform="translate(0,364) scale(1,-1)">callback exists. This guard is a research-hardening obligation.</text>
+			<path d="M 42,90 L 1398,90 Z" style="stroke: rgb(79%,83%,86%); stroke-linecap: butt; stroke-width: 1;"/>
+			<text x="42" y="69" style="font-family: Helvetica; font-size: 11.5px;fill: rgb(9%,16%,22%); stroke:none;" transform="translate(0,138) scale(1,-1)">FIGURE 4. The policy layer is implemented, but control scope and atomicity determine what it can enforce. Security mode is transcript-bound after the decision; no separate mode-negotiation field appears in the message tuples.</text>
+			<text x="42" y="20" style="font-family: Helvetica; font-size: 10px;fill: rgb(32%,39%,45%); stroke:none;" transform="translate(0,40) scale(1,-1)">Sources: protocol/hake.py:55-139,236-308; mitigations/mitigations.py; protocol/combiner.py:15-23. See evidence matrix on plate 6.</text>
+			<text x="1191.57" y="20" style="font-family: Helvetica; font-size: 10px;fill: rgb(32%,39%,45%); stroke:none;" transform="translate(0,40) scale(1,-1)">Source revision 2ba1ede  |  06 Oct 2026  |  4/6</text>
+		</g>
+	</g>
+</svg>

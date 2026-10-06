@@ -1,0 +1,17 @@
+{
+  "command": "make test",
+  "passed": 60,
+  "failed": 0,
+  "seconds": 3.36,
+  "warnings": [
+    "Pre-existing Starlette TestClient httpx deprecation"
+  ],
+  "live_status_cli_samples": 3,
+  "live_status_cli_passed": true,
+  "algorithms_tested": [
+    "ML-KEM-512",
+    "ML-KEM-768",
+    "ML-KEM-1024",
+    "FrodoKEM-976-AES"
+  ]
+}

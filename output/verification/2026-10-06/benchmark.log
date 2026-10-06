@@ -1,0 +1,18 @@
+Starting paired benchmark suite: 1000 recorded runs + 100 warm-up runs per algorithm...
+
+Benchmarking ML-KEM-512:
+liboqs-python faulthandler is disabled
+  [HYBRID] Latency: Median=0.122ms, p95=0.138ms | CPU Median=0.122ms, p95=0.138ms | Bytes=3268
+  [PURE_PQC] Latency: Median=0.121ms, p95=0.137ms | CPU Median=0.121ms, p95=0.137ms | Bytes=3232
+
+Benchmarking ML-KEM-768:
+  [HYBRID] Latency: Median=0.157ms, p95=0.177ms | CPU Median=0.157ms, p95=0.177ms | Bytes=4612
+  [PURE_PQC] Latency: Median=0.156ms, p95=0.176ms | CPU Median=0.156ms, p95=0.176ms | Bytes=4576
+
+Benchmarking ML-KEM-1024:
+  [HYBRID] Latency: Median=0.213ms, p95=0.263ms | CPU Median=0.213ms, p95=0.263ms | Bytes=6436
+  [PURE_PQC] Latency: Median=0.211ms, p95=0.263ms | CPU Median=0.211ms, p95=0.263ms | Bytes=6400
+
+Benchmarking FrodoKEM-976-AES:
+  [HYBRID] Latency: Median=4.959ms, p95=5.296ms | CPU Median=4.958ms, p95=5.286ms | Bytes=63172
+  [PURE_PQC] Latency: Median=4.950ms, p95=5.238ms | CPU Median=4.950ms, p95=5.228ms | Bytes=63136

@@ -1,0 +1,281 @@
+
+Starting corrected WP6 starvation sweep...
+Burst: measured actual depletion | Steady-state measurement: 60.0s | Repeats: 5 | Pool depths: [16, 64, 128]
+
+QKD supply: 1 kbps (3.90625 keys/s)
+  depth= 16 | rate=  1/s | burst=N/A | steady-state QKD=100.00% | failures=0
+  depth= 16 | rate=  1/s | burst=N/A | steady-state QKD=100.00% | failures=0
+  depth= 16 | rate=  1/s | burst=N/A | steady-state QKD=100.00% | failures=0
+  depth= 16 | rate=  1/s | burst=N/A | steady-state QKD=100.00% | failures=0
+  depth= 16 | rate=  1/s | burst=N/A | steady-state QKD=100.00% | failures=0
+  depth= 64 | rate=  1/s | burst=N/A | steady-state QKD=100.00% | failures=0
+  depth= 64 | rate=  1/s | burst=N/A | steady-state QKD=100.00% | failures=0
+  depth= 64 | rate=  1/s | burst=N/A | steady-state QKD=100.00% | failures=0
+  depth= 64 | rate=  1/s | burst=N/A | steady-state QKD=100.00% | failures=0
+  depth= 64 | rate=  1/s | burst=N/A | steady-state QKD=100.00% | failures=0
+  depth=128 | rate=  1/s | burst=N/A | steady-state QKD=100.00% | failures=0
+  depth=128 | rate=  1/s | burst=N/A | steady-state QKD=100.00% | failures=0
+  depth=128 | rate=  1/s | burst=N/A | steady-state QKD=100.00% | failures=0
+  depth=128 | rate=  1/s | burst=N/A | steady-state QKD=100.00% | failures=0
+  depth=128 | rate=  1/s | burst=N/A | steady-state QKD=100.00% | failures=0
+  depth= 16 | rate=  5/s | burst=14.80s (theory 14.63s) | steady-state QKD= 78.33% | failures=65
+  depth= 16 | rate=  5/s | burst=14.80s (theory 14.63s) | steady-state QKD= 78.33% | failures=65
+  depth= 16 | rate=  5/s | burst=14.80s (theory 14.63s) | steady-state QKD= 78.33% | failures=65
+  depth= 16 | rate=  5/s | burst=14.80s (theory 14.63s) | steady-state QKD= 78.33% | failures=65
+  depth= 16 | rate=  5/s | burst=14.80s (theory 14.63s) | steady-state QKD= 78.33% | failures=65
+  depth= 64 | rate=  5/s | burst=58.60s (theory 58.51s) | steady-state QKD= 78.33% | failures=65
+  depth= 64 | rate=  5/s | burst=58.60s (theory 58.51s) | steady-state QKD= 78.33% | failures=65
+  depth= 64 | rate=  5/s | burst=58.60s (theory 58.51s) | steady-state QKD= 78.33% | failures=65
+  depth= 64 | rate=  5/s | burst=58.60s (theory 58.51s) | steady-state QKD= 78.33% | failures=65
+  depth= 64 | rate=  5/s | burst=58.60s (theory 58.51s) | steady-state QKD= 78.33% | failures=65
+  depth=128 | rate=  5/s | burst=117.20s (theory 117.03s) | steady-state QKD= 78.33% | failures=65
+  depth=128 | rate=  5/s | burst=117.20s (theory 117.03s) | steady-state QKD= 78.33% | failures=65
+  depth=128 | rate=  5/s | burst=117.20s (theory 117.03s) | steady-state QKD= 78.33% | failures=65
+  depth=128 | rate=  5/s | burst=117.20s (theory 117.03s) | steady-state QKD= 78.33% | failures=65
+  depth=128 | rate=  5/s | burst=117.20s (theory 117.03s) | steady-state QKD= 78.33% | failures=65
+  depth= 16 | rate= 10/s | burst=2.70s (theory 2.63s) | steady-state QKD= 39.00% | failures=366
+  depth= 16 | rate= 10/s | burst=2.70s (theory 2.63s) | steady-state QKD= 39.00% | failures=366
+  depth= 16 | rate= 10/s | burst=2.70s (theory 2.63s) | steady-state QKD= 39.00% | failures=366
+  depth= 16 | rate= 10/s | burst=2.70s (theory 2.63s) | steady-state QKD= 39.00% | failures=366
+  depth= 16 | rate= 10/s | burst=2.70s (theory 2.63s) | steady-state QKD= 39.00% | failures=366
+  depth= 64 | rate= 10/s | burst=10.60s (theory 10.50s) | steady-state QKD= 39.00% | failures=366
+  depth= 64 | rate= 10/s | burst=10.60s (theory 10.50s) | steady-state QKD= 39.00% | failures=366
+  depth= 64 | rate= 10/s | burst=10.60s (theory 10.50s) | steady-state QKD= 39.00% | failures=366
+  depth= 64 | rate= 10/s | burst=10.60s (theory 10.50s) | steady-state QKD= 39.00% | failures=366
+  depth= 64 | rate= 10/s | burst=10.60s (theory 10.50s) | steady-state QKD= 39.00% | failures=366
+  depth=128 | rate= 10/s | burst=21.10s (theory 21.01s) | steady-state QKD= 39.00% | failures=366
+  depth=128 | rate= 10/s | burst=21.10s (theory 21.01s) | steady-state QKD= 39.00% | failures=366
+  depth=128 | rate= 10/s | burst=21.10s (theory 21.01s) | steady-state QKD= 39.00% | failures=366
+  depth=128 | rate= 10/s | burst=21.10s (theory 21.01s) | steady-state QKD= 39.00% | failures=366
+  depth=128 | rate= 10/s | burst=21.10s (theory 21.01s) | steady-state QKD= 39.00% | failures=366
+  depth= 16 | rate= 20/s | burst=1.00s (theory 0.99s) | steady-state QKD= 19.58% | failures=965
+  depth= 16 | rate= 20/s | burst=1.00s (theory 0.99s) | steady-state QKD= 19.58% | failures=965
+  depth= 16 | rate= 20/s | burst=1.00s (theory 0.99s) | steady-state QKD= 19.58% | failures=965
+  depth= 16 | rate= 20/s | burst=1.00s (theory 0.99s) | steady-state QKD= 19.58% | failures=965
+  depth= 16 | rate= 20/s | burst=1.00s (theory 0.99s) | steady-state QKD= 19.58% | failures=965
+  depth= 64 | rate= 20/s | burst=4.00s (theory 3.98s) | steady-state QKD= 19.50% | failures=966
+  depth= 64 | rate= 20/s | burst=4.00s (theory 3.98s) | steady-state QKD= 19.50% | failures=966
+  depth= 64 | rate= 20/s | burst=4.00s (theory 3.98s) | steady-state QKD= 19.50% | failures=966
+  depth= 64 | rate= 20/s | burst=4.00s (theory 3.98s) | steady-state QKD= 19.50% | failures=966
+  depth= 64 | rate= 20/s | burst=4.00s (theory 3.98s) | steady-state QKD= 19.50% | failures=966
+  depth=128 | rate= 20/s | burst=8.00s (theory 7.95s) | steady-state QKD= 19.50% | failures=966
+  depth=128 | rate= 20/s | burst=8.00s (theory 7.95s) | steady-state QKD= 19.50% | failures=966
+  depth=128 | rate= 20/s | burst=8.00s (theory 7.95s) | steady-state QKD= 19.50% | failures=966
+  depth=128 | rate= 20/s | burst=8.00s (theory 7.95s) | steady-state QKD= 19.50% | failures=966
+  depth=128 | rate= 20/s | burst=8.00s (theory 7.95s) | steady-state QKD= 19.50% | failures=966
+  depth= 16 | rate= 50/s | burst=0.36s (theory 0.35s) | steady-state QKD=  7.80% | failures=2766
+  depth= 16 | rate= 50/s | burst=0.36s (theory 0.35s) | steady-state QKD=  7.80% | failures=2766
+  depth= 16 | rate= 50/s | burst=0.36s (theory 0.35s) | steady-state QKD=  7.80% | failures=2766
+  depth= 16 | rate= 50/s | burst=0.36s (theory 0.35s) | steady-state QKD=  7.80% | failures=2766
+  depth= 16 | rate= 50/s | burst=0.36s (theory 0.35s) | steady-state QKD=  7.80% | failures=2766
+  depth= 64 | rate= 50/s | burst=1.40s (theory 1.39s) | steady-state QKD=  7.80% | failures=2766
+  depth= 64 | rate= 50/s | burst=1.40s (theory 1.39s) | steady-state QKD=  7.80% | failures=2766
+  depth= 64 | rate= 50/s | burst=1.40s (theory 1.39s) | steady-state QKD=  7.80% | failures=2766
+  depth= 64 | rate= 50/s | burst=1.40s (theory 1.39s) | steady-state QKD=  7.80% | failures=2766
+  depth= 64 | rate= 50/s | burst=1.40s (theory 1.39s) | steady-state QKD=  7.80% | failures=2766
+  depth=128 | rate= 50/s | burst=2.78s (theory 2.78s) | steady-state QKD=  7.83% | failures=2765
+  depth=128 | rate= 50/s | burst=2.78s (theory 2.78s) | steady-state QKD=  7.83% | failures=2765
+  depth=128 | rate= 50/s | burst=2.78s (theory 2.78s) | steady-state QKD=  7.83% | failures=2765
+  depth=128 | rate= 50/s | burst=2.78s (theory 2.78s) | steady-state QKD=  7.83% | failures=2765
+  depth=128 | rate= 50/s | burst=2.78s (theory 2.78s) | steady-state QKD=  7.83% | failures=2765
+  depth= 16 | rate=100/s | burst=0.17s (theory 0.17s) | steady-state QKD=  3.92% | failures=5765
+  depth= 16 | rate=100/s | burst=0.17s (theory 0.17s) | steady-state QKD=  3.92% | failures=5765
+  depth= 16 | rate=100/s | burst=0.17s (theory 0.17s) | steady-state QKD=  3.92% | failures=5765
+  depth= 16 | rate=100/s | burst=0.17s (theory 0.17s) | steady-state QKD=  3.92% | failures=5765
+  depth= 16 | rate=100/s | burst=0.17s (theory 0.17s) | steady-state QKD=  3.92% | failures=5765
+  depth= 64 | rate=100/s | burst=0.67s (theory 0.67s) | steady-state QKD=  3.90% | failures=5766
+  depth= 64 | rate=100/s | burst=0.67s (theory 0.67s) | steady-state QKD=  3.90% | failures=5766
+  depth= 64 | rate=100/s | burst=0.67s (theory 0.67s) | steady-state QKD=  3.90% | failures=5766
+  depth= 64 | rate=100/s | burst=0.67s (theory 0.67s) | steady-state QKD=  3.90% | failures=5766
+  depth= 64 | rate=100/s | burst=0.67s (theory 0.67s) | steady-state QKD=  3.90% | failures=5766
+  depth=128 | rate=100/s | burst=1.34s (theory 1.33s) | steady-state QKD=  3.90% | failures=5766
+  depth=128 | rate=100/s | burst=1.34s (theory 1.33s) | steady-state QKD=  3.90% | failures=5766
+  depth=128 | rate=100/s | burst=1.34s (theory 1.33s) | steady-state QKD=  3.90% | failures=5766
+  depth=128 | rate=100/s | burst=1.34s (theory 1.33s) | steady-state QKD=  3.90% | failures=5766
+  depth=128 | rate=100/s | burst=1.34s (theory 1.33s) | steady-state QKD=  3.90% | failures=5766
+
+QKD supply: 10 kbps (39.06250 keys/s)
+  depth= 16 | rate=  1/s | burst=N/A | steady-state QKD=100.00% | failures=0
+  depth= 16 | rate=  1/s | burst=N/A | steady-state QKD=100.00% | failures=0
+  depth= 16 | rate=  1/s | burst=N/A | steady-state QKD=100.00% | failures=0
+  depth= 16 | rate=  1/s | burst=N/A | steady-state QKD=100.00% | failures=0
+  depth= 16 | rate=  1/s | burst=N/A | steady-state QKD=100.00% | failures=0
+  depth= 64 | rate=  1/s | burst=N/A | steady-state QKD=100.00% | failures=0
+  depth= 64 | rate=  1/s | burst=N/A | steady-state QKD=100.00% | failures=0
+  depth= 64 | rate=  1/s | burst=N/A | steady-state QKD=100.00% | failures=0
+  depth= 64 | rate=  1/s | burst=N/A | steady-state QKD=100.00% | failures=0
+  depth= 64 | rate=  1/s | burst=N/A | steady-state QKD=100.00% | failures=0
+  depth=128 | rate=  1/s | burst=N/A | steady-state QKD=100.00% | failures=0
+  depth=128 | rate=  1/s | burst=N/A | steady-state QKD=100.00% | failures=0
+  depth=128 | rate=  1/s | burst=N/A | steady-state QKD=100.00% | failures=0
+  depth=128 | rate=  1/s | burst=N/A | steady-state QKD=100.00% | failures=0
+  depth=128 | rate=  1/s | burst=N/A | steady-state QKD=100.00% | failures=0
+  depth= 16 | rate=  5/s | burst=N/A | steady-state QKD=100.00% | failures=0
+  depth= 16 | rate=  5/s | burst=N/A | steady-state QKD=100.00% | failures=0
+  depth= 16 | rate=  5/s | burst=N/A | steady-state QKD=100.00% | failures=0
+  depth= 16 | rate=  5/s | burst=N/A | steady-state QKD=100.00% | failures=0
+  depth= 16 | rate=  5/s | burst=N/A | steady-state QKD=100.00% | failures=0
+  depth= 64 | rate=  5/s | burst=N/A | steady-state QKD=100.00% | failures=0
+  depth= 64 | rate=  5/s | burst=N/A | steady-state QKD=100.00% | failures=0
+  depth= 64 | rate=  5/s | burst=N/A | steady-state QKD=100.00% | failures=0
+  depth= 64 | rate=  5/s | burst=N/A | steady-state QKD=100.00% | failures=0
+  depth= 64 | rate=  5/s | burst=N/A | steady-state QKD=100.00% | failures=0
+  depth=128 | rate=  5/s | burst=N/A | steady-state QKD=100.00% | failures=0
+  depth=128 | rate=  5/s | burst=N/A | steady-state QKD=100.00% | failures=0
+  depth=128 | rate=  5/s | burst=N/A | steady-state QKD=100.00% | failures=0
+  depth=128 | rate=  5/s | burst=N/A | steady-state QKD=100.00% | failures=0
+  depth=128 | rate=  5/s | burst=N/A | steady-state QKD=100.00% | failures=0
+  depth= 16 | rate= 10/s | burst=N/A | steady-state QKD=100.00% | failures=0
+  depth= 16 | rate= 10/s | burst=N/A | steady-state QKD=100.00% | failures=0
+  depth= 16 | rate= 10/s | burst=N/A | steady-state QKD=100.00% | failures=0
+  depth= 16 | rate= 10/s | burst=N/A | steady-state QKD=100.00% | failures=0
+  depth= 16 | rate= 10/s | burst=N/A | steady-state QKD=100.00% | failures=0
+  depth= 64 | rate= 10/s | burst=N/A | steady-state QKD=100.00% | failures=0
+  depth= 64 | rate= 10/s | burst=N/A | steady-state QKD=100.00% | failures=0
+  depth= 64 | rate= 10/s | burst=N/A | steady-state QKD=100.00% | failures=0
+  depth= 64 | rate= 10/s | burst=N/A | steady-state QKD=100.00% | failures=0
+  depth= 64 | rate= 10/s | burst=N/A | steady-state QKD=100.00% | failures=0
+  depth=128 | rate= 10/s | burst=N/A | steady-state QKD=100.00% | failures=0
+  depth=128 | rate= 10/s | burst=N/A | steady-state QKD=100.00% | failures=0
+  depth=128 | rate= 10/s | burst=N/A | steady-state QKD=100.00% | failures=0
+  depth=128 | rate= 10/s | burst=N/A | steady-state QKD=100.00% | failures=0
+  depth=128 | rate= 10/s | burst=N/A | steady-state QKD=100.00% | failures=0
+  depth= 16 | rate= 20/s | burst=N/A | steady-state QKD=100.00% | failures=0
+  depth= 16 | rate= 20/s | burst=N/A | steady-state QKD=100.00% | failures=0
+  depth= 16 | rate= 20/s | burst=N/A | steady-state QKD=100.00% | failures=0
+  depth= 16 | rate= 20/s | burst=N/A | steady-state QKD=100.00% | failures=0
+  depth= 16 | rate= 20/s | burst=N/A | steady-state QKD=100.00% | failures=0
+  depth= 64 | rate= 20/s | burst=N/A | steady-state QKD=100.00% | failures=0
+  depth= 64 | rate= 20/s | burst=N/A | steady-state QKD=100.00% | failures=0
+  depth= 64 | rate= 20/s | burst=N/A | steady-state QKD=100.00% | failures=0
+  depth= 64 | rate= 20/s | burst=N/A | steady-state QKD=100.00% | failures=0
+  depth= 64 | rate= 20/s | burst=N/A | steady-state QKD=100.00% | failures=0
+  depth=128 | rate= 20/s | burst=N/A | steady-state QKD=100.00% | failures=0
+  depth=128 | rate= 20/s | burst=N/A | steady-state QKD=100.00% | failures=0
+  depth=128 | rate= 20/s | burst=N/A | steady-state QKD=100.00% | failures=0
+  depth=128 | rate= 20/s | burst=N/A | steady-state QKD=100.00% | failures=0
+  depth=128 | rate= 20/s | burst=N/A | steady-state QKD=100.00% | failures=0
+  depth= 16 | rate= 50/s | burst=1.48s (theory 1.46s) | steady-state QKD= 78.13% | failures=656
+  depth= 16 | rate= 50/s | burst=1.48s (theory 1.46s) | steady-state QKD= 78.13% | failures=656
+  depth= 16 | rate= 50/s | burst=1.48s (theory 1.46s) | steady-state QKD= 78.13% | failures=656
+  depth= 16 | rate= 50/s | burst=1.48s (theory 1.46s) | steady-state QKD= 78.13% | failures=656
+  depth= 16 | rate= 50/s | burst=1.48s (theory 1.46s) | steady-state QKD= 78.13% | failures=656
+  depth= 64 | rate= 50/s | burst=5.86s (theory 5.85s) | steady-state QKD= 78.13% | failures=656
+  depth= 64 | rate= 50/s | burst=5.86s (theory 5.85s) | steady-state QKD= 78.13% | failures=656
+  depth= 64 | rate= 50/s | burst=5.86s (theory 5.85s) | steady-state QKD= 78.13% | failures=656
+  depth= 64 | rate= 50/s | burst=5.86s (theory 5.85s) | steady-state QKD= 78.13% | failures=656
+  depth= 64 | rate= 50/s | burst=5.86s (theory 5.85s) | steady-state QKD= 78.13% | failures=656
+  depth=128 | rate= 50/s | burst=11.72s (theory 11.70s) | steady-state QKD= 78.13% | failures=656
+  depth=128 | rate= 50/s | burst=11.72s (theory 11.70s) | steady-state QKD= 78.13% | failures=656
+  depth=128 | rate= 50/s | burst=11.72s (theory 11.70s) | steady-state QKD= 78.13% | failures=656
+  depth=128 | rate= 50/s | burst=11.72s (theory 11.70s) | steady-state QKD= 78.13% | failures=656
+  depth=128 | rate= 50/s | burst=11.72s (theory 11.70s) | steady-state QKD= 78.13% | failures=656
+  depth= 16 | rate=100/s | burst=0.27s (theory 0.26s) | steady-state QKD= 39.07% | failures=3656
+  depth= 16 | rate=100/s | burst=0.27s (theory 0.26s) | steady-state QKD= 39.07% | failures=3656
+  depth= 16 | rate=100/s | burst=0.27s (theory 0.26s) | steady-state QKD= 39.07% | failures=3656
+  depth= 16 | rate=100/s | burst=0.27s (theory 0.26s) | steady-state QKD= 39.07% | failures=3656
+  depth= 16 | rate=100/s | burst=0.27s (theory 0.26s) | steady-state QKD= 39.07% | failures=3656
+  depth= 64 | rate=100/s | burst=1.06s (theory 1.05s) | steady-state QKD= 39.07% | failures=3656
+  depth= 64 | rate=100/s | burst=1.06s (theory 1.05s) | steady-state QKD= 39.07% | failures=3656
+  depth= 64 | rate=100/s | burst=1.06s (theory 1.05s) | steady-state QKD= 39.07% | failures=3656
+  depth= 64 | rate=100/s | burst=1.06s (theory 1.05s) | steady-state QKD= 39.07% | failures=3656
+  depth= 64 | rate=100/s | burst=1.06s (theory 1.05s) | steady-state QKD= 39.07% | failures=3656
+  depth=128 | rate=100/s | burst=2.11s (theory 2.10s) | steady-state QKD= 39.07% | failures=3656
+  depth=128 | rate=100/s | burst=2.11s (theory 2.10s) | steady-state QKD= 39.07% | failures=3656
+  depth=128 | rate=100/s | burst=2.11s (theory 2.10s) | steady-state QKD= 39.07% | failures=3656
+  depth=128 | rate=100/s | burst=2.11s (theory 2.10s) | steady-state QKD= 39.07% | failures=3656
+  depth=128 | rate=100/s | burst=2.11s (theory 2.10s) | steady-state QKD= 39.07% | failures=3656
+
+QKD supply: 100 kbps (390.62500 keys/s)
+  depth= 16 | rate=  1/s | burst=N/A | steady-state QKD=100.00% | failures=0
+  depth= 16 | rate=  1/s | burst=N/A | steady-state QKD=100.00% | failures=0
+  depth= 16 | rate=  1/s | burst=N/A | steady-state QKD=100.00% | failures=0
+  depth= 16 | rate=  1/s | burst=N/A | steady-state QKD=100.00% | failures=0
+  depth= 16 | rate=  1/s | burst=N/A | steady-state QKD=100.00% | failures=0
+  depth= 64 | rate=  1/s | burst=N/A | steady-state QKD=100.00% | failures=0
+  depth= 64 | rate=  1/s | burst=N/A | steady-state QKD=100.00% | failures=0
+  depth= 64 | rate=  1/s | burst=N/A | steady-state QKD=100.00% | failures=0
+  depth= 64 | rate=  1/s | burst=N/A | steady-state QKD=100.00% | failures=0
+  depth= 64 | rate=  1/s | burst=N/A | steady-state QKD=100.00% | failures=0
+  depth=128 | rate=  1/s | burst=N/A | steady-state QKD=100.00% | failures=0
+  depth=128 | rate=  1/s | burst=N/A | steady-state QKD=100.00% | failures=0
+  depth=128 | rate=  1/s | burst=N/A | steady-state QKD=100.00% | failures=0
+  depth=128 | rate=  1/s | burst=N/A | steady-state QKD=100.00% | failures=0
+  depth=128 | rate=  1/s | burst=N/A | steady-state QKD=100.00% | failures=0
+  depth= 16 | rate=  5/s | burst=N/A | steady-state QKD=100.00% | failures=0
+  depth= 16 | rate=  5/s | burst=N/A | steady-state QKD=100.00% | failures=0
+  depth= 16 | rate=  5/s | burst=N/A | steady-state QKD=100.00% | failures=0
+  depth= 16 | rate=  5/s | burst=N/A | steady-state QKD=100.00% | failures=0
+  depth= 16 | rate=  5/s | burst=N/A | steady-state QKD=100.00% | failures=0
+  depth= 64 | rate=  5/s | burst=N/A | steady-state QKD=100.00% | failures=0
+  depth= 64 | rate=  5/s | burst=N/A | steady-state QKD=100.00% | failures=0
+  depth= 64 | rate=  5/s | burst=N/A | steady-state QKD=100.00% | failures=0
+  depth= 64 | rate=  5/s | burst=N/A | steady-state QKD=100.00% | failures=0
+  depth= 64 | rate=  5/s | burst=N/A | steady-state QKD=100.00% | failures=0
+  depth=128 | rate=  5/s | burst=N/A | steady-state QKD=100.00% | failures=0
+  depth=128 | rate=  5/s | burst=N/A | steady-state QKD=100.00% | failures=0
+  depth=128 | rate=  5/s | burst=N/A | steady-state QKD=100.00% | failures=0
+  depth=128 | rate=  5/s | burst=N/A | steady-state QKD=100.00% | failures=0
+  depth=128 | rate=  5/s | burst=N/A | steady-state QKD=100.00% | failures=0
+  depth= 16 | rate= 10/s | burst=N/A | steady-state QKD=100.00% | failures=0
+  depth= 16 | rate= 10/s | burst=N/A | steady-state QKD=100.00% | failures=0
+  depth= 16 | rate= 10/s | burst=N/A | steady-state QKD=100.00% | failures=0
+  depth= 16 | rate= 10/s | burst=N/A | steady-state QKD=100.00% | failures=0
+  depth= 16 | rate= 10/s | burst=N/A | steady-state QKD=100.00% | failures=0
+  depth= 64 | rate= 10/s | burst=N/A | steady-state QKD=100.00% | failures=0
+  depth= 64 | rate= 10/s | burst=N/A | steady-state QKD=100.00% | failures=0
+  depth= 64 | rate= 10/s | burst=N/A | steady-state QKD=100.00% | failures=0
+  depth= 64 | rate= 10/s | burst=N/A | steady-state QKD=100.00% | failures=0
+  depth= 64 | rate= 10/s | burst=N/A | steady-state QKD=100.00% | failures=0
+  depth=128 | rate= 10/s | burst=N/A | steady-state QKD=100.00% | failures=0
+  depth=128 | rate= 10/s | burst=N/A | steady-state QKD=100.00% | failures=0
+  depth=128 | rate= 10/s | burst=N/A | steady-state QKD=100.00% | failures=0
+  depth=128 | rate= 10/s | burst=N/A | steady-state QKD=100.00% | failures=0
+  depth=128 | rate= 10/s | burst=N/A | steady-state QKD=100.00% | failures=0
+  depth= 16 | rate= 20/s | burst=N/A | steady-state QKD=100.00% | failures=0
+  depth= 16 | rate= 20/s | burst=N/A | steady-state QKD=100.00% | failures=0
+  depth= 16 | rate= 20/s | burst=N/A | steady-state QKD=100.00% | failures=0
+  depth= 16 | rate= 20/s | burst=N/A | steady-state QKD=100.00% | failures=0
+  depth= 16 | rate= 20/s | burst=N/A | steady-state QKD=100.00% | failures=0
+  depth= 64 | rate= 20/s | burst=N/A | steady-state QKD=100.00% | failures=0
+  depth= 64 | rate= 20/s | burst=N/A | steady-state QKD=100.00% | failures=0
+  depth= 64 | rate= 20/s | burst=N/A | steady-state QKD=100.00% | failures=0
+  depth= 64 | rate= 20/s | burst=N/A | steady-state QKD=100.00% | failures=0
+  depth= 64 | rate= 20/s | burst=N/A | steady-state QKD=100.00% | failures=0
+  depth=128 | rate= 20/s | burst=N/A | steady-state QKD=100.00% | failures=0
+  depth=128 | rate= 20/s | burst=N/A | steady-state QKD=100.00% | failures=0
+  depth=128 | rate= 20/s | burst=N/A | steady-state QKD=100.00% | failures=0
+  depth=128 | rate= 20/s | burst=N/A | steady-state QKD=100.00% | failures=0
+  depth=128 | rate= 20/s | burst=N/A | steady-state QKD=100.00% | failures=0
+  depth= 16 | rate= 50/s | burst=N/A | steady-state QKD=100.00% | failures=0
+  depth= 16 | rate= 50/s | burst=N/A | steady-state QKD=100.00% | failures=0
+  depth= 16 | rate= 50/s | burst=N/A | steady-state QKD=100.00% | failures=0
+  depth= 16 | rate= 50/s | burst=N/A | steady-state QKD=100.00% | failures=0
+  depth= 16 | rate= 50/s | burst=N/A | steady-state QKD=100.00% | failures=0
+  depth= 64 | rate= 50/s | burst=N/A | steady-state QKD=100.00% | failures=0
+  depth= 64 | rate= 50/s | burst=N/A | steady-state QKD=100.00% | failures=0
+  depth= 64 | rate= 50/s | burst=N/A | steady-state QKD=100.00% | failures=0
+  depth= 64 | rate= 50/s | burst=N/A | steady-state QKD=100.00% | failures=0
+  depth= 64 | rate= 50/s | burst=N/A | steady-state QKD=100.00% | failures=0
+  depth=128 | rate= 50/s | burst=N/A | steady-state QKD=100.00% | failures=0
+  depth=128 | rate= 50/s | burst=N/A | steady-state QKD=100.00% | failures=0
+  depth=128 | rate= 50/s | burst=N/A | steady-state QKD=100.00% | failures=0
+  depth=128 | rate= 50/s | burst=N/A | steady-state QKD=100.00% | failures=0
+  depth=128 | rate= 50/s | burst=N/A | steady-state QKD=100.00% | failures=0
+  depth= 16 | rate=100/s | burst=N/A | steady-state QKD=100.00% | failures=0
+  depth= 16 | rate=100/s | burst=N/A | steady-state QKD=100.00% | failures=0
+  depth= 16 | rate=100/s | burst=N/A | steady-state QKD=100.00% | failures=0
+  depth= 16 | rate=100/s | burst=N/A | steady-state QKD=100.00% | failures=0
+  depth= 16 | rate=100/s | burst=N/A | steady-state QKD=100.00% | failures=0
+  depth= 64 | rate=100/s | burst=N/A | steady-state QKD=100.00% | failures=0
+  depth= 64 | rate=100/s | burst=N/A | steady-state QKD=100.00% | failures=0
+  depth= 64 | rate=100/s | burst=N/A | steady-state QKD=100.00% | failures=0
+  depth= 64 | rate=100/s | burst=N/A | steady-state QKD=100.00% | failures=0
+  depth= 64 | rate=100/s | burst=N/A | steady-state QKD=100.00% | failures=0
+  depth=128 | rate=100/s | burst=N/A | steady-state QKD=100.00% | failures=0
+  depth=128 | rate=100/s | burst=N/A | steady-state QKD=100.00% | failures=0
+  depth=128 | rate=100/s | burst=N/A | steady-state QKD=100.00% | failures=0
+  depth=128 | rate=100/s | burst=N/A | steady-state QKD=100.00% | failures=0
+  depth=128 | rate=100/s | burst=N/A | steady-state QKD=100.00% | failures=0
+
+Corrected starvation results written to: results/bottleneck_steady_state.csv

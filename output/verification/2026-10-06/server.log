@@ -1,0 +1,21 @@
+INFO:     Started server process [16427]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:51834 (Press CTRL+C to quit)
+INFO:     127.0.0.1:51837 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51838 - "GET /api/v1/keys/bob/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51839 - "POST /api/v1/keys/bob/enc_keys HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51840 - "POST /api/v1/keys/alice/dec_keys HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51841 - "GET /api/v1/keys/bob/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51842 - "POST /api/v1/keys/bob/enc_keys HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51843 - "POST /api/v1/keys/alice/dec_keys HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51844 - "GET /api/v1/keys/bob/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51845 - "POST /api/v1/keys/bob/enc_keys HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51846 - "POST /api/v1/keys/alice/dec_keys HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51847 - "GET /api/v1/keys/bob/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51848 - "POST /api/v1/keys/bob/enc_keys HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51849 - "POST /api/v1/keys/alice/dec_keys HTTP/1.1" 200 OK
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [16427]

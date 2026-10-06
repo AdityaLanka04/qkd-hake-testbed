@@ -1,0 +1,18 @@
+{"duration_ms": 19.249, "event": "rejected", "mode": null, "reason": "connection_closed", "role": "bob", "time": "2026-10-06T17:15:31.952863+00:00"}
+{"duration_ms": 11.114, "event": "rejected", "mode": null, "reason": "connection_closed", "role": "bob", "time": "2026-10-06T17:15:32.074988+00:00"}
+{"duration_ms": 8.404, "event": "rejected", "mode": null, "reason": "connection_closed", "role": "bob", "time": "2026-10-06T17:15:32.604187+00:00"}
+{"duration_ms": 7.958, "event": "rejected", "mode": null, "reason": "connection_closed", "role": "bob", "time": "2026-10-06T17:15:33.132510+00:00"}
+{"duration_ms": 5.671, "event": "rejected", "mode": null, "reason": "connection_closed", "role": "bob", "time": "2026-10-06T17:15:33.652371+00:00"}
+{"duration_ms": 7.471, "event": "rejected", "mode": null, "reason": "connection_closed", "role": "bob", "time": "2026-10-06T17:15:34.182704+00:00"}
+{"duration_ms": 7.823, "event": "rejected", "mode": null, "reason": "connection_closed", "role": "bob", "time": "2026-10-06T17:15:34.711013+00:00"}
+{"duration_ms": 7.921, "event": "rejected", "mode": null, "reason": "connection_closed", "role": "bob", "time": "2026-10-06T17:15:35.238934+00:00"}
+{"duration_ms": 7.918, "event": "rejected", "mode": null, "reason": "connection_closed", "role": "bob", "time": "2026-10-06T17:15:35.765007+00:00"}
+{"duration_ms": 8.252, "event": "rejected", "mode": null, "reason": "connection_closed", "role": "bob", "time": "2026-10-06T17:15:36.295595+00:00"}
+{"duration_ms": 11.603, "event": "rejected", "mode": null, "reason": "connection_closed", "role": "bob", "time": "2026-10-06T17:15:36.826362+00:00"}
+{"duration_ms": 8.163, "event": "rejected", "mode": null, "reason": "connection_closed", "role": "bob", "time": "2026-10-06T17:15:37.352108+00:00"}
+{"duration_ms": 5.603, "event": "rejected", "mode": null, "reason": "connection_closed", "role": "bob", "time": "2026-10-06T17:15:37.872666+00:00"}
+{"duration_ms": 7.79, "event": "rejected", "mode": null, "reason": "connection_closed", "role": "bob", "time": "2026-10-06T17:15:38.400038+00:00"}
+{"duration_ms": 8.236, "event": "rejected", "mode": null, "reason": "connection_closed", "role": "bob", "time": "2026-10-06T17:15:38.927213+00:00"}
+{"duration_ms": 7.984, "event": "rejected", "mode": null, "reason": "connection_closed", "role": "bob", "time": "2026-10-06T17:15:39.451572+00:00"}
+{"bytes": 80823, "confirmed": true, "event": "session_confirmed", "filename": "research-dataset.csv", "handshake_id": "39fc80053ee04e4c", "mode": "HYBRID_QKD", "policy": "hybrid-required", "role": "bob", "time": "2026-10-06T17:15:40.015596+00:00", "transfer_id": "8eabed21-6aa8-4b70-9995-74e161662f49"}
+{"bytes": 80823, "duration_ms": 48.503, "event": "delivered", "filename": "research-dataset.csv", "mode": "HYBRID_QKD", "policy": "hybrid-required", "reason": "aead_and_digest_verified", "role": "bob", "saved_as": "8eabed21-6aa8-4b70-9995-74e161662f49-research-dataset.csv", "time": "2026-10-06T17:15:40.016801+00:00", "transfer_id": "8eabed21-6aa8-4b70-9995-74e161662f49"}

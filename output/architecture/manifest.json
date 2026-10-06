@@ -1,0 +1,42 @@
+{
+  "source_revision": "2ba1ede",
+  "inspection_date": "2026-10-06",
+  "pdf": "output/pdf/qkd_hake_architecture_atlas.pdf",
+  "figures": [
+    "01_system_architecture.svg",
+    "02_protocol_and_key_schedule.svg",
+    "03_kme_and_pool_accounting.svg",
+    "04_policy_and_security_modes.svg",
+    "05_experiment_and_measurement_architecture.svg",
+    "06_traceability_and_research_boundaries.svg"
+  ],
+  "sources": [
+    "src/qkd_hake/__init__.py",
+    "src/qkd_hake/benchmarks/__init__.py",
+    "src/qkd_hake/benchmarks/plot_performance_figures.py",
+    "src/qkd_hake/benchmarks/plot_wp6.py",
+    "src/qkd_hake/benchmarks/runner.py",
+    "src/qkd_hake/benchmarks/suite.py",
+    "src/qkd_hake/cli.py",
+    "src/qkd_hake/crypto/__init__.py",
+    "src/qkd_hake/crypto/kdf.py",
+    "src/qkd_hake/crypto/kem.py",
+    "src/qkd_hake/crypto/store.py",
+    "src/qkd_hake/mitigations/__init__.py",
+    "src/qkd_hake/mitigations/mitigations.py",
+    "src/qkd_hake/protocol/__init__.py",
+    "src/qkd_hake/protocol/combiner.py",
+    "src/qkd_hake/protocol/hake.py",
+    "src/qkd_hake/qkd_mock/__init__.py",
+    "src/qkd_hake/qkd_mock/client.py",
+    "src/qkd_hake/qkd_mock/models.py",
+    "src/qkd_hake/qkd_mock/pool.py",
+    "src/qkd_hake/qkd_mock/server.py",
+    "src/qkd_hake/settings.py"
+  ],
+  "references": {
+    "R1": "https://eprint.iacr.org/2026/1231",
+    "R2": "https://www.etsi.org/deliver/etsi_gs/QKD/001_099/014/01.01.01_60/gs_QKD014v010101p.pdf"
+  },
+  "scope": "Repository implementation and separately identified modeling assumptions; not a proof or a claim of exact paper conformance."
+}

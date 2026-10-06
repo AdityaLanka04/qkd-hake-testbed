@@ -1,0 +1,6 @@
+QUEUED e2a097c4-9f34-40c8-bd8c-23dc77363e20 | research-dataset.csv | hybrid-required
+{"available_keys": 8, "capacity": 8, "event": "pool_status", "occupancy_percent": 100.0, "reason": "status_available", "role": "alice", "time": "2026-10-06T17:15:30.049734+00:00"}
+liboqs-python faulthandler is disabled
+{"attempt_id": "d89ad84d8c635a16", "attempts": 1, "bytes": 80823, "event": "handshake_started", "filename": "research-dataset.csv", "policy": "hybrid-required", "role": "alice", "time": "2026-10-06T17:15:30.057496+00:00", "transfer_id": "e2a097c4-9f34-40c8-bd8c-23dc77363e20"}
+{"algorithm": "ML-KEM-768", "attempts": 1, "bytes": 80823, "confirmed": true, "event": "session_confirmed", "filename": "research-dataset.csv", "handshake_id": "8004d349b2fa6dd5", "mode": "HYBRID_QKD", "policy": "hybrid-required", "reason": "qkd_available", "role": "alice", "time": "2026-10-06T17:15:30.094415+00:00", "transfer_id": "e2a097c4-9f34-40c8-bd8c-23dc77363e20"}
+{"attempts": 1, "bytes": 80823, "duration_ms": 66.593, "event": "delivered", "filename": "research-dataset.csv", "mode": "HYBRID_QKD", "policy": "hybrid-required", "reason": "qkd_available", "role": "alice", "saved_as": "e2a097c4-9f34-40c8-bd8c-23dc77363e20-research-dataset.csv", "state": "DELIVERED", "time": "2026-10-06T17:15:30.096114+00:00", "transfer_id": "e2a097c4-9f34-40c8-bd8c-23dc77363e20"}

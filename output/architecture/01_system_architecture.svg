@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg
+  PUBLIC '-//W3C//DTD SVG 1.0//EN'
+  'http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd'>
+<svg width="1440" height="1080" preserveAspectRatio="xMinYMin meet" viewBox="0 0 1440 1080" xmlns="http://www.w3.org/2000/svg" version="1.0" fill-rule="evenodd" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<title>...</title>
+	<desc>...</desc>
+	<clipPath id="clip">
+		<rect x="0" y="0" width="1440" height="1080"/>
+	</clipPath>
+	<g id="group" transform="scale(1,-1) translate(0,-1080)" style="clip-path: url(#clip)">
+		<g transform="">
+			<rect x="0" y="0" width="1440" height="1080" style="stroke: rgb(100%,100%,100%); stroke-linecap: butt; stroke-width: 1; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<text x="42" y="1046" style="font-family: Helvetica-Bold; font-size: 12px;fill: rgb(14%,36%,54%); stroke:none;" transform="translate(0,2092) scale(1,-1)">QKD / PQC  RESEARCH TESTBED</text>
+			<text x="1232.628" y="1046" style="font-family: Helvetica; font-size: 12px;fill: rgb(32%,39%,45%); stroke:none;" transform="translate(0,2092) scale(1,-1)">ARCHITECTURE ATLAS  /  01</text>
+			<text x="42" y="997" style="font-family: Helvetica-Bold; font-size: 32px;fill: rgb(9%,16%,22%); stroke:none;" transform="translate(0,1994) scale(1,-1)">Hybrid QKD-PQC HAKE: system architecture</text>
+			<text x="42" y="967" style="font-family: Helvetica; font-size: 14px;fill: rgb(32%,39%,45%); stroke:none;" transform="translate(0,1934) scale(1,-1)">Implementation-grounded overview of execution paths, cryptographic dependencies, key delivery and research outputs.</text>
+			<path d="M 42,946 L 1398,946 Z" style="stroke: rgb(79%,83%,86%); stroke-linecap: butt; stroke-width: 1;"/>
+			<text x="42" y="918" style="font-family: Helvetica-Bold; font-size: 12px;fill: rgb(9%,16%,22%); stroke:none;" transform="translate(0,1836) scale(1,-1)">A  /  EXPERIMENT CONTROL AND ENTRY POINTS</text>
+			<rect x="42" y="776" width="315" height="126" style="stroke: rgb(79%,83%,86%); stroke-linecap: butt; stroke-width: 1; fill: rgb(93%,96%,98%); fill-rule: evenodd;"/>
+			<rect x="42" y="776" width="4" height="126" style="stroke: rgb(14%,36%,54%); stroke-linecap: butt; stroke-width: 1; fill: rgb(14%,36%,54%); fill-rule: evenodd;"/>
+			<text x="58" y="880" style="font-family: Helvetica-Bold; font-size: 10.5px;fill: rgb(14%,36%,54%); stroke:none;" transform="translate(0,1760) scale(1,-1)">ACTIVE</text>
+			<text x="58" y="861" style="font-family: Helvetica-Bold; font-size: 17px;fill: rgb(14%,36%,54%); stroke:none;" transform="translate(0,1722) scale(1,-1)">Command-line orchestration</text>
+			<text x="58" y="837.45" style="font-family: Helvetica; font-size: 14px;fill: rgb(9%,16%,22%); stroke:none;" transform="translate(0,1674) scale(1,-1)">server | demo | benchmark | sweep</text>
+			<text x="58" y="819.95" style="font-family: Helvetica; font-size: 14px;fill: rgb(9%,16%,22%); stroke:none;" transform="translate(0,1639) scale(1,-1)">Makefile + cli.py; Docker defaults to demo.</text>
+			<rect x="377" y="776" width="315" height="126" style="stroke: rgb(79%,83%,86%); stroke-linecap: butt; stroke-width: 1; fill: rgb(93%,96%,98%); fill-rule: evenodd;"/>
+			<rect x="377" y="776" width="4" height="126" style="stroke: rgb(14%,36%,54%); stroke-linecap: butt; stroke-width: 1; fill: rgb(14%,36%,54%); fill-rule: evenodd;"/>
+			<text x="393" y="880" style="font-family: Helvetica-Bold; font-size: 10.5px;fill: rgb(14%,36%,54%); stroke:none;" transform="translate(0,1760) scale(1,-1)">ACTIVE / PLATE 5</text>
+			<text x="393" y="861" style="font-family: Helvetica-Bold; font-size: 17px;fill: rgb(14%,36%,54%); stroke:none;" transform="translate(0,1722) scale(1,-1)">Paired handshake benchmark</text>
+			<text x="393" y="837.45" style="font-family: Helvetica; font-size: 14px;fill: rgb(9%,16%,22%); stroke:none;" transform="translate(0,1674) scale(1,-1)">4 KEMs; 1,000 pairs per algorithm;</text>
+			<text x="393" y="819.95" style="font-family: Helvetica; font-size: 14px;fill: rgb(9%,16%,22%); stroke:none;" transform="translate(0,1639) scale(1,-1)">100 warm-ups per mode; local calls.</text>
+			<rect x="712" y="776" width="315" height="126" style="stroke: rgb(79%,83%,86%); stroke-linecap: butt; stroke-width: 1; fill: rgb(93%,97%,96%); fill-rule: evenodd;"/>
+			<rect x="712" y="776" width="4" height="126" style="stroke: rgb(7%,47%,44%); stroke-linecap: butt; stroke-width: 1; fill: rgb(7%,47%,44%); fill-rule: evenodd;"/>
+			<text x="728" y="880" style="font-family: Helvetica-Bold; font-size: 10.5px;fill: rgb(7%,47%,44%); stroke:none;" transform="translate(0,1760) scale(1,-1)">ACTIVE / PLATE 5</text>
+			<text x="728" y="861" style="font-family: Helvetica-Bold; font-size: 17px;fill: rgb(7%,47%,44%); stroke:none;" transform="translate(0,1722) scale(1,-1)">Key-supply simulation</text>
+			<text x="728" y="837.45" style="font-family: Helvetica; font-size: 14px;fill: rgb(9%,16%,22%); stroke:none;" transform="translate(0,1674) scale(1,-1)">6 demand rates x 3 supply rates x</text>
+			<text x="728" y="819.95" style="font-family: Helvetica; font-size: 14px;fill: rgb(9%,16%,22%); stroke:none;" transform="translate(0,1639) scale(1,-1)">3 pool depths x 5 repeats; virtual clock.</text>
+			<text x="728" y="802.45" style="font-family: Helvetica; font-size: 14px;fill: rgb(9%,16%,22%); stroke:none;" transform="translate(0,1604) scale(1,-1)">Direct pool calls; bypasses REST.</text>
+			<rect x="1047" y="776" width="351" height="126" style="stroke: rgb(79%,83%,86%); stroke-linecap: butt; stroke-width: 1; fill: rgb(100%,97%,92%); fill-rule: evenodd;"/>
+			<rect x="1047" y="776" width="4" height="126" style="stroke: rgb(61%,39%,11%); stroke-linecap: butt; stroke-width: 1; fill: rgb(61%,39%,11%); fill-rule: evenodd;"/>
+			<text x="1063" y="880" style="font-family: Helvetica-Bold; font-size: 10.5px;fill: rgb(61%,39%,11%); stroke:none;" transform="translate(0,1760) scale(1,-1)">CONFIGS + SETTINGS</text>
+			<text x="1063" y="861" style="font-family: Helvetica-Bold; font-size: 17px;fill: rgb(61%,39%,11%); stroke:none;" transform="translate(0,1722) scale(1,-1)">Configuration surfaces</text>
+			<text x="1063" y="837.45" style="font-family: Helvetica; font-size: 14px;fill: rgb(9%,16%,22%); stroke:none;" transform="translate(0,1674) scale(1,-1)">QKD_* environment -&gt; server settings.</text>
+			<text x="1063" y="819.95" style="font-family: Helvetica; font-size: 14px;fill: rgb(9%,16%,22%); stroke:none;" transform="translate(0,1639) scale(1,-1)">CLI -&gt; experiments. JSON matrix is declarative.</text>
+			<path d="M 357,840 L 377,840 Z" style="stroke: rgb(14%,36%,54%); stroke-linecap: butt; stroke-width: 1.7;"/>
+			<polygon points="377 840, 369 843.5, 369 836.5" style="stroke: rgb(14%,36%,54%); stroke-linecap: butt; stroke-width: 1; fill: rgb(14%,36%,54%); fill-rule: evenodd;"/>
+			<path d="M 535,776 L 535,764 Z" style="stroke: rgb(14%,36%,54%); stroke-linecap: butt; stroke-width: 1.7;"/>
+			<path d="M 535,764 L 977,764 Z" style="stroke: rgb(14%,36%,54%); stroke-linecap: butt; stroke-width: 1.7;"/>
+			<path d="M 977,764 L 977,734 Z" style="stroke: rgb(14%,36%,54%); stroke-linecap: butt; stroke-width: 1.7;"/>
+			<polygon points="977 734, 980.5 742, 973.5 742" style="stroke: rgb(14%,36%,54%); stroke-linecap: butt; stroke-width: 1; fill: rgb(14%,36%,54%); fill-rule: evenodd;"/>
+			<path d="M 870,776 L 870,769 Z" style="stroke: rgb(7%,47%,44%); stroke-linecap: butt; stroke-width: 1.7;"/>
+			<path d="M 870,769 L 1415,769 Z" style="stroke: rgb(7%,47%,44%); stroke-linecap: butt; stroke-width: 1.7;"/>
+			<path d="M 1415,769 L 1415,472 Z" style="stroke: rgb(7%,47%,44%); stroke-linecap: butt; stroke-width: 1.7;"/>
+			<path d="M 1415,472 L 1398,472 Z" style="stroke: rgb(7%,47%,44%); stroke-linecap: butt; stroke-width: 1.7;"/>
+			<polygon points="1398 472, 1406 468.5, 1406 475.5" style="stroke: rgb(7%,47%,44%); stroke-linecap: butt; stroke-width: 1; fill: rgb(7%,47%,44%); fill-rule: evenodd;"/>
+			<text x="42" y="750" style="font-family: Helvetica-Bold; font-size: 12px;fill: rgb(9%,16%,22%); stroke:none;" transform="translate(0,1500) scale(1,-1)">B  /  PRIMITIVES AND IDENTITY</text>
+			<text x="377" y="750" style="font-family: Helvetica-Bold; font-size: 12px;fill: rgb(9%,16%,22%); stroke:none;" transform="translate(0,1500) scale(1,-1)">C  /  LOCAL PROTOCOL EXECUTION</text>
+			<text x="1047" y="750" style="font-family: Helvetica-Bold; font-size: 12px;fill: rgb(9%,16%,22%); stroke:none;" transform="translate(0,1500) scale(1,-1)">D  /  QKD SERVICE AND RESOURCE MODEL</text>
+			<rect x="42" y="556" width="285" height="178" style="stroke: rgb(79%,83%,86%); stroke-linecap: butt; stroke-width: 1; fill: rgb(96%,94%,97%); fill-rule: evenodd;"/>
+			<rect x="42" y="556" width="4" height="178" style="stroke: rgb(43%,32%,55%); stroke-linecap: butt; stroke-width: 1; fill: rgb(43%,32%,55%); fill-rule: evenodd;"/>
+			<text x="58" y="712" style="font-family: Helvetica-Bold; font-size: 10.5px;fill: rgb(43%,32%,55%); stroke:none;" transform="translate(0,1424) scale(1,-1)">CRYPTO/KEM.PY</text>
+			<text x="58" y="693" style="font-family: Helvetica-Bold; font-size: 17px;fill: rgb(43%,32%,55%); stroke:none;" transform="translate(0,1386) scale(1,-1)">OQSKEM adapter</text>
+			<text x="58" y="669.45" style="font-family: Helvetica; font-size: 14px;fill: rgb(9%,16%,22%); stroke:none;" transform="translate(0,1338) scale(1,-1)">liboqs-python -&gt; native liboqs</text>
+			<text x="58" y="651.95" style="font-family: Helvetica; font-size: 14px;fill: rgb(9%,16%,22%); stroke:none;" transform="translate(0,1303) scale(1,-1)">ML-KEM-512 / 768 / 1024</text>
+			<text x="58" y="634.45" style="font-family: Helvetica; font-size: 14px;fill: rgb(9%,16%,22%); stroke:none;" transform="translate(0,1268) scale(1,-1)">FrodoKEM-976-AES</text>
+			<text x="58" y="616.95" style="font-family: Helvetica; font-size: 14px;fill: rgb(9%,16%,22%); stroke:none;" transform="translate(0,1233) scale(1,-1)">KeyGen, Encaps, Decaps</text>
+			<rect x="42" y="406" width="285" height="130" style="stroke: rgb(79%,83%,86%); stroke-linecap: butt; stroke-width: 1; fill: rgb(96%,94%,97%); fill-rule: evenodd;"/>
+			<rect x="42" y="406" width="4" height="130" style="stroke: rgb(43%,32%,55%); stroke-linecap: butt; stroke-width: 1; fill: rgb(43%,32%,55%); fill-rule: evenodd;"/>
+			<text x="58" y="514" style="font-family: Helvetica-Bold; font-size: 10.5px;fill: rgb(43%,32%,55%); stroke:none;" transform="translate(0,1028) scale(1,-1)">CRYPTO/STORE.PY</text>
+			<text x="58" y="495" style="font-family: Helvetica-Bold; font-size: 17px;fill: rgb(43%,32%,55%); stroke:none;" transform="translate(0,990) scale(1,-1)">Static identity material</text>
+			<text x="58" y="471.45000000000005" style="font-family: Helvetica; font-size: 14px;fill: rgb(9%,16%,22%); stroke:none;" transform="translate(0,942) scale(1,-1)">Harness provisions both keypairs.</text>
+			<text x="58" y="453.95000000000005" style="font-family: Helvetica; font-size: 14px;fill: rgb(9%,16%,22%); stroke:none;" transform="translate(0,907) scale(1,-1)">KeyStore JSON utility exists separately;</text>
+			<text x="58" y="436.45000000000005" style="font-family: Helvetica; font-size: 14px;fill: rgb(9%,16%,22%); stroke:none;" transform="translate(0,872) scale(1,-1)">identity trust is assumed.</text>
+			<rect x="377" y="568" width="620" height="166" style="stroke: rgb(79%,83%,86%); stroke-linecap: butt; stroke-width: 1; fill: rgb(93%,96%,98%); fill-rule: evenodd;"/>
+			<rect x="377" y="568" width="4" height="166" style="stroke: rgb(14%,36%,54%); stroke-linecap: butt; stroke-width: 1; fill: rgb(14%,36%,54%); fill-rule: evenodd;"/>
+			<text x="393" y="712" style="font-family: Helvetica-Bold; font-size: 10.5px;fill: rgb(14%,36%,54%); stroke:none;" transform="translate(0,1424) scale(1,-1)">PROTOCOL/HAKE.PY / PLATE 2</text>
+			<text x="393" y="693" style="font-family: Helvetica-Bold; font-size: 20px;fill: rgb(14%,36%,54%); stroke:none;" transform="translate(0,1386) scale(1,-1)">AliceSession &lt;--&gt; BobSession</text>
+			<text x="393" y="666.0" style="font-family: Helvetica; font-size: 14px;fill: rgb(9%,16%,22%); stroke:none;" transform="translate(0,1332) scale(1,-1)">M1 (ct1, nA) -&gt; M2 (pkE, tag1, ct2, nB) -&gt; M3 (ct*, QKD ID, tag2) -&gt; M4 (tag3).</text>
+			<text x="393" y="648.5" style="font-family: Helvetica; font-size: 14px;fill: rgb(9%,16%,22%); stroke:none;" transform="translate(0,1297) scale(1,-1)">Separate logical roles execute in one process; no peer network transport is implemented.</text>
+			<path d="M 327,649 L 377,649 Z" style="stroke: rgb(43%,32%,55%); stroke-linecap: butt; stroke-width: 1.7;"/>
+			<polygon points="377 649, 369 652.5, 369 645.5" style="stroke: rgb(43%,32%,55%); stroke-linecap: butt; stroke-width: 1; fill: rgb(43%,32%,55%); fill-rule: evenodd;"/>
+			<rect x="334.0815" y="658" width="33.83699999999999" height="17" style="stroke: rgb(100%,100%,100%); stroke-linecap: butt; stroke-width: 1; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<text x="339.0815" y="662" style="font-family: Helvetica; font-size: 11px;fill: rgb(43%,32%,55%); stroke:none;" transform="translate(0,1324) scale(1,-1)">KEM</text>
+			<path d="M 327,476 L 350,476 Z" style="stroke: rgb(43%,32%,55%); stroke-linecap: butt; stroke-width: 1.7;"/>
+			<path d="M 350,476 L 350,598 Z" style="stroke: rgb(43%,32%,55%); stroke-linecap: butt; stroke-width: 1.7;"/>
+			<path d="M 350,598 L 377,598 Z" style="stroke: rgb(43%,32%,55%); stroke-linecap: butt; stroke-width: 1.7;"/>
+			<polygon points="377 598, 369 601.5, 369 594.5" style="stroke: rgb(43%,32%,55%); stroke-linecap: butt; stroke-width: 1; fill: rgb(43%,32%,55%); fill-rule: evenodd;"/>
+			<rect x="377" y="406" width="293" height="130" style="stroke: rgb(79%,83%,86%); stroke-linecap: butt; stroke-width: 1; fill: rgb(100%,97%,92%); fill-rule: evenodd;"/>
+			<rect x="377" y="406" width="4" height="130" style="stroke: rgb(61%,39%,11%); stroke-linecap: butt; stroke-width: 1; fill: rgb(61%,39%,11%); fill-rule: evenodd;"/>
+			<text x="393" y="514" style="font-family: Helvetica-Bold; font-size: 10.5px;fill: rgb(61%,39%,11%); stroke:none;" transform="translate(0,1028) scale(1,-1)">MITIGATIONS.PY / PLATE 4</text>
+			<text x="393" y="495" style="font-family: Helvetica-Bold; font-size: 17px;fill: rgb(61%,39%,11%); stroke:none;" transform="translate(0,990) scale(1,-1)">Policy gates at Alice</text>
+			<text x="393" y="471.45000000000005" style="font-family: Helvetica; font-size: 14px;fill: rgb(9%,16%,22%); stroke:none;" transform="translate(0,942) scale(1,-1)">Rate quota -&gt; occupancy floor -&gt; key</text>
+			<text x="393" y="453.95000000000005" style="font-family: Helvetica; font-size: 14px;fill: rgb(9%,16%,22%); stroke:none;" transform="translate(0,907) scale(1,-1)">request -&gt; fallback or reject.</text>
+			<text x="393" y="436.45000000000005" style="font-family: Helvetica; font-size: 14px;fill: rgb(9%,16%,22%); stroke:none;" transform="translate(0,872) scale(1,-1)">Shared manager needed across</text>
+			<text x="393" y="418.95000000000005" style="font-family: Helvetica; font-size: 14px;fill: rgb(9%,16%,22%); stroke:none;" transform="translate(0,837) scale(1,-1)">sessions.</text>
+			<rect x="690" y="406" width="307" height="130" style="stroke: rgb(79%,83%,86%); stroke-linecap: butt; stroke-width: 1; fill: rgb(96%,94%,97%); fill-rule: evenodd;"/>
+			<rect x="690" y="406" width="4" height="130" style="stroke: rgb(43%,32%,55%); stroke-linecap: butt; stroke-width: 1; fill: rgb(43%,32%,55%); fill-rule: evenodd;"/>
+			<text x="706" y="514" style="font-family: Helvetica-Bold; font-size: 10.5px;fill: rgb(43%,32%,55%); stroke:none;" transform="translate(0,1028) scale(1,-1)">CRYPTO/KDF.PY / PLATE 2</text>
+			<text x="706" y="495" style="font-family: Helvetica-Bold; font-size: 17px;fill: rgb(43%,32%,55%); stroke:none;" transform="translate(0,990) scale(1,-1)">Transcript + multi-input KDF</text>
+			<text x="706" y="471.45000000000005" style="font-family: Helvetica; font-size: 14px;fill: rgb(9%,16%,22%); stroke:none;" transform="translate(0,942) scale(1,-1)">SHA3-256 transcript hash; SHA3-512</text>
+			<text x="706" y="453.95000000000005" style="font-family: Helvetica; font-size: 14px;fill: rgb(9%,16%,22%); stroke:none;" transform="translate(0,907) scale(1,-1)">ROKDF; HMAC-SHA-256 tags.</text>
+			<text x="706" y="436.45000000000005" style="font-family: Helvetica; font-size: 14px;fill: rgb(9%,16%,22%); stroke:none;" transform="translate(0,872) scale(1,-1)">32-byte confirmation + session keys.</text>
+			<path d="M 520,568 L 520,536 Z" style="stroke: rgb(61%,39%,11%); stroke-linecap: butt; stroke-width: 1.7;"/>
+			<polygon points="520 536, 523.5 544, 516.5 544" style="stroke: rgb(61%,39%,11%); stroke-linecap: butt; stroke-width: 1; fill: rgb(61%,39%,11%); fill-rule: evenodd;"/>
+			<path d="M 845,568 L 845,536 Z" style="stroke: rgb(43%,32%,55%); stroke-linecap: butt; stroke-width: 1.7;"/>
+			<polygon points="845 536, 848.5 544, 841.5 544" style="stroke: rgb(43%,32%,55%); stroke-linecap: butt; stroke-width: 1; fill: rgb(43%,32%,55%); fill-rule: evenodd;"/>
+			<rect x="1047" y="584" width="351" height="150" style="stroke: rgb(79%,83%,86%); stroke-linecap: butt; stroke-width: 1; fill: rgb(93%,97%,96%); fill-rule: evenodd;"/>
+			<rect x="1047" y="584" width="4" height="150" style="stroke: rgb(7%,47%,44%); stroke-linecap: butt; stroke-width: 1; fill: rgb(7%,47%,44%); fill-rule: evenodd;"/>
+			<text x="1063" y="712" style="font-family: Helvetica-Bold; font-size: 10.5px;fill: rgb(7%,47%,44%); stroke:none;" transform="translate(0,1424) scale(1,-1)">CLIENT.PY + SERVER.PY + MODELS.PY</text>
+			<text x="1063" y="693" style="font-family: Helvetica-Bold; font-size: 17px;fill: rgb(7%,47%,44%); stroke:none;" transform="translate(0,1386) scale(1,-1)">ETSI 014-style REST facade</text>
+			<text x="1063" y="669.45" style="font-family: Helvetica; font-size: 14px;fill: rgb(9%,16%,22%); stroke:none;" transform="translate(0,1338) scale(1,-1)">QKDClient -&gt; HTTPX -&gt; FastAPI</text>
+			<text x="1063" y="651.95" style="font-family: Helvetica; font-size: 14px;fill: rgb(9%,16%,22%); stroke:none;" transform="translate(0,1303) scale(1,-1)">status / enc_keys / dec_keys</text>
+			<text x="1063" y="634.45" style="font-family: Helvetica; font-size: 14px;fill: rgb(9%,16%,22%); stroke:none;" transform="translate(0,1268) scale(1,-1)">X-SAE-ID identifies test callers.</text>
+			<text x="1063" y="616.95" style="font-family: Helvetica; font-size: 14px;fill: rgb(9%,16%,22%); stroke:none;" transform="translate(0,1233) scale(1,-1)">Adapter available; harness uses callbacks.</text>
+			<rect x="1047" y="406" width="351" height="130" style="stroke: rgb(79%,83%,86%); stroke-linecap: butt; stroke-width: 1; fill: rgb(93%,97%,96%); fill-rule: evenodd;"/>
+			<rect x="1047" y="406" width="4" height="130" style="stroke: rgb(7%,47%,44%); stroke-linecap: butt; stroke-width: 1; fill: rgb(7%,47%,44%); fill-rule: evenodd;"/>
+			<text x="1063" y="514" style="font-family: Helvetica-Bold; font-size: 10.5px;fill: rgb(7%,47%,44%); stroke:none;" transform="translate(0,1028) scale(1,-1)">POOL.PY / PLATE 3</text>
+			<text x="1063" y="495" style="font-family: Helvetica-Bold; font-size: 17px;fill: rgb(7%,47%,44%); stroke:none;" transform="translate(0,990) scale(1,-1)">Finite, shared QKDKeyPool</text>
+			<text x="1063" y="471.45000000000005" style="font-family: Helvetica; font-size: 14px;fill: rgb(9%,16%,22%); stroke:none;" transform="translate(0,942) scale(1,-1)">Lazy bit-rate refill; mutex; UUID key IDs;</text>
+			<text x="1063" y="453.95000000000005" style="font-family: Helvetica; font-size: 14px;fill: rgb(9%,16%,22%); stroke:none;" transform="translate(0,907) scale(1,-1)">outstanding-key ledger.</text>
+			<text x="1063" y="436.45000000000005" style="font-family: Helvetica; font-size: 14px;fill: rgb(9%,16%,22%); stroke:none;" transform="translate(0,872) scale(1,-1)">Mock bytes generated on issue.</text>
+			<path d="M 1218,584 L 1218,536 Z" style="stroke: rgb(7%,47%,44%); stroke-linecap: butt; stroke-width: 1.7;"/>
+			<polygon points="1218 536, 1221.5 544, 1214.5 544" style="stroke: rgb(7%,47%,44%); stroke-linecap: butt; stroke-width: 1; fill: rgb(7%,47%,44%); fill-rule: evenodd;"/>
+			<rect x="1216.835" y="551" width="76.32999999999993" height="17" style="stroke: rgb(100%,100%,100%); stroke-linecap: butt; stroke-width: 1; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<text x="1221.835" y="555" style="font-family: Helvetica; font-size: 11px;fill: rgb(7%,47%,44%); stroke:none;" transform="translate(0,1110) scale(1,-1)">REST -&gt; pool</text>
+			<path d="M 997,618 L 1047,618 Z" style="stroke: rgb(7%,47%,44%); stroke-linecap: butt; stroke-width: 1.7; stroke-dasharray: 5, 4;"/>
+			<polygon points="1047 618, 1039 621.5, 1039 614.5" style="stroke: rgb(7%,47%,44%); stroke-linecap: butt; stroke-width: 1; fill: rgb(7%,47%,44%); fill-rule: evenodd;"/>
+			<rect x="998.94" y="632" width="46.11999999999989" height="16" style="stroke: rgb(100%,100%,100%); stroke-linecap: butt; stroke-width: 1; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<text x="1003.94" y="636" style="font-family: Helvetica; font-size: 10px;fill: rgb(7%,47%,44%); stroke:none;" transform="translate(0,1272) scale(1,-1)">callback</text>
+			<rect x="42" y="256" width="285" height="121" style="stroke: rgb(79%,83%,86%); stroke-linecap: butt; stroke-width: 1; fill: rgb(96%,94%,97%); fill-rule: evenodd;"/>
+			<rect x="42" y="256" width="4" height="121" style="stroke: rgb(43%,32%,55%); stroke-linecap: butt; stroke-width: 1; fill: rgb(43%,32%,55%); fill-rule: evenodd;"/>
+			<text x="58" y="355" style="font-family: Helvetica-Bold; font-size: 10.5px;fill: rgb(43%,32%,55%); stroke:none;" transform="translate(0,710) scale(1,-1)">ACTIVE / 20 DEMO SAMPLES</text>
+			<text x="58" y="336" style="font-family: Helvetica-Bold; font-size: 17px;fill: rgb(43%,32%,55%); stroke:none;" transform="translate(0,672) scale(1,-1)">Independent smoke path</text>
+			<text x="58" y="312.45000000000005" style="font-family: Helvetica; font-size: 14px;fill: rgb(9%,16%,22%); stroke:none;" transform="translate(0,624) scale(1,-1)">demo -&gt; runner.py -&gt; combiner.py</text>
+			<text x="58" y="294.95000000000005" style="font-family: Helvetica; font-size: 14px;fill: rgb(9%,16%,22%); stroke:none;" transform="translate(0,589) scale(1,-1)">Labelled HKDF-SHA3-256 chain;</text>
+			<text x="58" y="277.45000000000005" style="font-family: Helvetica; font-size: 14px;fill: rgb(9%,16%,22%); stroke:none;" transform="translate(0,554) scale(1,-1)">separate from the ROKDF handshake.</text>
+			<rect x="377" y="256" width="620" height="121" style="stroke: rgb(79%,83%,86%); stroke-linecap: butt; stroke-width: 1; fill: rgb(93%,96%,98%); fill-rule: evenodd;"/>
+			<rect x="377" y="256" width="4" height="121" style="stroke: rgb(14%,36%,54%); stroke-linecap: butt; stroke-width: 1; fill: rgb(14%,36%,54%); fill-rule: evenodd;"/>
+			<text x="393" y="355" style="font-family: Helvetica-Bold; font-size: 10.5px;fill: rgb(14%,36%,54%); stroke:none;" transform="translate(0,710) scale(1,-1)">RETURN BOUNDARY</text>
+			<text x="393" y="336" style="font-family: Helvetica-Bold; font-size: 17px;fill: rgb(14%,36%,54%); stroke:none;" transform="translate(0,672) scale(1,-1)">Application-facing handshake result</text>
+			<text x="393" y="312.45000000000005" style="font-family: Helvetica; font-size: 14px;fill: rgb(9%,16%,22%); stroke:none;" transform="translate(0,624) scale(1,-1)">HandshakeResult(session_key, security_mode, transcript)</text>
+			<text x="393" y="294.95000000000005" style="font-family: Helvetica; font-size: 14px;fill: rgb(9%,16%,22%); stroke:none;" transform="translate(0,589) scale(1,-1)">Alice returns after tag3 verification; Bob returns while producing tag3.</text>
+			<text x="393" y="277.45000000000005" style="font-family: Helvetica; font-size: 14px;fill: rgb(9%,16%,22%); stroke:none;" transform="translate(0,554) scale(1,-1)">Mode distinguishes hybrid from explicit computational-only fallback.</text>
+			<path d="M 845,406 L 845,377 Z" style="stroke: rgb(43%,32%,55%); stroke-linecap: butt; stroke-width: 1.7;"/>
+			<polygon points="845 377, 848.5 385, 841.5 385" style="stroke: rgb(43%,32%,55%); stroke-linecap: butt; stroke-width: 1; fill: rgb(43%,32%,55%); fill-rule: evenodd;"/>
+			<rect x="1047" y="256" width="351" height="121" style="stroke: rgb(79%,83%,86%); stroke-linecap: butt; stroke-width: 1; fill: rgb(93%,97%,96%); fill-rule: evenodd; stroke-dasharray: 6, 4;"/>
+			<rect x="1047" y="256" width="4" height="121" style="stroke: rgb(7%,47%,44%); stroke-linecap: butt; stroke-width: 1; fill: rgb(7%,47%,44%); fill-rule: evenodd;"/>
+			<text x="1063" y="355" style="font-family: Helvetica-Bold; font-size: 10.5px;fill: rgb(7%,47%,44%); stroke:none;" transform="translate(0,710) scale(1,-1)">MODELED BOUNDARY</text>
+			<text x="1063" y="336" style="font-family: Helvetica-Bold; font-size: 17px;fill: rgb(7%,47%,44%); stroke:none;" transform="translate(0,672) scale(1,-1)">Physical QKD abstraction</text>
+			<text x="1063" y="312.45000000000005" style="font-family: Helvetica; font-size: 14px;fill: rgb(9%,16%,22%); stroke:none;" transform="translate(0,624) scale(1,-1)">One process models shared key delivery. Optical</text>
+			<text x="1063" y="294.95000000000005" style="font-family: Helvetica; font-size: 14px;fill: rgb(9%,16%,22%); stroke:none;" transform="translate(0,589) scale(1,-1)">links, paired physical KMEs and authenticated</text>
+			<text x="1063" y="277.45000000000005" style="font-family: Helvetica; font-size: 14px;fill: rgb(9%,16%,22%); stroke:none;" transform="translate(0,554) scale(1,-1)">KME channels are outside the experiment.</text>
+			<text x="42" y="227" style="font-family: Helvetica-Bold; font-size: 12px;fill: rgb(9%,16%,22%); stroke:none;" transform="translate(0,454) scale(1,-1)">E  /  MEASUREMENT AND SCIENTIFIC EVIDENCE</text>
+			<rect x="42" y="116" width="131" height="98" style="stroke: rgb(79%,83%,86%); stroke-linecap: butt; stroke-width: 1; fill: rgb(96%,94%,97%); fill-rule: evenodd;"/>
+			<rect x="42" y="116" width="4" height="98" style="stroke: rgb(43%,32%,55%); stroke-linecap: butt; stroke-width: 1; fill: rgb(43%,32%,55%); fill-rule: evenodd;"/>
+			<text x="58" y="192" style="font-family: Helvetica-Bold; font-size: 15px;fill: rgb(43%,32%,55%); stroke:none;" transform="translate(0,384) scale(1,-1)">Smoke CSV</text>
+			<text x="58" y="170.75" style="font-family: Helvetica; font-size: 13px;fill: rgb(9%,16%,22%); stroke:none;" transform="translate(0,341) scale(1,-1)">KDF timing</text>
+			<rect x="213" y="116" width="360" height="98" style="stroke: rgb(79%,83%,86%); stroke-linecap: butt; stroke-width: 1; fill: rgb(93%,96%,98%); fill-rule: evenodd;"/>
+			<rect x="213" y="116" width="4" height="98" style="stroke: rgb(14%,36%,54%); stroke-linecap: butt; stroke-width: 1; fill: rgb(14%,36%,54%); fill-rule: evenodd;"/>
+			<text x="229" y="192" style="font-family: Helvetica-Bold; font-size: 15px;fill: rgb(14%,36%,54%); stroke:none;" transform="translate(0,384) scale(1,-1)">Performance CSV</text>
+			<text x="229" y="170.75" style="font-family: Helvetica; font-size: 13px;fill: rgb(9%,16%,22%); stroke:none;" transform="translate(0,341) scale(1,-1)">Paired latency, CPU time and payload byte counts; static</text>
+			<text x="229" y="154.5" style="font-family: Helvetica; font-size: 13px;fill: rgb(9%,16%,22%); stroke:none;" transform="translate(0,309) scale(1,-1)">key setup excluded.</text>
+			<rect x="613" y="116" width="360" height="98" style="stroke: rgb(79%,83%,86%); stroke-linecap: butt; stroke-width: 1; fill: rgb(93%,97%,96%); fill-rule: evenodd;"/>
+			<rect x="613" y="116" width="4" height="98" style="stroke: rgb(7%,47%,44%); stroke-linecap: butt; stroke-width: 1; fill: rgb(7%,47%,44%); fill-rule: evenodd;"/>
+			<text x="629" y="192" style="font-family: Helvetica-Bold; font-size: 15px;fill: rgb(7%,47%,44%); stroke:none;" transform="translate(0,384) scale(1,-1)">Starvation CSV</text>
+			<text x="629" y="170.75" style="font-family: Helvetica; font-size: 13px;fill: rgb(9%,16%,22%); stroke:none;" transform="translate(0,341) scale(1,-1)">Burst depletion, steady-state successes, failures and</text>
+			<text x="629" y="154.5" style="font-family: Helvetica; font-size: 13px;fill: rgb(9%,16%,22%); stroke:none;" transform="translate(0,309) scale(1,-1)">final occupancy.</text>
+			<rect x="1013" y="116" width="385" height="98" style="stroke: rgb(79%,83%,86%); stroke-linecap: butt; stroke-width: 1; fill: rgb(96%,97%,98%); fill-rule: evenodd;"/>
+			<rect x="1013" y="116" width="4" height="98" style="stroke: rgb(9%,16%,22%); stroke-linecap: butt; stroke-width: 1; fill: rgb(9%,16%,22%); fill-rule: evenodd;"/>
+			<text x="1029" y="192" style="font-family: Helvetica-Bold; font-size: 15px;fill: rgb(9%,16%,22%); stroke:none;" transform="translate(0,384) scale(1,-1)">Plots + evidence review</text>
+			<text x="1029" y="170.75" style="font-family: Helvetica; font-size: 13px;fill: rgb(9%,16%,22%); stroke:none;" transform="translate(0,341) scale(1,-1)">Matplotlib / pandas figures; tests; research assumptions and</text>
+			<text x="1029" y="154.5" style="font-family: Helvetica; font-size: 13px;fill: rgb(9%,16%,22%); stroke:none;" transform="translate(0,309) scale(1,-1)">traceability (plate 6).</text>
+			<path d="M 393,116 L 393,102 Z" style="stroke: rgb(32%,39%,45%); stroke-linecap: butt; stroke-width: 1.7;"/>
+			<path d="M 393,102 L 993,102 Z" style="stroke: rgb(32%,39%,45%); stroke-linecap: butt; stroke-width: 1.7;"/>
+			<path d="M 993,102 L 993,137 Z" style="stroke: rgb(32%,39%,45%); stroke-linecap: butt; stroke-width: 1.7;"/>
+			<path d="M 993,137 L 1013,137 Z" style="stroke: rgb(32%,39%,45%); stroke-linecap: butt; stroke-width: 1.7;"/>
+			<polygon points="1013 137, 1005 140.5, 1005 133.5" style="stroke: rgb(32%,39%,45%); stroke-linecap: butt; stroke-width: 1; fill: rgb(32%,39%,45%); fill-rule: evenodd;"/>
+			<path d="M 973,165 L 1013,165 Z" style="stroke: rgb(32%,39%,45%); stroke-linecap: butt; stroke-width: 1.7;"/>
+			<polygon points="1013 165, 1005 168.5, 1005 161.5" style="stroke: rgb(32%,39%,45%); stroke-linecap: butt; stroke-width: 1; fill: rgb(32%,39%,45%); fill-rule: evenodd;"/>
+			<path d="M 42,90 L 1398,90 Z" style="stroke: rgb(79%,83%,86%); stroke-linecap: butt; stroke-width: 1;"/>
+			<text x="42" y="69" style="font-family: Helvetica; font-size: 11.5px;fill: rgb(9%,16%,22%); stroke:none;" transform="translate(0,138) scale(1,-1)">FIGURE 1. The three experiment paths share modules but measure different systems. Solid edges show active calls or data flow; dashed edges denote REST integration outside the default benchmark path, not measured network traffic.</text>
+			<text x="42" y="20" style="font-family: Helvetica; font-size: 10px;fill: rgb(32%,39%,45%); stroke:none;" transform="translate(0,40) scale(1,-1)">Sources: cli.py; benchmarks/{suite,runner}.py; protocol/; crypto/; qkd_mock/; configs/experiments.json</text>
+			<text x="1191.57" y="20" style="font-family: Helvetica; font-size: 10px;fill: rgb(32%,39%,45%); stroke:none;" transform="translate(0,40) scale(1,-1)">Source revision 2ba1ede  |  06 Oct 2026  |  1/6</text>
+		</g>
+	</g>
+</svg>

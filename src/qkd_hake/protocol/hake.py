@@ -13,6 +13,19 @@ class HandshakeError(Exception):
     pass
 
 
+class QKDUnavailableError(HandshakeError):
+    """A resource-policy failure that may be retried with a fresh handshake."""
+
+    def __init__(self, message: str, reason_code: str = "qkd_client_unavailable") -> None:
+        super().__init__(message)
+        self.reason_code = reason_code
+
+
+def validate_qkd_key(key: bytes | None, key_id: str) -> None:
+    if not isinstance(key, bytes) or len(key) != 32 or not isinstance(key_id, str) or not key_id:
+        raise HandshakeError("QKD delivery must contain a 256-bit key and a nonempty key ID")
+
+
 class HandshakeResult(NamedTuple):
     session_key: bytes
     security_mode: str  # "HYBRID_QKD" or "SECURITY_LEVEL_DEGRADED_PQC_ONLY" or "PQC_ONLY"
@@ -85,17 +98,19 @@ class AliceSession:
         k_qkd: bytes | None = None
         qkd_key_id: str = ""
         security_mode = "HYBRID_QKD"
+        self.decision_reason = "qkd_available"
 
         # Apply quota check
         try:
             self.mitigation_mgr.check_quota(self.id_a)
         except QuotaExceededError as e:
+            self.decision_reason = "request_quota_exceeded"
             if allow_explicit_fallback:
                 k_qkd = None
                 qkd_key_id = ""
                 security_mode = "SECURITY_LEVEL_DEGRADED_PQC_ONLY"
             else:
-                raise HandshakeError(str(e)) from e
+                raise QKDUnavailableError(self.decision_reason, self.decision_reason) from e
 
         if security_mode == "HYBRID_QKD":
             if qkd_pool_client_fn is not None:
@@ -108,20 +123,30 @@ class AliceSession:
                     
                     # Fetch key
                     k_qkd, qkd_key_id = qkd_pool_client_fn("get")
-                except (AdmissionControlError, Exception) as e:
+                except Exception as e:
+                    self.decision_reason = (
+                        "reserve_below_5_percent" if isinstance(e, AdmissionControlError)
+                        else "qkd_acquisition_unavailable"
+                    )
                     if allow_explicit_fallback:
                         k_qkd = None
                         qkd_key_id = ""
                         security_mode = "SECURITY_LEVEL_DEGRADED_PQC_ONLY"
                     else:
-                        raise HandshakeError(str(e)) from e
+                        # Preserve the existing admission diagnostic, without exposing callback data.
+                        reason = str(e) if isinstance(e, AdmissionControlError) else self.decision_reason
+                        raise QKDUnavailableError(reason, self.decision_reason) from e
+                else:
+                    # Invalid delivered material is an error, never an implicit downgrade.
+                    validate_qkd_key(k_qkd, qkd_key_id)
             else:
+                self.decision_reason = "qkd_client_unavailable"
                 if allow_explicit_fallback:
                     k_qkd = None
                     qkd_key_id = ""
                     security_mode = "SECURITY_LEVEL_DEGRADED_PQC_ONLY"
                 else:
-                    raise HandshakeError("QKD is required but no key pool client is available")
+                    raise QKDUnavailableError("QKD is required but no key pool client is available")
 
         # Compute tau2 tag using k2
         tau2 = hmac_sha256_tag(k2, qkd_key_id.encode("utf-8") + ct_star + s + b"B")
@@ -255,9 +280,13 @@ class BobSession:
         security_mode = "HYBRID_QKD"
         if qkd_key_id:
             if qkd_pool_client_fn is not None:
-                k_qkd = qkd_pool_client_fn(qkd_key_id)
+                try:
+                    k_qkd = qkd_pool_client_fn(qkd_key_id)
+                except Exception as exc:
+                    raise HandshakeError("Bob could not retrieve the QKD key") from exc
             else:
-                k_qkd = None
+                raise HandshakeError("QKD key ID received without a retrieval client")
+            validate_qkd_key(k_qkd, qkd_key_id)
         else:
             k_qkd = None
             security_mode = "SECURITY_LEVEL_DEGRADED_PQC_ONLY"

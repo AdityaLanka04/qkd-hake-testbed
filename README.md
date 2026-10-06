@@ -102,3 +102,22 @@ This repository is for controlled experiments. Do not deploy it to protect
 real traffic. The server currently uses a test header to identify an SAE;
 production ETSI deployments require authenticated channels and proper access
 control.
+
+## Policy-aware encrypted file transfer
+
+Run the complete five-case application demonstration with real local Alice,
+Bob and KME processes:
+
+```bash
+make transfer-verify
+```
+
+The demo supports strict hybrid policy, explicit PQC fallback, a persistent
+queue with fresh-handshake retries, live pool status, authenticated file
+verification and key-free audit logs. It saves a report, CSV/JSON results,
+terminal logs and verified received files under `output/file-transfer/`.
+
+For separate terminal operation, run `make transfer-init` once, `make server`,
+and `make transfer-receive`; use `qkd-hake transfer send FILE` from Alice's
+terminal. See [the complete file-transfer guide](docs/file-transfer.md) for
+policies, queue recovery, negative tests and result interpretation.

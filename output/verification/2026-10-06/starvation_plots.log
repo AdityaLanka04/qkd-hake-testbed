@@ -1,0 +1,5 @@
+Read 270 experiment rows from results/bottleneck_steady_state.csv
+Figure 1 generated: results/wp6_burst_capacity_vs_pool_depth.png
+Figure 2 generated: results/wp6_steady_state_qkd_success_rate.png
+Figure 3 generated: results/wp6_measured_vs_theoretical_burst.png
+All WP6 figures generated successfully.

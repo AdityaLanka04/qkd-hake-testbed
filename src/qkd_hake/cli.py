@@ -61,6 +61,9 @@ def main() -> None:
         required=True,
     )
 
+    from qkd_hake.transfer.cli import configure
+    configure(subparsers)
+
     subparsers.add_parser(
         "server",
         help="run the mock ETSI QKD 014 KME",
@@ -119,7 +122,16 @@ def main() -> None:
 
     args = parser.parse_args()
 
-    if args.command == "server":
+    if args.command == "transfer":
+        from qkd_hake.transfer.cli import run
+        from qkd_hake.transfer.wire import TransferError
+        try:
+            raise SystemExit(run(args))
+        except (TransferError, ValueError, OSError) as exc:
+            # Do not print arbitrary transport or library exception bodies.
+            parser.exit(1, f"Transfer could not complete ({type(exc).__name__}). Check arguments and local services.\n")
+
+    elif args.command == "server":
         uvicorn.run(
             "qkd_hake.qkd_mock.server:app",
             host="127.0.0.1",
@@ -200,4 +212,3 @@ if __name__ == "__main__":
 
 # if __name__ == "__main__":
 #     main()
-

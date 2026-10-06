@@ -167,3 +167,29 @@ def test_hake_tampering_fails() -> None:
             allow_explicit_fallback=True
         )
     assert "Alice failed to verify Bob's Message 2 MAC" in str(excinfo.value)
+
+
+@pytest.mark.parametrize('bad_key', [None, b'', bytes(31)])
+@pytest.mark.parametrize('fallback', [True, False])
+def test_alice_rejects_invalid_qkd_material(bad_key, fallback) -> None:
+    kem = OQSKEM('ML-KEM-512')
+    a, b = kem.generate_keypair(), kem.generate_keypair()
+    alice = AliceSession('alice', a.public_key, a.secret_key, 'bob', b.public_key)
+    bob = BobSession('alice', a.public_key, 'bob', b.public_key, b.secret_key)
+    def delivery(action):
+        return {'stored_key_count': 8, 'max_key_count': 8} if action == 'status' else (bad_key, 'id')
+    with pytest.raises(HandshakeError, match='256-bit'):
+        alice.message3(bob.message2(alice.message1()), delivery, fallback)
+
+
+@pytest.mark.parametrize('retrieval', [None, lambda _: None, lambda _: b'', lambda _: bytes(31)])
+def test_bob_rejects_missing_qkd_material(retrieval) -> None:
+    kem = OQSKEM('ML-KEM-512')
+    a, b = kem.generate_keypair(), kem.generate_keypair()
+    alice = AliceSession('alice', a.public_key, a.secret_key, 'bob', b.public_key)
+    bob = BobSession('alice', a.public_key, 'bob', b.public_key, b.secret_key)
+    def delivery(action):
+        return {'stored_key_count': 8, 'max_key_count': 8} if action == 'status' else (b'q' * 32, 'id')
+    msg3 = alice.message3(bob.message2(alice.message1()), delivery, False)
+    with pytest.raises(HandshakeError):
+        bob.message4(msg3, retrieval)

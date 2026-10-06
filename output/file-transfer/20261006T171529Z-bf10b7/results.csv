@@ -1,0 +1,6 @@
+scenario,passed,state,mode,reason,bytes,attempts,duration_ms,identical_file,alice_exit_code
+hybrid,True,DELIVERED,HYBRID_QKD,qkd_available,80823,1,66.593,True,0
+explicit-pqc-fallback,True,DELIVERED,PQC_ONLY,reserve_below_5_percent,80823,1,43.055,True,0
+tampered-ciphertext,True,FAILED,HYBRID_QKD,authentication_failed,80823,1,68.022,False,1
+hybrid-required-queued,True,QUEUED,,reserve_below_5_percent,80823,1,40.643,False,2
+refill-resumes-with-fresh-handshake,True,DELIVERED,HYBRID_QKD,qkd_available,80823,17,61.304,True,0

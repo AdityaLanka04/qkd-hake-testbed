@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg
+  PUBLIC '-//W3C//DTD SVG 1.0//EN'
+  'http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd'>
+<svg width="1440" height="1080" preserveAspectRatio="xMinYMin meet" viewBox="0 0 1440 1080" xmlns="http://www.w3.org/2000/svg" version="1.0" fill-rule="evenodd" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<title>...</title>
+	<desc>...</desc>
+	<clipPath id="clip">
+		<rect x="0" y="0" width="1440" height="1080"/>
+	</clipPath>
+	<g id="group" transform="scale(1,-1) translate(0,-1080)" style="clip-path: url(#clip)">
+		<g transform="">
+			<rect x="0" y="0" width="1440" height="1080" style="stroke: rgb(100%,100%,100%); stroke-linecap: butt; stroke-width: 1; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<text x="42" y="1046" style="font-family: Helvetica-Bold; font-size: 12px;fill: rgb(14%,36%,54%); stroke:none;" transform="translate(0,2092) scale(1,-1)">QKD / PQC  RESEARCH TESTBED</text>
+			<text x="1232.628" y="1046" style="font-family: Helvetica; font-size: 12px;fill: rgb(32%,39%,45%); stroke:none;" transform="translate(0,2092) scale(1,-1)">ARCHITECTURE ATLAS  /  06</text>
+			<text x="42" y="997" style="font-family: Helvetica-Bold; font-size: 32px;fill: rgb(9%,16%,22%); stroke:none;" transform="translate(0,1994) scale(1,-1)">Module traceability, verification and research boundaries</text>
+			<text x="42" y="967" style="font-family: Helvetica; font-size: 14px;fill: rgb(32%,39%,45%); stroke:none;" transform="translate(0,1934) scale(1,-1)">A reviewable map from figure claims to source files, with the conditions needed to interpret the experimental evidence.</text>
+			<path d="M 42,946 L 1398,946 Z" style="stroke: rgb(79%,83%,86%); stroke-linecap: butt; stroke-width: 1;"/>
+			<text x="42" y="917" style="font-family: Helvetica-Bold; font-size: 12px;fill: rgb(9%,16%,22%); stroke:none;" transform="translate(0,1834) scale(1,-1)">A  /  IMPLEMENTATION-TO-EVIDENCE MATRIX</text>
+			<rect x="42" y="865" width="1356" height="36" style="stroke: rgb(9%,16%,22%); stroke-linecap: butt; stroke-width: 1; fill: rgb(9%,16%,22%); fill-rule: evenodd;"/>
+			<text x="54" y="878" style="font-family: Helvetica-Bold; font-size: 12px;fill: rgb(100%,100%,100%); stroke:none;" transform="translate(0,1756) scale(1,-1)">MODULE / SOURCE</text>
+			<text x="342" y="878" style="font-family: Helvetica-Bold; font-size: 12px;fill: rgb(100%,100%,100%); stroke:none;" transform="translate(0,1756) scale(1,-1)">ARCHITECTURAL RESPONSIBILITY</text>
+			<text x="946" y="878" style="font-family: Helvetica-Bold; font-size: 12px;fill: rgb(100%,100%,100%); stroke:none;" transform="translate(0,1756) scale(1,-1)">EXISTING TEST EVIDENCE</text>
+			<rect x="42" y="829" width="1356" height="36" style="stroke: rgb(79%,83%,86%); stroke-linecap: butt; stroke-width: 1; fill: rgb(96%,97%,98%); fill-rule: evenodd;"/>
+			<text x="54" y="842" style="font-family: Helvetica; font-size: 12.2px;fill: rgb(9%,16%,22%); stroke:none;" transform="translate(0,1684) scale(1,-1)">protocol/hake.py</text>
+			<text x="342" y="842" style="font-family: Helvetica; font-size: 12.2px;fill: rgb(9%,16%,22%); stroke:none;" transform="translate(0,1684) scale(1,-1)">4-message role state; transcript hash; key confirmation</text>
+			<text x="946" y="842" style="font-family: Helvetica; font-size: 12.2px;fill: rgb(9%,16%,22%); stroke:none;" transform="translate(0,1684) scale(1,-1)">test_hake.py: 5 scenarios</text>
+			<rect x="42" y="793" width="1356" height="36" style="stroke: rgb(79%,83%,86%); stroke-linecap: butt; stroke-width: 1; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<text x="54" y="806" style="font-family: Helvetica; font-size: 12.2px;fill: rgb(9%,16%,22%); stroke:none;" transform="translate(0,1612) scale(1,-1)">crypto/kem.py</text>
+			<text x="342" y="806" style="font-family: Helvetica; font-size: 12.2px;fill: rgb(9%,16%,22%); stroke:none;" transform="translate(0,1612) scale(1,-1)">liboqs adapter; 4 selected KEM algorithms</text>
+			<text x="946" y="806" style="font-family: Helvetica; font-size: 12.2px;fill: rgb(9%,16%,22%); stroke:none;" transform="translate(0,1612) scale(1,-1)">test_kem.py: 4 algorithm round trips</text>
+			<rect x="42" y="757" width="1356" height="36" style="stroke: rgb(79%,83%,86%); stroke-linecap: butt; stroke-width: 1; fill: rgb(96%,97%,98%); fill-rule: evenodd;"/>
+			<text x="54" y="770" style="font-family: Helvetica; font-size: 12.2px;fill: rgb(9%,16%,22%); stroke:none;" transform="translate(0,1540) scale(1,-1)">crypto/kdf.py + combiner.py</text>
+			<text x="342" y="770" style="font-family: Helvetica; font-size: 12.2px;fill: rgb(9%,16%,22%); stroke:none;" transform="translate(0,1540) scale(1,-1)">ROKDF for HAKE; separate labelled HKDF prototype</text>
+			<text x="946" y="770" style="font-family: Helvetica; font-size: 12.2px;fill: rgb(9%,16%,22%); stroke:none;" transform="translate(0,1540) scale(1,-1)">test_combiner.py: 3 mode/derivation checks</text>
+			<rect x="42" y="721" width="1356" height="36" style="stroke: rgb(79%,83%,86%); stroke-linecap: butt; stroke-width: 1; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<text x="54" y="734" style="font-family: Helvetica; font-size: 12.2px;fill: rgb(9%,16%,22%); stroke:none;" transform="translate(0,1468) scale(1,-1)">qkd_mock/pool.py</text>
+			<text x="342" y="734" style="font-family: Helvetica; font-size: 12.2px;fill: rgb(9%,16%,22%); stroke:none;" transform="translate(0,1468) scale(1,-1)">Lazy refill; credits; pair-bound ID ledger; mutex</text>
+			<text x="946" y="734" style="font-family: Helvetica; font-size: 12.2px;fill: rgb(9%,16%,22%); stroke:none;" transform="translate(0,1468) scale(1,-1)">test_pool.py: 3 lifecycle/exhaustion checks</text>
+			<rect x="42" y="685" width="1356" height="36" style="stroke: rgb(79%,83%,86%); stroke-linecap: butt; stroke-width: 1; fill: rgb(96%,97%,98%); fill-rule: evenodd;"/>
+			<text x="54" y="698" style="font-family: Helvetica; font-size: 12.2px;fill: rgb(9%,16%,22%); stroke:none;" transform="translate(0,1396) scale(1,-1)">server.py + models.py</text>
+			<text x="342" y="698" style="font-family: Helvetica; font-size: 12.2px;fill: rgb(9%,16%,22%); stroke:none;" transform="translate(0,1396) scale(1,-1)">FastAPI endpoints, schemas and error mapping</text>
+			<text x="946" y="698" style="font-family: Helvetica; font-size: 12.2px;fill: rgb(9%,16%,22%); stroke:none;" transform="translate(0,1396) scale(1,-1)">test_api.py: 2 delivery/exhaustion checks</text>
+			<rect x="42" y="649" width="1356" height="36" style="stroke: rgb(79%,83%,86%); stroke-linecap: butt; stroke-width: 1; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<text x="54" y="662" style="font-family: Helvetica; font-size: 12.2px;fill: rgb(9%,16%,22%); stroke:none;" transform="translate(0,1324) scale(1,-1)">client.py + mitigations.py</text>
+			<text x="342" y="662" style="font-family: Helvetica; font-size: 12.2px;fill: rgb(9%,16%,22%); stroke:none;" transform="translate(0,1324) scale(1,-1)">HTTP callbacks; request quota; 5% admission floor</text>
+			<text x="946" y="662" style="font-family: Helvetica; font-size: 12.2px;fill: rgb(9%,16%,22%); stroke:none;" transform="translate(0,1324) scale(1,-1)">HAKE tests + 4 loopback REST checks [V]</text>
+			<rect x="42" y="613" width="1356" height="36" style="stroke: rgb(79%,83%,86%); stroke-linecap: butt; stroke-width: 1; fill: rgb(96%,97%,98%); fill-rule: evenodd;"/>
+			<text x="54" y="626" style="font-family: Helvetica; font-size: 12.2px;fill: rgb(9%,16%,22%); stroke:none;" transform="translate(0,1252) scale(1,-1)">benchmarks/suite.py</text>
+			<text x="342" y="626" style="font-family: Helvetica; font-size: 12.2px;fill: rgb(9%,16%,22%); stroke:none;" transform="translate(0,1252) scale(1,-1)">Paired local handshakes; two-phase pool simulation</text>
+			<text x="946" y="626" style="font-family: Helvetica; font-size: 12.2px;fill: rgb(9%,16%,22%); stroke:none;" transform="translate(0,1252) scale(1,-1)">Full execution and output checks [V]</text>
+			<rect x="42" y="577" width="1356" height="36" style="stroke: rgb(79%,83%,86%); stroke-linecap: butt; stroke-width: 1; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<text x="54" y="590" style="font-family: Helvetica; font-size: 12.2px;fill: rgb(9%,16%,22%); stroke:none;" transform="translate(0,1180) scale(1,-1)">runner.py + plot_*.py</text>
+			<text x="342" y="590" style="font-family: Helvetica; font-size: 12.2px;fill: rgb(9%,16%,22%); stroke:none;" transform="translate(0,1180) scale(1,-1)">Smoke timing; CSV-derived figures</text>
+			<text x="946" y="590" style="font-family: Helvetica; font-size: 12.2px;fill: rgb(9%,16%,22%); stroke:none;" transform="translate(0,1180) scale(1,-1)">Demo and both plotting commands [V]</text>
+			<rect x="42" y="541" width="1356" height="36" style="stroke: rgb(79%,83%,86%); stroke-linecap: butt; stroke-width: 1; fill: rgb(96%,97%,98%); fill-rule: evenodd;"/>
+			<text x="54" y="554" style="font-family: Helvetica; font-size: 12.2px;fill: rgb(9%,16%,22%); stroke:none;" transform="translate(0,1108) scale(1,-1)">store.py / cli.py / settings.py</text>
+			<text x="342" y="554" style="font-family: Helvetica; font-size: 12.2px;fill: rgb(9%,16%,22%); stroke:none;" transform="translate(0,1108) scale(1,-1)">JSON identity utility / dispatch / QKD_* environment</text>
+			<text x="946" y="554" style="font-family: Helvetica; font-size: 12.2px;fill: rgb(9%,16%,22%); stroke:none;" transform="translate(0,1108) scale(1,-1)">Store is separate from active harness wiring</text>
+			<text x="42" y="508" style="font-family: Helvetica-Bold; font-size: 12px;fill: rgb(9%,16%,22%); stroke:none;" transform="translate(0,1016) scale(1,-1)">B  /  SECURITY AND SYSTEM BOUNDARIES</text>
+			<rect x="42" y="313" width="429" height="180" style="stroke: rgb(79%,83%,86%); stroke-linecap: butt; stroke-width: 1; fill: rgb(96%,94%,97%); fill-rule: evenodd;"/>
+			<rect x="42" y="313" width="4" height="180" style="stroke: rgb(43%,32%,55%); stroke-linecap: butt; stroke-width: 1; fill: rgb(43%,32%,55%); fill-rule: evenodd;"/>
+			<text x="58" y="471" style="font-family: Helvetica-Bold; font-size: 17px;fill: rgb(43%,32%,55%); stroke:none;" transform="translate(0,942) scale(1,-1)">Identity and local secrets</text>
+			<text x="58" y="447.45000000000005" style="font-family: Helvetica; font-size: 13.5px;fill: rgb(9%,16%,22%); stroke:none;" transform="translate(0,894) scale(1,-1)">Trusted static public-key provisioning is assumed. KeyStore stores</text>
+			<text x="58" y="430.57500000000005" style="font-family: Helvetica; font-size: 13.5px;fill: rgb(9%,16%,22%); stroke:none;" transform="translate(0,861) scale(1,-1)">public/secret key hex in JSON and is not used by the benchmark.</text>
+			<text x="58" y="413.70000000000005" style="font-family: Helvetica; font-size: 13.5px;fill: rgb(9%,16%,22%); stroke:none;" transform="translate(0,827) scale(1,-1)">Secret state resides in Python/native memory; the implementation</text>
+			<text x="58" y="396.82500000000005" style="font-family: Helvetica; font-size: 13.5px;fill: rgb(9%,16%,22%); stroke:none;" transform="translate(0,793) scale(1,-1)">does not demonstrate key erasure or a hardware trust boundary.</text>
+			<rect x="505" y="313" width="429" height="180" style="stroke: rgb(79%,83%,86%); stroke-linecap: butt; stroke-width: 1; fill: rgb(96%,94%,97%); fill-rule: evenodd;"/>
+			<rect x="505" y="313" width="4" height="180" style="stroke: rgb(43%,32%,55%); stroke-linecap: butt; stroke-width: 1; fill: rgb(43%,32%,55%); fill-rule: evenodd;"/>
+			<text x="521" y="471" style="font-family: Helvetica-Bold; font-size: 17px;fill: rgb(43%,32%,55%); stroke:none;" transform="translate(0,942) scale(1,-1)">Independent HKDF prototype</text>
+			<text x="521" y="447.45000000000005" style="font-family: Helvetica; font-size: 13px;fill: rgb(9%,16%,22%); stroke:none;" transform="translate(0,894) scale(1,-1)">derive_keys(): hash(mode || 0x00 || transcript), then labelled extracts</text>
+			<text x="521" y="431.20000000000005" style="font-family: Helvetica; font-size: 13px;fill: rgb(9%,16%,22%); stroke:none;" transform="translate(0,862) scale(1,-1)">for static KEM, ephemeral KEM and QKD (or explicit-pqc-only).</text>
+			<text x="521" y="414.95000000000005" style="font-family: Helvetica; font-size: 13px;fill: rgb(9%,16%,22%); stroke:none;" transform="translate(0,829) scale(1,-1)">Labelled expands produce session, client-confirmation and</text>
+			<text x="521" y="398.70000000000005" style="font-family: Helvetica; font-size: 13px;fill: rgb(9%,16%,22%); stroke:none;" transform="translate(0,797) scale(1,-1)">server-confirmation keys. Only the smoke path uses this combiner.</text>
+			<rect x="968" y="313" width="430" height="180" style="stroke: rgb(79%,83%,86%); stroke-linecap: butt; stroke-width: 1; fill: rgb(100%,97%,92%); fill-rule: evenodd;"/>
+			<rect x="968" y="313" width="4" height="180" style="stroke: rgb(61%,39%,11%); stroke-linecap: butt; stroke-width: 1; fill: rgb(61%,39%,11%); fill-rule: evenodd;"/>
+			<text x="984" y="471" style="font-family: Helvetica-Bold; font-size: 17px;fill: rgb(61%,39%,11%); stroke:none;" transform="translate(0,942) scale(1,-1)">Claims requiring separate proof</text>
+			<text x="984" y="447.45000000000005" style="font-family: Helvetica; font-size: 13px;fill: rgb(9%,16%,22%); stroke:none;" transform="translate(0,894) scale(1,-1)">Code traces and successful tests do not establish CK01 security,</text>
+			<text x="984" y="431.20000000000005" style="font-family: Helvetica; font-size: 13px;fill: rgb(9%,16%,22%); stroke:none;" transform="translate(0,862) scale(1,-1)">exact paper conformance or information-theoretic secrecy.</text>
+			<text x="984" y="414.95000000000005" style="font-family: Helvetica; font-size: 13px;fill: rgb(9%,16%,22%); stroke:none;" transform="translate(0,829) scale(1,-1)">The repository security-analysis document is a research outline.</text>
+			<text x="984" y="398.70000000000005" style="font-family: Helvetica; font-size: 13px;fill: rgb(9%,16%,22%); stroke:none;" transform="translate(0,797) scale(1,-1)">Match protocol labels, adversary model and combiner assumptions</text>
+			<text x="984" y="382.45000000000005" style="font-family: Helvetica; font-size: 13px;fill: rgb(9%,16%,22%); stroke:none;" transform="translate(0,764) scale(1,-1)">to [R1] before importing its claims.</text>
+			<rect x="42" y="222" width="1356" height="69" style="stroke: rgb(7%,47%,44%); stroke-linecap: butt; stroke-width: 1; fill: rgb(93%,97%,96%); fill-rule: evenodd;"/>
+			<text x="60" y="266" style="font-family: Helvetica-Bold; font-size: 12px;fill: rgb(7%,47%,44%); stroke:none;" transform="translate(0,532) scale(1,-1)">[V] VERIFIED EXECUTION</text>
+			<text x="60" y="240" style="font-family: Helvetica; font-size: 14px;fill: rgb(9%,16%,22%); stroke:none;" transform="translate(0,480) scale(1,-1)">17 tests passed  |  4 REST-backed HAKE checks  |  8,000 benchmark rows  |  270 sweep cases  |  20 smoke rows  |  5 result plots</text>
+			<text x="42" y="194" style="font-family: Helvetica-Bold; font-size: 12px;fill: rgb(9%,16%,22%); stroke:none;" transform="translate(0,388) scale(1,-1)">C  /  REFERENCES AND REPRODUCTION</text>
+			<text x="42" y="170" style="font-family: Helvetica; font-size: 12px;fill: rgb(9%,16%,22%); stroke:none;" transform="translate(0,340) scale(1,-1)">[R1] Clermont &amp; Henrich (2026). The Best of Both Worlds: Hybrid Authenticated Key Exchange for QKD(N) without Signatures.</text>
+			<text x="42" y="151" style="font-family: Helvetica; font-size: 11.5px;fill: rgb(32%,39%,45%); stroke:none;" transform="translate(0,302) scale(1,-1)">Cryptology ePrint 2026/1231. https://eprint.iacr.org/2026/1231  (research reference; exact implementation correspondence unverified).</text>
+			<text x="42" y="131" style="font-family: Helvetica; font-size: 12px;fill: rgb(9%,16%,22%); stroke:none;" transform="translate(0,262) scale(1,-1)">[R2] ETSI GS QKD 014 V1.1.1 (2019-02), REST-based key delivery API. Official ETSI PDF linked in the artifact manifest.</text>
+			<text x="42" y="110" style="font-family: Helvetica; font-size: 11.5px;fill: rgb(14%,36%,54%); stroke:none;" transform="translate(0,220) scale(1,-1)">Rebuild: uv run docs/architecture/generate_architecture.py     |     Execute: .venv/bin/python docs/architecture/run_verification.py</text>
+			<path d="M 42,90 L 1398,90 Z" style="stroke: rgb(79%,83%,86%); stroke-linecap: butt; stroke-width: 1;"/>
+			<text x="42" y="69" style="font-family: Helvetica; font-size: 11.5px;fill: rgb(9%,16%,22%); stroke:none;" transform="translate(0,138) scale(1,-1)">FIGURE 6. This atlas describes the inspected repository and the executed experiments. Diagram generation and verification are companion scripts; the protocol implementation and historical result files were not modified.</text>
+			<text x="42" y="20" style="font-family: Helvetica; font-size: 10px;fill: rgb(32%,39%,45%); stroke:none;" transform="translate(0,40) scale(1,-1)">Evidence: output/verification/2026-10-06/{verification.json,*.log,results/}; references and figure captions in output/architecture/manifest.json.</text>
+			<text x="1191.57" y="20" style="font-family: Helvetica; font-size: 10px;fill: rgb(32%,39%,45%); stroke:none;" transform="translate(0,40) scale(1,-1)">Source revision 2ba1ede  |  06 Oct 2026  |  6/6</text>
+		</g>
+	</g>
+</svg>

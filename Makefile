@@ -2,7 +2,7 @@ PYTHON ?= python3
 VENV := .venv
 BIN := $(VENV)/bin
 
-.PHONY: setup test server demo clean
+.PHONY: setup test server demo clean transfer-init transfer-receive transfer-verify
 
 setup:
 	$(PYTHON) -m venv $(VENV)
@@ -17,6 +17,15 @@ server:
 
 demo:
 	$(BIN)/python -m qkd_hake.cli demo
+
+transfer-init:
+	$(BIN)/python -m qkd_hake.cli transfer init
+
+transfer-receive:
+	$(BIN)/python -m qkd_hake.cli transfer receive
+
+transfer-verify:
+	$(BIN)/python -m qkd_hake.cli transfer verify-demo
 
 clean:
 	find src tests -type d -name __pycache__ -prune -exec rm -r {} +

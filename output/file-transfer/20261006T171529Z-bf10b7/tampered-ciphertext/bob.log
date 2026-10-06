@@ -1,0 +1,4 @@
+Bob listening on 127.0.0.1:54181 | output=/Users/adityalanka/Downloads/qkd-hake-testbed/output/file-transfer/20261006T171529Z-bf10b7/tampered-ciphertext/received
+liboqs-python faulthandler is disabled
+{"bytes": 80823, "confirmed": true, "event": "session_confirmed", "filename": "research-dataset.csv", "handshake_id": "85883f8af8d2c3cd", "mode": "HYBRID_QKD", "policy": "hybrid-required", "role": "bob", "time": "2026-10-06T17:15:31.392582+00:00", "transfer_id": "eef694c4-fbd9-4d37-a991-cd03a3806002"}
+{"bytes": 80823, "duration_ms": 46.727, "event": "rejected", "filename": "research-dataset.csv", "mode": "HYBRID_QKD", "policy": "hybrid-required", "reason": "authentication_failed", "role": "bob", "time": "2026-10-06T17:15:31.393212+00:00", "transfer_id": "eef694c4-fbd9-4d37-a991-cd03a3806002"}

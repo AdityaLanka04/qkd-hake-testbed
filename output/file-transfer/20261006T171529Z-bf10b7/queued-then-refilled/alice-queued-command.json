@@ -1,0 +1,20 @@
+[
+  "/Users/adityalanka/Downloads/qkd-hake-testbed/.venv/bin/python",
+  "-m",
+  "qkd_hake.cli",
+  "transfer",
+  "send",
+  "/Users/adityalanka/Downloads/qkd-hake-testbed/output/file-transfer/20261006T171529Z-bf10b7/research-dataset.csv",
+  "--policy",
+  "hybrid-required",
+  "--identity",
+  "/Users/adityalanka/Downloads/qkd-hake-testbed/output/file-transfer/20261006T171529Z-bf10b7/private-identities/alice.json",
+  "--kme",
+  "http://127.0.0.1:54191",
+  "--port",
+  "54192",
+  "--queue-dir",
+  "/Users/adityalanka/Downloads/qkd-hake-testbed/output/file-transfer/20261006T171529Z-bf10b7/queued-then-refilled/queue",
+  "--audit",
+  "/Users/adityalanka/Downloads/qkd-hake-testbed/output/file-transfer/20261006T171529Z-bf10b7/queued-then-refilled/alice-audit.jsonl"
+]
