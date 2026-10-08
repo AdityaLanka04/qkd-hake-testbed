@@ -120,6 +120,17 @@ def main() -> None:
         help="initial/max pool depths in keys",
     )
 
+    policy_parser = subparsers.add_parser('policy-sweep', help='compare resource policies and local decision costs')
+    policy_parser.add_argument('--output', type=Path, required=True, help='new directory; refuses to overwrite')
+    policy_parser.add_argument('--measurement-seconds', type=float, default=60)
+    policy_parser.add_argument('--warmup-seconds', type=float, default=10)
+    policy_parser.add_argument('--repeats', type=int, default=3)
+    policy_parser.add_argument('--pool-depths', type=int, nargs='+', default=[128])
+    policy_parser.add_argument('--rates', type=int, nargs='+', default=[1, 5, 10, 20, 50, 100])
+    policy_parser.add_argument('--supplies-kbps', type=int, nargs='+', default=[1, 10, 100])
+    policy_parser.add_argument('--quota', type=int, default=10)
+    policy_parser.add_argument('--seed', type=int, default=20261008)
+
     args = parser.parse_args()
 
     if args.command == "transfer":
@@ -130,6 +141,13 @@ def main() -> None:
         except (TransferError, ValueError, OSError) as exc:
             # Do not print arbitrary transport or library exception bodies.
             parser.exit(1, f"Transfer could not complete ({type(exc).__name__}). Check arguments and local services.\n")
+
+    elif args.command == 'policy-sweep':
+        from qkd_hake.benchmarks.policies import PolicyConfig, run_policy_comparison
+        run_policy_comparison(args.output, PolicyConfig(
+            measurement_seconds=args.measurement_seconds, warmup_seconds=args.warmup_seconds,
+            repeats=args.repeats, pool_depths=tuple(args.pool_depths), rates=tuple(args.rates),
+            supplies_kbps=tuple(args.supplies_kbps), quota_per_second=args.quota, seed=args.seed))
 
     elif args.command == "server":
         uvicorn.run(

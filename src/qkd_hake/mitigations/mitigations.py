@@ -1,6 +1,7 @@
 from __future__ import annotations
 import time
 from collections import defaultdict
+from typing import Callable
 
 class AdmissionControlError(Exception):
     pass
@@ -9,15 +10,17 @@ class QuotaExceededError(Exception):
     pass
 
 class MitigationManager:
-    def __init__(self, rate_limit_per_peer: float = 10.0) -> None:
+    def __init__(self, rate_limit_per_peer: float = 10.0, *,
+                 clock: Callable[[], float] = time.time) -> None:
         self.rate_limit_per_peer = rate_limit_per_peer
+        self.clock = clock
         self.peer_request_history: dict[str, list[float]] = defaultdict(list)
 
     def check_quota(self, peer_id: str) -> None:
         """Enforce maximum QKD requests per second per peer session."""
         if not self.rate_limit_per_peer:
             return
-        now = time.time()
+        now = self.clock()
         self.peer_request_history[peer_id] = [
             t for t in self.peer_request_history[peer_id] if now - t < 1.0
         ]

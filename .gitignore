@@ -9,3 +9,4 @@ build/
 *.egg-info/
 transfer-demo/
 output/file-transfer/**/private-identities/
+**/private-identities/

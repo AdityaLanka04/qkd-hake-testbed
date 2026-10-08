@@ -1,0 +1,17 @@
+{
+  "test_command": "make test",
+  "result": "76 passed, 1 deprecation warning",
+  "seconds": 3.85,
+  "annotation_files": 51,
+  "annotated_lines": 5943,
+  "policy_cases": 432,
+  "policy_event_count": 803520,
+  "recorded_experiment_source_hashes_still_match": true,
+  "annotation_source_hashes_match": true,
+  "private_identity_directories_excluded_by_gitignore": 1,
+  "limitations": [
+    "resource policy experiment is not an end-to-end handshake latency benchmark",
+    "original performance results predate injected-clock addition; their source hashes are retained",
+    "full paper compatibility unverified"
+  ]
+}

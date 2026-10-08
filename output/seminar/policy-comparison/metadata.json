@@ -1,0 +1,92 @@
+{
+  "started_utc": "2026-10-08T11:04:45.869559+00:00",
+  "completed_utc": "2026-10-08T11:04:55.813215+00:00",
+  "python": "3.11.13 (main, Jun  3 2025, 18:38:25) [Clang 17.0.0 (clang-1700.0.13.3)]",
+  "platform": "macOS-27.0-arm64-arm-64bit",
+  "machine": "arm64",
+  "processor": "arm",
+  "revision": "070a984d4803c8f447a342ec30efebd21e1cd022",
+  "config": {
+    "measurement_seconds": 60.0,
+    "warmup_seconds": 10.0,
+    "repeats": 3,
+    "pool_depths": [
+      128
+    ],
+    "rates": [
+      1,
+      5,
+      10,
+      20,
+      50,
+      100
+    ],
+    "supplies_kbps": [
+      1,
+      10,
+      100
+    ],
+    "quota_per_second": 10,
+    "seed": 20261008,
+    "workloads": [
+      "balanced",
+      "skewed"
+    ]
+  },
+  "policies": {
+    "reject_on_empty": "Control: attempt QKD; reject if unavailable.",
+    "explicit_downgrade": "Attempt QKD; explicitly select PQC_ONLY if unavailable.",
+    "per_peer_quota": "Sliding 1-second request quota per peer; reject on quota or empty pool.",
+    "admission_control": "Reject below 5% occupancy or on empty pool; no fallback."
+  },
+  "cases": 432,
+  "measurement_scope": "Virtual-time pool/policy model; no KEM, REST, TCP, queue, file transfer or network latency.",
+  "timing_scope": "Real local guard and decision timings; includes timer overhead; excludes CSV and post-decision occupancy observation. Admission guard includes pool.status. Decision includes issue/retrieve and random key/UUID generation on hybrid success.",
+  "warmup": "Each policy starts empty; warmup advances state but emits no measured rows. Warmup does not prove stationarity for every quota/reserve configuration.",
+  "workloads": "Aggregate periodic arrivals; seeded categorical peer choice. balanced weights 1:1:1:1; skewed 7:1:1:1. Same sequence for every policy in a case.",
+  "randomness": "Only workload assignment is seeded; secrets.token_bytes and UUIDs remain unseeded. No secret material is recorded.",
+  "fairness": "Jain index of per-peer HYBRID/attempt fractions, omitting peers with zero offered requests. Blank when all fractions are zero.",
+  "assumptions": "Immediate partner retrieval; no pending-key quota; all modeled PQC fallbacks complete; strict policies reject rather than queue. Quota counts admitted quota checks even if pool later empty. No hybrid admission floor in the quota-only arm.",
+  "source_sha256": {
+    "__init__.py": "4e632a031492ed015e9e661abd759543504b4e5229a36d0cfd10bc51c4586610",
+    "benchmarks/__init__.py": "8650f055b171455d8fd7608b5a58f6f7d074393f7f22bd9cd0fc2f8f96e94eff",
+    "benchmarks/plot_performance_figures.py": "9333e9be1052d7f2fb49408d3ab68a323cc4cb45979ff57f2f1c80dce2a1a600",
+    "benchmarks/plot_wp6.py": "90c72131f2fce5395124de933c3629ab7a1f1a073510d5c26fac58ffa921b047",
+    "benchmarks/policies.py": "20753a3cfd73bc9fbd3a6f956908be364ad163d2b4756f16f3c5bf60b3c1c6fe",
+    "benchmarks/runner.py": "2e2cf7201c129502b600a01bdc37b4f3fa897ed0cd235ddbf492fb8c4881d87c",
+    "benchmarks/suite.py": "fdc418a4f2a3cf0336191f7285d710ebfdcbd41b687b9a7700731742f0eb25f2",
+    "cli.py": "85cd587ef9a6fe5afa99a18f03ae133eebae39eb9b3365978ca8e3783bdda061",
+    "crypto/__init__.py": "9eb92bdcfbdd17b15cfc059f0de7b6b7b9acb7b5a7a4c92baa0bac2db8e96fb7",
+    "crypto/kdf.py": "eeb4c9298bb0dbab56bd0fca03b95094c9a03735ef6cef53ba9a711bac12d57b",
+    "crypto/kem.py": "bc9323c272960ecaa937c5aa3b1be580af12cf07e6c314b05e4c8fb51cdf2a7e",
+    "crypto/store.py": "82aa9e3fbdcab23cc68e934fc6b7534aa91c9f6ddc74ea49fcaf4bbb2b3591d9",
+    "mitigations/__init__.py": "5384bfdb2df380b6557cc7a71d16891415bccaa87699406e236f752c6415389f",
+    "mitigations/mitigations.py": "d29d8e53f4934908cd27507271bc1144214ac8da6dd4a6246c8366a8a7d57389",
+    "protocol/__init__.py": "60c9b4453a21d927d33cf1ad0e247bc98dae9fc94fb9e731d948d3dc832e4192",
+    "protocol/combiner.py": "da256f1529124c0116cb3025d614d14aa7f3b339baafee62bd380afbb783a3d6",
+    "protocol/hake.py": "53142573a4df4555c706e64efa5c8f5c82962ec17c9c0ceb3012f84f4bf9b205",
+    "qkd_mock/__init__.py": "111776212cf8787e0b088b42d39b114ad7cffb5e56dd2d67cad4e19726803f6b",
+    "qkd_mock/client.py": "87363fd1fcd48228ac7befd1c6363689fe28be843fd94b73d91d68624290a9f8",
+    "qkd_mock/models.py": "ab97a0f1358dea2f66de3693fd8f0f3c2d1cd53675c172eb7bf33fe38f754c3c",
+    "qkd_mock/pool.py": "372e99af06e5b74883d242210a71b8388b66122a573769891499515b05973806",
+    "qkd_mock/server.py": "a937b6f9e1d52d7943ec6c357a8045e517037cd088dc4914cadc6b3ddb33eb51",
+    "settings.py": "64e10169289d73a32c6a93939762900b2f3f17ced0aa84aabbcca80eae8c9813",
+    "transfer/__init__.py": "5a81e8108ba3641629ebd6f80dc457a4b26e55cc00071b505ffeb72a2697a3cc",
+    "transfer/audit.py": "cecdf05c4155d8b25ce1807bf18c1cfa1f9236c61501537002688a8e85223e51",
+    "transfer/channel.py": "cbee504798323ed8e4e0c7ecb086174eeb707d94730cd21024de645fca58df34",
+    "transfer/cli.py": "8928de881f243c646913a4495eafd5a6bbc64128c6a5828dd2bda04533c742f4",
+    "transfer/handshake.py": "e88c52f5c935bc73c3c9f1c52eee88771a611128e4b03fa31d7dc01f41d7414d",
+    "transfer/identity.py": "259dc6d29bc6a222bb62c457fe6424c911a4055ea9785407306081400d30f462",
+    "transfer/queue.py": "f499e6649a0ffa42d50fdc3940bbcda3842cf0d906340f297f269d8c07c524a2",
+    "transfer/receiver.py": "e9a69100fb838b4cedd5a71b76edbaec973414d463620391f607c568fb9a9bf1",
+    "transfer/sender.py": "e3ef5db39dd8545dacdf64173a01331e6e63e016bfae3f3b8e8cc0cb703424a6",
+    "transfer/storage.py": "4499be047160fcbb1009d9f0f7405659225a494958aa694f404ffac8e68be0fe",
+    "transfer/verification.py": "27ddeeb615539beebebd24c4eedadfe8b9a3177e3df28e49c877a56c0e63629b",
+    "transfer/wire.py": "a166673fe527442e602ff3bf099310744b366226f0fddb7c3f2ce60b5bcbc9c6"
+  },
+  "packages": {
+    "fastapi": "0.141.1",
+    "httpx": "0.28.1",
+    "cryptography": "46.0.7"
+  }
+}

@@ -1,0 +1,7 @@
+liboqs-python faulthandler is disabled
+{"scenario": "hybrid", "passed": true, "state": "DELIVERED", "mode": "HYBRID_QKD", "reason": "qkd_available", "bytes": 80823, "attempts": 1, "duration_ms": 71.059, "identical_file": true, "alice_exit_code": 0}
+{"scenario": "explicit-pqc-fallback", "passed": true, "state": "DELIVERED", "mode": "PQC_ONLY", "reason": "reserve_below_5_percent", "bytes": 80823, "attempts": 1, "duration_ms": 45.487, "identical_file": true, "alice_exit_code": 0}
+{"scenario": "tampered-ciphertext", "passed": true, "state": "FAILED", "mode": "HYBRID_QKD", "reason": "authentication_failed", "bytes": 80823, "attempts": 1, "duration_ms": 73.309, "identical_file": false, "alice_exit_code": 1}
+{"scenario": "hybrid-required-queued", "passed": true, "state": "QUEUED", "mode": null, "reason": "reserve_below_5_percent", "bytes": 80823, "attempts": 1, "duration_ms": 42.322, "identical_file": false, "alice_exit_code": 2}
+{"scenario": "refill-resumes-with-fresh-handshake", "passed": true, "state": "DELIVERED", "mode": "HYBRID_QKD", "reason": "qkd_available", "bytes": 80823, "attempts": 17, "duration_ms": 62.535, "identical_file": true, "alice_exit_code": 0}
+Verification report: /Users/adityalanka/Downloads/qkd-hake-testbed/output/seminar/verification/file-transfer/20261008T105444Z-4e1f16/REPORT.md

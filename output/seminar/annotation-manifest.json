@@ -1,0 +1,260 @@
+{
+  "files": [
+    {
+      "path": "src/qkd_hake/__init__.py",
+      "lines": 3,
+      "sha256": "4e632a031492ed015e9e661abd759543504b4e5229a36d0cfd10bc51c4586610"
+    },
+    {
+      "path": "src/qkd_hake/benchmarks/__init__.py",
+      "lines": 1,
+      "sha256": "8650f055b171455d8fd7608b5a58f6f7d074393f7f22bd9cd0fc2f8f96e94eff"
+    },
+    {
+      "path": "src/qkd_hake/benchmarks/plot_performance_figures.py",
+      "lines": 579,
+      "sha256": "9333e9be1052d7f2fb49408d3ab68a323cc4cb45979ff57f2f1c80dce2a1a600"
+    },
+    {
+      "path": "src/qkd_hake/benchmarks/plot_wp6.py",
+      "lines": 246,
+      "sha256": "90c72131f2fce5395124de933c3629ab7a1f1a073510d5c26fac58ffa921b047"
+    },
+    {
+      "path": "src/qkd_hake/benchmarks/policies.py",
+      "lines": 255,
+      "sha256": "20753a3cfd73bc9fbd3a6f956908be364ad163d2b4756f16f3c5bf60b3c1c6fe"
+    },
+    {
+      "path": "src/qkd_hake/benchmarks/policy_report.py",
+      "lines": 116,
+      "sha256": "bc302b73d937fc63450669022f8171e6206c84fd6a48ba664dbe421d85a2da35"
+    },
+    {
+      "path": "src/qkd_hake/benchmarks/runner.py",
+      "lines": 48,
+      "sha256": "2e2cf7201c129502b600a01bdc37b4f3fa897ed0cd235ddbf492fb8c4881d87c"
+    },
+    {
+      "path": "src/qkd_hake/benchmarks/suite.py",
+      "lines": 1036,
+      "sha256": "fdc418a4f2a3cf0336191f7285d710ebfdcbd41b687b9a7700731742f0eb25f2"
+    },
+    {
+      "path": "src/qkd_hake/cli.py",
+      "lines": 232,
+      "sha256": "85cd587ef9a6fe5afa99a18f03ae133eebae39eb9b3365978ca8e3783bdda061"
+    },
+    {
+      "path": "src/qkd_hake/crypto/__init__.py",
+      "lines": 1,
+      "sha256": "9eb92bdcfbdd17b15cfc059f0de7b6b7b9acb7b5a7a4c92baa0bac2db8e96fb7"
+    },
+    {
+      "path": "src/qkd_hake/crypto/kdf.py",
+      "lines": 81,
+      "sha256": "eeb4c9298bb0dbab56bd0fca03b95094c9a03735ef6cef53ba9a711bac12d57b"
+    },
+    {
+      "path": "src/qkd_hake/crypto/kem.py",
+      "lines": 55,
+      "sha256": "bc9323c272960ecaa937c5aa3b1be580af12cf07e6c314b05e4c8fb51cdf2a7e"
+    },
+    {
+      "path": "src/qkd_hake/crypto/store.py",
+      "lines": 48,
+      "sha256": "82aa9e3fbdcab23cc68e934fc6b7534aa91c9f6ddc74ea49fcaf4bbb2b3591d9"
+    },
+    {
+      "path": "src/qkd_hake/mitigations/__init__.py",
+      "lines": 1,
+      "sha256": "5384bfdb2df380b6557cc7a71d16891415bccaa87699406e236f752c6415389f"
+    },
+    {
+      "path": "src/qkd_hake/mitigations/mitigations.py",
+      "lines": 39,
+      "sha256": "d29d8e53f4934908cd27507271bc1144214ac8da6dd4a6246c8366a8a7d57389"
+    },
+    {
+      "path": "src/qkd_hake/protocol/__init__.py",
+      "lines": 1,
+      "sha256": "60c9b4453a21d927d33cf1ad0e247bc98dae9fc94fb9e731d948d3dc832e4192"
+    },
+    {
+      "path": "src/qkd_hake/protocol/combiner.py",
+      "lines": 67,
+      "sha256": "da256f1529124c0116cb3025d614d14aa7f3b339baafee62bd380afbb783a3d6"
+    },
+    {
+      "path": "src/qkd_hake/protocol/hake.py",
+      "lines": 337,
+      "sha256": "53142573a4df4555c706e64efa5c8f5c82962ec17c9c0ceb3012f84f4bf9b205"
+    },
+    {
+      "path": "src/qkd_hake/qkd_mock/__init__.py",
+      "lines": 1,
+      "sha256": "111776212cf8787e0b088b42d39b114ad7cffb5e56dd2d67cad4e19726803f6b"
+    },
+    {
+      "path": "src/qkd_hake/qkd_mock/client.py",
+      "lines": 41,
+      "sha256": "87363fd1fcd48228ac7befd1c6363689fe28be843fd94b73d91d68624290a9f8"
+    },
+    {
+      "path": "src/qkd_hake/qkd_mock/models.py",
+      "lines": 39,
+      "sha256": "ab97a0f1358dea2f66de3693fd8f0f3c2d1cd53675c172eb7bf33fe38f754c3c"
+    },
+    {
+      "path": "src/qkd_hake/qkd_mock/pool.py",
+      "lines": 121,
+      "sha256": "372e99af06e5b74883d242210a71b8388b66122a573769891499515b05973806"
+    },
+    {
+      "path": "src/qkd_hake/qkd_mock/server.py",
+      "lines": 115,
+      "sha256": "a937b6f9e1d52d7943ec6c357a8045e517037cd088dc4914cadc6b3ddb33eb51"
+    },
+    {
+      "path": "src/qkd_hake/settings.py",
+      "lines": 37,
+      "sha256": "64e10169289d73a32c6a93939762900b2f3f17ced0aa84aabbcca80eae8c9813"
+    },
+    {
+      "path": "src/qkd_hake/transfer/__init__.py",
+      "lines": 1,
+      "sha256": "5a81e8108ba3641629ebd6f80dc457a4b26e55cc00071b505ffeb72a2697a3cc"
+    },
+    {
+      "path": "src/qkd_hake/transfer/audit.py",
+      "lines": 32,
+      "sha256": "cecdf05c4155d8b25ce1807bf18c1cfa1f9236c61501537002688a8e85223e51"
+    },
+    {
+      "path": "src/qkd_hake/transfer/channel.py",
+      "lines": 64,
+      "sha256": "cbee504798323ed8e4e0c7ecb086174eeb707d94730cd21024de645fca58df34"
+    },
+    {
+      "path": "src/qkd_hake/transfer/cli.py",
+      "lines": 108,
+      "sha256": "8928de881f243c646913a4495eafd5a6bbc64128c6a5828dd2bda04533c742f4"
+    },
+    {
+      "path": "src/qkd_hake/transfer/handshake.py",
+      "lines": 63,
+      "sha256": "e88c52f5c935bc73c3c9f1c52eee88771a611128e4b03fa31d7dc01f41d7414d"
+    },
+    {
+      "path": "src/qkd_hake/transfer/identity.py",
+      "lines": 39,
+      "sha256": "259dc6d29bc6a222bb62c457fe6424c911a4055ea9785407306081400d30f462"
+    },
+    {
+      "path": "src/qkd_hake/transfer/queue.py",
+      "lines": 97,
+      "sha256": "f499e6649a0ffa42d50fdc3940bbcda3842cf0d906340f297f269d8c07c524a2"
+    },
+    {
+      "path": "src/qkd_hake/transfer/receiver.py",
+      "lines": 80,
+      "sha256": "e9a69100fb838b4cedd5a71b76edbaec973414d463620391f607c568fb9a9bf1"
+    },
+    {
+      "path": "src/qkd_hake/transfer/sender.py",
+      "lines": 124,
+      "sha256": "e3ef5db39dd8545dacdf64173a01331e6e63e016bfae3f3b8e8cc0cb703424a6"
+    },
+    {
+      "path": "src/qkd_hake/transfer/storage.py",
+      "lines": 55,
+      "sha256": "4499be047160fcbb1009d9f0f7405659225a494958aa694f404ffac8e68be0fe"
+    },
+    {
+      "path": "src/qkd_hake/transfer/verification.py",
+      "lines": 199,
+      "sha256": "27ddeeb615539beebebd24c4eedadfe8b9a3177e3df28e49c877a56c0e63629b"
+    },
+    {
+      "path": "src/qkd_hake/transfer/wire.py",
+      "lines": 67,
+      "sha256": "a166673fe527442e602ff3bf099310744b366226f0fddb7c3f2ce60b5bcbc9c6"
+    },
+    {
+      "path": "tests/test_api.py",
+      "lines": 41,
+      "sha256": "ee96dc806fd4f8720a21cda64f8a3830218cf03adef48ead40a80c9781a50b57"
+    },
+    {
+      "path": "tests/test_combiner.py",
+      "lines": 40,
+      "sha256": "a326f5f695c3ccb65e7362879ee952be8d7ff997fc6a70f9561ba047a40cfa78"
+    },
+    {
+      "path": "tests/test_hake.py",
+      "lines": 195,
+      "sha256": "5aff6c193d764ce1e6083da3342b399146fd419acfb9e9518d18ac39a81cebf8"
+    },
+    {
+      "path": "tests/test_kem.py",
+      "lines": 29,
+      "sha256": "633dae0a752769d1fd55030346de637a28c041f5a044f082636a972d0bbbfb09"
+    },
+    {
+      "path": "tests/test_policies.py",
+      "lines": 140,
+      "sha256": "8e38ba3faf6380a293e126bc1952ef40e0fa8e3058ff0cf7ade1ff006b7b7954"
+    },
+    {
+      "path": "tests/test_pool.py",
+      "lines": 26,
+      "sha256": "3391f87b340eab958d900e3d5b2ddb5b65b6a4c642692ce7e9e19321b33dbb17"
+    },
+    {
+      "path": "tests/test_transfer.py",
+      "lines": 342,
+      "sha256": "8d2a5bd2fdc8637e6ac605f2de58212ba6abbca1ed0905e1a14d5b1339b0e69b"
+    },
+    {
+      "path": "docs/architecture/generate_architecture.py",
+      "lines": 452,
+      "sha256": "12bd776d0c2edb4d6554bac590b7a36fc83cab90e23d4d6bfaaf53fd790d9195"
+    },
+    {
+      "path": "docs/architecture/run_verification.py",
+      "lines": 116,
+      "sha256": "afeed12919df93c2fe8b57d6c842e6d62c4e7c92d169c48f7779a7accfe49010"
+    },
+    {
+      "path": "Makefile",
+      "lines": 32,
+      "sha256": "6ef4fa948ad3035a79053f3a30eb8253ba799d1de338feb654297a05c440aa28"
+    },
+    {
+      "path": "pyproject.toml",
+      "lines": 38,
+      "sha256": "99e0134bfc682e03d93d701ce331be273f0aa4bd5e9622b2858b8a52bfc6c810"
+    },
+    {
+      "path": "Dockerfile",
+      "lines": 25,
+      "sha256": "f057f3e3ad5eaf5688f59faf62063a3826c8c234d4313dad10a1177f2e06aefb"
+    },
+    {
+      "path": "docker-compose.yml",
+      "lines": 8,
+      "sha256": "433d1b7e885a7f4ee6b0d004c06abf893b205b3bc72cd22d6ea86427a88dace3"
+    },
+    {
+      "path": "configs/experiments.json",
+      "lines": 18,
+      "sha256": "9da0845d7e6ab932272cf76418d67dfb8754fd397ec104385e98d6e0dbdd5af0"
+    },
+    {
+      "path": ".gitignore",
+      "lines": 12,
+      "sha256": "44b18f435bd5d1487e7a16d285edf1807ec0f46c35b596d3eae99951d478565e"
+    }
+  ],
+  "total_lines": 5943
+}

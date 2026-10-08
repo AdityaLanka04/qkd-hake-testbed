@@ -1,0 +1,4 @@
+QKD key ID: 1a781563-52a4-4f8a-a2b2-ace47c277e62
+Both SAEs received the same 256-bit key: True
+Encoded key length: 44 bytes
+Smoke benchmark: {'median_wall_time_ns': 11999.5, 'p95_wall_time_ns': 17458.0}

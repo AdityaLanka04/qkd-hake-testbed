@@ -103,6 +103,26 @@ real traffic. The server currently uses a test header to identify an SAE;
 production ETSI deployments require authenticated channels and proper access
 control.
 
+## Comparing starvation policies
+
+Run paired virtual-time experiments with identical arrivals for explicit PQC
+fallback, per-peer request quotas, and the 5% admission threshold, plus a
+reject-on-empty control:
+
+```bash
+.venv/bin/python -m qkd_hake.cli policy-sweep --output results/policies-run-1
+.venv/bin/pip install -e '.[plots]'
+.venv/bin/python -m qkd_hake.benchmarks.policy_report results/policies-run-1
+```
+
+The output directory must be new. Raw per-request CSVs, per-peer results,
+policy summaries, and host/configuration/source metadata make the comparison
+reproducible. The HTML report shows hybrid success, explicit fallback,
+rejection, occupancy, fairness, and measured local policy-check cost.
+These are resource-model outcomes and local Python timings, not end-to-end
+handshake latency. Strict policies reject rather than queue in this experiment.
+See [the seminar guide](docs/SEMINAR_GUIDE.md) for interpretation and limitations.
+
 ## Policy-aware encrypted file transfer
 
 Run the complete five-case application demonstration with real local Alice,
